@@ -270,8 +270,6 @@ public String downLoadPdf(@RequestBody String path,HttpServletRequest request,Ht
 
 ```
 
-https://github.com/leisuping/MyBlog.git
-
 
 [参考](https://blog.csdn.net/zf18234031156/article/details/83744097)
 
