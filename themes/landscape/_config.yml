@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  about: /2019/05/17/about-myself/
 rss: /atom.xml
 
 # Content
@@ -16,6 +17,7 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
+
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
