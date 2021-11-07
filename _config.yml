@@ -57,15 +57,16 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+# 代码高亮配置
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -124,3 +125,4 @@ deploy:
 search:
   path: search.xml
   field: post
+
