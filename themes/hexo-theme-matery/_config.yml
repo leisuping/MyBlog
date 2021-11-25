@@ -122,7 +122,7 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
+favicon: /medias/avatar.jpg
 logo: /medias/avatar.jpg 
 
 
