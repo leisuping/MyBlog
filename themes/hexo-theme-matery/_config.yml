@@ -144,7 +144,7 @@ socialLink:
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: 2950821420
-  weibo: # https://weibo.com/xxx
+  weibo: # https://weibo.com/u/6537493249
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
 
@@ -228,7 +228,7 @@ sakura:
 mouseStar:
   enable: false
 
-  # 是否激活页面飘雪效果, 只在桌面版网页启用特效
+# 是否激活页面飘雪效果, 只在桌面版网页启用特效
 snowdown:
   enable: false
 
@@ -236,8 +236,8 @@ snowdown:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  career: 一棵前端小白菜 🥬
+  introduction: 工作是我们生命中非常重要的一部分，只有工作可爱了，生活才会可爱。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
