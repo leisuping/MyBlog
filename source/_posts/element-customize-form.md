@@ -196,3 +196,6 @@ export default {
   }
 }
 ```
+> OK完美结束！
+
+<img src="./imagepic.jpg" style="width: 400px"/>
