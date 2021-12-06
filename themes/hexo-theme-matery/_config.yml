@@ -290,9 +290,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/0.jpg
-    - /medias/featureimages/1.jpg
     - /medias/featureimages/2.jpg
+    - /medias/featureimages/3.jpg
+    - /medias/featureimages/0.jpg
 
 # 设置在归档页面中是否显示'文章日历'控件
 postCalendar: true
