@@ -1,6 +1,7 @@
 ---
 title: MySql日期函数的使用与批量更新
 date: 2019-05-17 17:30:45
+img: https://s6.jpg.cm/2021/12/07/LQetAf.jpg
 tags:
  - MYSQL
 categories: 

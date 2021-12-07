@@ -1,6 +1,7 @@
 ---
 title : Element 自定义表单验证
 date: 2021-11-29
+img: https://s6.jpg.cm/2021/12/07/LQerdw.jpg
 tags:
  - Vue
  - ElementUI

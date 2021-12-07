@@ -1,6 +1,7 @@
 ---
 title: 使用 jQuery.fileDownload.js 插件实现Ajax下载文件
 date: 2019-05-17 12:36:45
+img: https://s6.jpg.cm/2021/12/07/LQeu12.jpg
 tags:
  - JS
  - JQ

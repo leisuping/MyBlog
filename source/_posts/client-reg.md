@@ -1,6 +1,7 @@
 ---
 title : 前端之正则校验（一）
 date: 2021-11-24
+img: https://s6.jpg.cm/2021/12/07/LQe1fH.jpg
 tags:
  - js
  - jquery

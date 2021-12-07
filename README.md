@@ -53,3 +53,8 @@ npx hexo g && npx hexo d
 ```
 
 - 详情参照hexo官网：https://hexo.io/zh-cn/docs/
+
+## 博客文章特征图
+博客文章特征图的存储最好是使用图床
+我个人使用的是免费的图床 [笑果图床](https://imagelol.com/) 无需注册。
+最大限制单张图片 5M，注册登录后可上传 10M 大小图片，支持 HTTPS。

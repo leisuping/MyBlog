@@ -1,6 +1,7 @@
 ---
 title : 👨‍💻mac安装win10虚拟机
 date: 2021-10-27
+img: https://s6.jpg.cm/2021/12/07/LQemHe.jpg
 tags:
  - Mac
  - 服务器
