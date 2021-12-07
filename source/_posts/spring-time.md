@@ -8,6 +8,10 @@ tags:
 categories: 
  - 后端
  - 定时任务
+keywords:
+ - 后端
+ - Spring
+ - Spring 实现定时器的几种方式
 ---
 &emsp;最近在项目开发中使用到spring定时器，综合自己的开发以及在网上查找的资料总结一下。
 

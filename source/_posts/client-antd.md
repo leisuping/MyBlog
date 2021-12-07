@@ -7,6 +7,9 @@ tags:
 categories: 
  - 前端
  - Vue
+keywords:
+ - Vue
+ - antd在IE浏览器中组件不渲染
 ---
 ## 一、兼容性
 > 🎯 Ant Design Vue 支持所有的现代浏览器和 IE9+

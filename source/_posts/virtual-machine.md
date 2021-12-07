@@ -7,6 +7,9 @@ tags:
 categories: 
  - 虚拟机
  - win10
+keywords:
+ - mac安装win10虚拟机
+ - 服务器
 ---
 
 ## 一、准备下载相关工具

@@ -8,6 +8,10 @@ tags:
 categories: 
  - 后端
  - Java
+keywords:
+ - java
+ - io
+ - 压缩/解压Zip文件
 ---
 &emsp;java.util.zip包提供了用于读取和编写zip和gzip文件格式的类。在这篇文章中我们将学习如何使用java.util.zip.ZipInputStream和java.util.zip.ZipFile解压zip文件，如何以zip格式压缩文件和目录。
 

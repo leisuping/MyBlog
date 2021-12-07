@@ -9,6 +9,10 @@ categories:
  - 前端
  - Vue
  - ElementUI
+keywords:
+ - 前端
+ - Vue
+ - 自定义表单验证
 ---
 
 ## 一、需求

@@ -9,6 +9,10 @@ categories:
  - 前端
  - Vue
  - ElementUI
+keywords:
+ - table
+ - ElementUI
+ - table组件上移下移数据实现自定义排序
 ---
 
 <img src="./IMG_1987.JPG"/>

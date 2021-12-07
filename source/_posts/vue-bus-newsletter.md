@@ -9,6 +9,9 @@ categories:
  - 前端
  - Vue
  - 组件通讯
+keywords:
+ - 组件通讯
+ - Vue使用eventBus总线，实现非父子组件间的通信
 ---
 
 ## 一、前提

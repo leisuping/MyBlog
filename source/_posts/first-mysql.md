@@ -6,6 +6,10 @@ tags:
 categories: 
  - 后端
  - 数据库
+keywords:
+ - Java
+ - MYSQL
+ - MySql日期函数的使用与批量更新
 ---
 
 &emsp;目前MySQL版本已经更新到8.0.15，但是大部分企业中使用的还是MySQL5.7的。我本地安装的是MySQL5.7.20，因为MySQL版本的不同可能对某些SQL语句的支持度也不同，所以特地在此说明。

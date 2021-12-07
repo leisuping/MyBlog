@@ -8,6 +8,10 @@ tags:
 categories: 
  - 前端
  - 正则
+keywords:
+ - js
+ - reg
+ - 正则
 ---
 ## 一、正则表达式
 > 🎯 归纳最近用到的一些正则表达式

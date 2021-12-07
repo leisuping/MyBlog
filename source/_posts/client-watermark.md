@@ -9,6 +9,10 @@ categories:
  - 前端
  - Vue
  - js
+keywords:
+ - 前端
+ - Vue
+ - 前端系统添加水印
 ---
 
 <img src="./images.jpeg" width="90%"/>
