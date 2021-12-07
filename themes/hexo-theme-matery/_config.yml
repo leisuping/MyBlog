@@ -333,13 +333,13 @@ gitment:
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
 disqus:
-  enable: true
+  enable: false
   shortname:
 
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
 livere:
-  enable: true
+  enable: false
   uid:
 
 # The configuration of the Valine comment module is not activated by default.
