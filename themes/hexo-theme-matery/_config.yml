@@ -41,11 +41,11 @@ menu:
 # 站点运行开始时间.
 time:
   enable: false
-  year: 2019 # 年份
-  month: 03 # 月份
-  date: 17 # 日期
-  hour: 15 # 小时
-  minute: 16 # 分钟
+  year: 2021 # 年份
+  month: 11 # 月份
+  date: 05 # 日期
+  hour: 11 # 小时
+  minute: 36 # 分钟
   second: 00 # 秒
 
 # Index cover carousel configuration.
@@ -333,13 +333,13 @@ gitment:
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
 disqus:
-  enable: false
+  enable: true
   shortname:
 
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
 livere:
-  enable: false
+  enable: true
   uid:
 
 # The configuration of the Valine comment module is not activated by default.
