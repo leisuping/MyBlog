@@ -4,13 +4,13 @@ date: 2021-12-09 09:40:26
 img: https://s6.jpg.cm/2021/12/07/LQegeR.jpg
 tags:
  - hexo
- - 搭建博客
+ - 部署博客
 categories: 
  - nodejs
  - hexo
 keywords:
  - hexo
- - 如何使用hexo搭建个人博客
+ - 将hexo搭建的个人博客部署到GitHub
 ---
 ## 一、新建仓库
 > 🎯 上一篇[如何使用hexo搭建个人博客](https://leisuping.github.io/MyBlog/build-blog-one/)中准备环境有提到要注册GitHub/GitLab账号
@@ -41,7 +41,7 @@ pretty_urls:
 ```
 
 ## 三、上传部署博客
-> 1.将本地的 myblog 与 GitHub仓库关联，将代码提交到仓库的 master分支下
+> 1.将本地的 myblog 与 GitHub仓库关联（配置ssh），将代码提交到仓库的 master分支下
 > 2.在博客仓库下新建 gh-pages 分支，用来存储博客编译后要部署的静态文件
 > 3.在仓库下配置发布源 Settings => Pages 在 GitHub Pages 下设置发布源分支 gh-pages
 > 4.在 _config.yml 中配置博客部署信息
