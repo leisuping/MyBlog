@@ -118,7 +118,7 @@ $ npx hexo init myblog
 
 > source：资源文件夹是存放用户资源的地方，_posts 文件夹下一般存放博客文章。
 > themes：[主题](https://hexo.io/zh-cn/docs/themes) 文件夹，Hexo 会根据主题来生成静态页面。
-> _config.yml：根目录下的 _config.yml（全局）可以配置博客的信息。
+> _config.yml：根目录下_config.yml用于当前博客全局配置。
 > package.json：根目录下的 package.json 是博客的一些依赖，以及 Hexo 相关配置。
 > 比如：（启动博客命令）npx hexo serve
 
@@ -126,7 +126,38 @@ $ npx hexo init myblog
 ![](./hexo.jpg)
 
 ### 2.配置博客
-> 关于博客的配置可以仔细阅读[Hexo 官方文档](https://hexo.io/zh-cn/docs/)
+> 博客的相关配置均在 根目录下的 _config.yml 文件中配置。
+> 配置博客基本信息：
+
+```yml
+# 配置博客标题、描述、关键字、作者、语言（基础配置）
+title: 楠竹菇凉
+subtitle: 楠竹
+description: 当然，还是会有不可逾越的界限
+keywords: "楠竹菇凉"
+author: nzgl
+language: zh-CN
+```
+
+> 配置博客主题：
+> 关于博客的主题可以参见[主题列表](https://hexo.io/themes/)，当然如果自己有更好的主题也可以发布在主题列表分享。
+> 在[主题列表](https://hexo.io/themes/)选一个自己喜欢的主题 "git clone 主题资源GitHub路径" 到博客根目录下的 themes 文件夹里。
+> 然后在博客根目录下的 _config.yml 配置文件里面配置 "theme: 主题名称" 即可。
+
+![](./themes.jpg)
+
+在博客根目录下的 themes 文件夹里拉取主题资源（也可以拉取主题copy到 themes 目录里）
+```bash
+$ git clone https://github.com/ptsteadman/hexo-theme-corporate.git
+```
+
+```yml
+# _config.yml 配置文件里面配置应用主题名称
+# theme: https://hexo.io/themes/
+theme: hexo-theme-corporate
+```
+
+> 关于博客其他配置可以仔细阅读[Hexo 官方文档](https://hexo.io/zh-cn/docs/)
 > 可以按照个人的喜好风格来配置，这里就请大家自由发挥吧～（下次我再跟大家分享 如何将博客到GitHub上）
 > 相信大家都能够搭建一个独具特色的个人博客！
 
