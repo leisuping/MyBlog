@@ -38,24 +38,3 @@ header .brand-logo .logo-img {
     width: 48px;
     height: 48px;
 }
-/* 设置评论框样式 */
-.v .vwrap {
-    border: 1px solid #f0f0f0;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    padding: 10px;
-    width: 54%;
-}
-/* 设置评论框请求异常信息代码块样式 */
-#vcomments pre {
-    font-family: monospace, monospace;
-    padding: 1.2em;
-    margin: 0.5em 0;
-    background: #272822;
-    overflow: auto;
-    border-radius: 0.3em;
-    tab-size: 4;
-    width: 54%;
-}
