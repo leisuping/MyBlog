@@ -27,7 +27,7 @@ keywords:
 
 
 ## 二、配置博客
-> copy GitHub博客仓库的地址 https://username.github.io/MyBlog
+> copy GitHub博客仓库的地址 [https://username.github.io/MyBlog](https://github.com/leisuping/)
 > 在博客根目录下的 _config.yml 中配置 GitHub 仓库地址（博客部署/访问的地址）
 
 ```yml
