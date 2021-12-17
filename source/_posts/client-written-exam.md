@@ -12,7 +12,7 @@ categories:
 keywords:
  - prototype
  - constructor
- - 分享一些前端笔试遇到的问题
+ - 前端笔试
 ---
 
 ## 一、故事分享
