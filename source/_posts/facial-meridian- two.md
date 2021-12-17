@@ -1,5 +1,5 @@
 ---
-title : js基础篇之“浅入深出”
+title : js基础篇之“深入浅出”
 date: 2021-12-07 19:46:20
 img: https://s6.jpg.cm/2021/12/07/LQeoX5.png
 tags:
