@@ -23,6 +23,12 @@ keywords:
 > 实现表格自定义排序
 
 ## 二、处理方式
+> 思路：
+> 1.监听 table 数据行的选中事件（获取当前选中行的数据）假设当前行 currentData
+> 2.上移、下移按钮点击事件：handleSortUp、handleSortDown
+> 3.保存选中行的下标 currentIndex
+> 4.保存选中行的上一行数据 currentData
+> 5.移除选中行（下一行数据上移），并将上一行数据 currentData 插入到选中行的位置
 ### 1. 实现table数据单行选中，并获得该行数据的index信息（用于后面上移下移数据）
 
 > 定义table并绑定数据
