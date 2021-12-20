@@ -169,8 +169,8 @@ overflow: hidden;
 
 ### 1.数组相关操作方法
 ● push 在数组末尾添加元素
-● unshift 在数组首位添加元素
 ● pop 删除末尾元素
+● unshift 在数组首位添加元素
 ● shift 删除首位元素
 ● splice 删除数组元素，或者在指定位置插入元素
 ● sort 数组排序
