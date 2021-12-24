@@ -14,11 +14,11 @@ keywords:
  - io
  - 压缩/解压Zip文件
 ---
-&emsp;java.util.zip包提供了用于读取和编写zip和gzip文件格式的类。在这篇文章中我们将学习如何使用java.util.zip.ZipInputStream和java.util.zip.ZipFile解压zip文件，如何以zip格式压缩文件和目录。
+> java.util.zip包提供了用于读取和编写zip和gzip文件格式的类。在这篇文章中我们将学习如何使用java.util.zip.ZipInputStream和java.util.zip.ZipFile解压zip文件，如何以zip格式压缩文件和目录。
 
- ZipInputStream - 此类用于按顺序读取zip条目。 
- ZipFile - 此类在内部使用随机访问文件来读取zip条目。 
- 使用java.util.zip.ZipInputStream解压缩zip文件，ZipOutputStream类用于将zip格式的数据写入输出流，zip文件包含多个由ZipEntry类表示的条目。 
+> ZipInputStream - 此类用于按顺序读取zip条目。 
+> ZipFile - 此类在内部使用随机访问文件来读取zip条目。 
+> 使用java.util.zip.ZipInputStream解压缩zip文件，ZipOutputStream类用于将zip格式的数据写入输出流，zip文件包含多个由ZipEntry类表示的条目。 
 
 示例一：
 
