@@ -14,17 +14,16 @@ keywords:
  - Spring
  - Spring 实现定时器的几种方式
 ---
-&emsp;最近在项目开发中使用到spring定时器，综合自己的开发以及在网上查找的资料总结一下。
+> 最近在项目开发中使用到spring定时器，综合自己的开发以及在网上查找的资料总结一下。
 
-&emsp;1、Quartz 是我最先了解到的一个功能比较强大的spring定时器。可以实现按照指定时间执行，也可以按照指定的频率执行定时任务。只是在配置方面似乎比较复杂。
-
-&emsp;Quartz 任务调度的核心元素有：Scheduler（任务调度器）、Trigger（触发器）、Job（任务）。其中Scheduler是实际任务调度的控制器，Trigger是定义任务调度时间的元素，Job是调度的任务。
+> 1、Quartz 是我最先了解到的一个功能比较强大的spring定时器。可以实现按照指定时间执行，也可以按照指定的频率执行定时任务。只是在配置方面似乎比较复杂。
+> Quartz 任务调度的核心元素有：Scheduler（任务调度器）、Trigger（触发器）、Job（任务）。其中Scheduler是实际任务调度的控制器，Trigger是定义任务调度时间的元素，Job是调度的任务。
 
 demo实现：
 
 （1）、Pom.xml引入依赖：
 
-```
+```xml
 <!--集成quartz-->
 <dependency>
     <groupId>org.quartz-scheduler</groupId>
@@ -46,7 +45,7 @@ demo实现：
 ```
 （2）、创建配置文件类
 
-```
+```java
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -95,7 +94,7 @@ public class QuartzConfig {
 ```
 （3）、创建自定义Job任务类，继承QuartzJobBean
 
-```
+```java
 import com.alibaba.fastjson.JSON;
 import com.qfedu.rongzaiboot.entity.ScheduleJob;
 import com.qfedu.rongzaiboot.entity.ScheduleJobLog;
@@ -182,7 +181,7 @@ public class QuartzJob extends QuartzJobBean {
 ```
 
 （4）、创建Scheduler工具类,quartz的操作核心，包括操作quartz在数据库中的表
-```
+```java
 import com.alibaba.fastjson.JSON;
 import com.qfedu.rongzaiboot.entity.ScheduleJob;
 import com.qfedu.rongzaiboot.quartz.QuartzJob;
@@ -300,7 +299,7 @@ public class SchedulerUtils {
 
 （5）、保存任务的自定义类实体类
 
-```
+```java
 public class ScheduleJob implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -323,11 +322,11 @@ public class ScheduleJob implements Serializable {
 
 ```
 
-&emsp;2、Timer 是java自带的java.util.Timer类，允许调度一个java.util.TimerTask任务，可以让程序按照某个频率执行任务，但不能指定时间运行，所以一般使用的较少。
+> 2、Timer 是java自带的java.util.Timer类，允许调度一个java.util.TimerTask任务，可以让程序按照某个频率执行任务，但不能指定时间运行，所以一般使用的较少。
 
 demo 实现：
 
-```
+```java
 public class TestTimer {
 
    public static void main(String[] args) {
@@ -349,11 +348,11 @@ public class TestTimer {
 
 ```
 
-&emsp;3、ScheduledExecutorService jdk自带的一个类；是基于线程池设计的定时任务类,每个调度任务都会分配到线程池中的一个线程去执行,也就是说,任务是并发执行,互不影响。
+> 3、ScheduledExecutorService jdk自带的一个类；是基于线程池设计的定时任务类,每个调度任务都会分配到线程池中的一个线程去执行,也就是说,任务是并发执行,互不影响。
 
 demo 实现：
 
-```
+```java
 public class TestScheduledExecutorService {
 
    public static void main(String[] args) {
@@ -369,12 +368,12 @@ public class TestScheduledExecutorService {
 
 ```
 
-&emsp;4、Spring Task：Spring3.0以后自带的task，可以将它看成一个轻量级的Quartz，而且使用起来比Quartz简单许多。
+> 4、Spring Task：Spring3.0以后自带的task，可以将它看成一个轻量级的Quartz，而且使用起来比Quartz简单许多。
 
 demo 实现：
 
 （1）、Pom.xml依赖：
-```
+```xml
 <dependencies>
 
  <dependency>
@@ -403,7 +402,7 @@ demo 实现：
 ```
 
 （2）、创建任务类：在主类上使用@EnableScheduling注解开启对定时任务的支持，然后启动项目。
-```
+```java
 @Slf4j
 @Component
 public class ScheduledService {
@@ -426,9 +425,9 @@ public class ScheduledService {
 }
 ```
 
-推荐：Spring快速开启计划。可以看到三个定时任务都已经执行，并且使同一个线程中串行执行，如果只有一个定时任务，这样做肯定没问题，当定时任务增多，如果一个任务卡死，会导致其他任务也无法执行。
+> 推荐：Spring快速开启计划。可以看到三个定时任务都已经执行，并且使同一个线程中串行执行，如果只有一个定时任务，这样做肯定没问题，当定时任务增多，如果一个任务卡死，会导致其他任务也无法执行。
 
-参考链接：https://juejin.im/post/5ca24fb1e51d454a490a4809
+[参考链接](https://juejin.im/post/5ca24fb1e51d454a490a4809)
 
 
 

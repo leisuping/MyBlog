@@ -14,26 +14,30 @@ keywords:
  - 使用 jQuery.fileDownload.js 插件实现Ajax下载文件
  - js
 ---
-&emsp;近期做项目过程中有一个需求，根据文档的地址从服务器上下载该文档。分两种情况，第一种是单个文件的下载（使用文件流输出到前台页面），第二种是多个文件实现批量下载。
 
-思路一：单个文件下载，获取文件流响应到前台页面。
-&emsp;&emsp;&emsp;&emsp;多个文件批量下载，获取文件路径集合，循环下载。（效率低，显然是不可取的）
+> 近期做项目过程中有一个需求，根据文档的地址从服务器上下载该文档。分两种情况，第一种是单个文件的下载（使用文件流输出到前台页面），第二种是多个文件实现批量下载。
 
-思路二：单个文件下载，写一个工具类获取文件流响应到页面同时封装文件打包zip方法。
-&emsp;&emsp;&emsp;&emsp;多个文件批量下载，将获取到的文件路径打包成zip，再使用文件流响应到前台页面。
+> 思路一：单个文件下载，获取文件流响应到前台页面。
+> 多个文件批量下载，获取文件路径集合，循环下载。（效率低，显然是不可取的）
+> 思路二：单个文件下载，写一个工具类获取文件流响应到页面同时封装文件打包zip方法。
+> 多个文件批量下载，将获取到的文件路径打包成zip，再使用文件流响应到前台页面。
 
-原理：（从磁盘读到内存然后从内存写入网络，客服端接收流保存）
-&emsp;&emsp;&emsp;1、获取文件路径，使用文件输入流将文件输入到内存
-&emsp;&emsp;&emsp;2、使用输出流将文件输出到页面
-&emsp;&emsp;&emsp;3、页面接收到响应流在回调中给出提示
+> 原理：（从磁盘读到内存然后从内存写入网络，客服端接收流保存）
+> 1、获取文件路径，使用文件输入流将文件输入到内存
+> 2、使用输出流将文件输出到页面
+> 3、页面接收到响应流在回调中给出提示
 
 问题：
 1、返回文件名中文乱码
-解决：<pre><code>response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(downFile.getName(), "UTF-8"));</code></pre>
+
+解决：
+```java
+response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(downFile.getName(), "UTF-8"));
+```
 
 2、因为原生的ajax请求是无法进行文件上传下载的（无法处理流格式的参数），所以我想到了用form表单模拟提交。但是，使用form表单提交在请求结束之后前台无法获得回调函数。
 
-```
+```js
 var url = rootPath + "hncaBusinessinfo/downLoadPdf";
 var form = $("&lt;form&gt;&lt;/form&gt;").attr("action", url).attr("method", "post");
 form.append($("&lt;input&gt;&lt;/input&gt;").attr("type", "hidden").attr("name", "PATHSIGNFORM").attr("value", path));
@@ -42,7 +46,7 @@ form.appendTo('body').submit().remove();
 
 解决：
 使用jQuery.filedownload.js来实现文件下载的回调（页面需要先引用 jQuery.fileDownload.js）。
-```
+```js
 var url = rootPath + "hncaBusinessinfo/downLoadPdf";
 var index = layer.msg();
 $.fileDownload(url, {
@@ -62,17 +66,15 @@ $.fileDownload(url, {
 ```
 
 3、在使用了jQuery.filedownload.js来下载文件，但是页面下载成功后回调没有反应。
+
 解决：刚开始找了很久，一直以为是前台代码写错了后面才发现使用jQuery.filedownload.js下载文件页面要获取回调函数后台必须要设置头部信息。
-
-```
+```java
+// 没有设置这个头部信息，页面还是没办法执行回调函数的呢！
 response.setHeader("Set-Cookie", "fileDownload=true; path=/");
-
-没有设置这个头部信息，页面还是没办法执行回调函数的呢！
-
 ```
 #### 话不多说，直接来工具类的代码：
 
-```
+```java
 /**
     * 单个PDF文件下载（单个文件下载）
     * @param response 响应流
@@ -136,7 +138,7 @@ public static String downLoadPdfByUrl(HttpServletResponse response,String fileNa
 
 #### 多文件下载（批量下载），下载的是zip格式
 
-```
+```java
 /**
     * 批量下载打包zip压缩包
     * @param response
@@ -210,11 +212,11 @@ public static void downloadZip(HttpServletResponse response,String[] names,Strin
 }
 
 ```
-#### controller代码
+#### controller类
 
 ##### 判断该文件路径是否有效
 
-```
+```java
 @RequestMapping("hncaBusinessinfo/fileExists")
 @Pass
 @ResponseBody
@@ -247,7 +249,7 @@ public DataRes fileExists(HncaBusinessinfo hncaBusinessinfo,HttpServletRequest r
 
 ##### 下载文件
 
-```
+```java
 /**
 * 批量下载PDF文档->hnca_businessinfo
 */
@@ -284,7 +286,7 @@ public String downLoadPdf(@RequestBody String path,HttpServletRequest request,Ht
 ```
 
 
-[参考](https://blog.csdn.net/zf18234031156/article/details/83744097)
+[springboot-单文件下载、多文件下载（zip）](https://blog.csdn.net/zf18234031156/article/details/83744097)
 
-[参考](https://blog.csdn.net/weixin_41029960/article/details/82585082)
+[使用 jQuery.fileDownload.js 插件实现Ajax下载文件](https://blog.csdn.net/weixin_41029960/article/details/82585082)
 

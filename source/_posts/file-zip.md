@@ -22,8 +22,8 @@ keywords:
 
 示例一：
 
-```
-使用java.util.zip.ZipInputStream解压缩zip文件
+```java
+// 使用java.util.zip.ZipInputStream解压缩zip文件
 
 package com.yiibai.tutorial.io;
 
@@ -82,8 +82,8 @@ public class UnzipFileExample1 {
 
 示例二：
 
-```
-使用java.util.zip.ZipFile解压缩zip文件
+```java
+// 使用java.util.zip.ZipFile解压缩zip文件
 
 package com.yiibai.tutorial.io;
 
@@ -142,7 +142,7 @@ public class UnzipFileExample2 {
 
 压缩文件的示例：
 
-```
+```java
 package com.yiibai.tutorial.io; 
 
 import java.io.File; 
@@ -197,8 +197,8 @@ public class ZipFileExample {
 ```
 压缩目录中的所有文件和子目录
 
-```
-以递归方式遍历目录中的所有文件，并使用ZipOutputStream将其写入zip文件。
+```java
+// 以递归方式遍历目录中的所有文件，并使用ZipOutputStream将其写入zip文件。
 
 package com.yiibai.tutorial.io; 
 
@@ -259,6 +259,6 @@ public class ZipDirectoryExample {
 ```
 
 
-原文出自[易百教程] 原文链接: 
+原文出自[易百教程](https://www.yiibai.com/) 原文链接：
 https://www.yiibai.com/geek/detail/447
 https://www.yiibai.com/geek/detail/441

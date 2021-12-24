@@ -132,8 +132,7 @@ git push
 
 ......
 
-此处附上Git一些常用命令的链接 ：https://www.jianshu.com/p/360bdda5157f
-https://www.cnblogs.com/my--sunshine/p/7093412.html
+[Git常用命令](https://www.runoob.com/git/git-basic-operations.html)
 
 
 
