@@ -144,9 +144,9 @@ socialLink:
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: 2950821420
-  weibo: # https://weibo.com/u/6537493249
-  zhihu: # https://www.zhihu.com/xxx
-  rss: true # true、false
+  weibo: https://weibo.com/u/6537493249
+  # zhihu: https://www.zhihu.com/people/nan-nan-31-69-13
+  rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
