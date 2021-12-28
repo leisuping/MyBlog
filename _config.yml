@@ -127,9 +127,13 @@ include:
 exclude:
 ignore:
 
+# watermark
+# 安装插件：npm install hexo-images-watermark
+# 待完善
+
 # 安装动画插件：npm install live2d-widget-model-z16 -D
 # 安装具体的动画人物：npm install --save hexo-helper-live2d 
-# 配置博客动漫人物（动画跟蒜子计算会有冲突，建议两者不要一起使用）
+# 配置博客动漫人物（动画跟不蒜子统计会有冲突，建议两者不要一起使用）
 live2d: 
   enable: true 
   scriptFrom: local 

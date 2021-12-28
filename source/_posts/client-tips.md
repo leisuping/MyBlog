@@ -50,11 +50,13 @@ keywords:
     visibility: hidden；
 }
 ```
+> 补充：清除浮动伪类有.clearfix clear:both overflow:hidden
+> 常用：.clearfix
 
 ### 2.CSS显示与隐藏的实现方式有哪些？区别在哪？
 实现方式：
-a.display[none]：不占位隐藏，会导致页面回流重绘
-b.hidden[true]：占位隐藏，可能会导致页面重绘，绑定事件无效
+a.display[none]：不占位隐藏，会导致页面回流重绘，绑定事件无效
+b.visibility[hidden]：占位隐藏，可能会导致页面重绘，绑定事件无效
 c.opacity[设置透明度为0]：内部元素都会受影响，可以被继承，绑定事件仍有效
 d.rgb[设置透明度]：只作用于当前元素，不可被继承
 
