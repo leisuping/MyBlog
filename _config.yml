@@ -10,6 +10,12 @@ keywords: "楠竹菇凉"
 author: nzgl
 language: zh-CN
 
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-matery
+#landscape
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://leisuping.github.io/
@@ -19,6 +25,18 @@ permalink_defaults:
 pretty_urls:
   trailing_index: true # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除
   trailing_html: true # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: git@github.com:leisuping/MyBlog
+  branch: gh-pages
+
+# 博客搜索
+search:
+  path: search.xml
+  field: post
 
 # 中文链接转拼音
 permalink_pinyin:
@@ -109,20 +127,24 @@ include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
-#landscape
-
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: git@github.com:leisuping/MyBlog
-  branch: gh-pages
-
-search:
-  path: search.xml
-  field: post
-
+# 安装动画插件：npm install live2d-widget-model-z16 -D
+# 安装具体的动画人物：npm install --save hexo-helper-live2d 
+# 配置博客动漫人物（动画跟蒜子计算会有冲突，建议两者不要一起使用）
+live2d: 
+  enable: true 
+  scriptFrom: local 
+  pluginRootPath: live2dw/ 
+  pluginJsPath: lib/ 
+  pluginModelPath: assets/ 
+  tagMode: false 
+  log: false 
+  model: 
+    use: live2d-widget-model-tororo # live2d-widget-model-shizuku # live2d-widget-model-z16
+  display: 
+    position: right 
+    width: 150 
+    height: 300 
+  mobile: 
+    show: true 
+    react: 
+      opacity: 0.7

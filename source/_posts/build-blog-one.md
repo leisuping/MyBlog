@@ -2,6 +2,7 @@
 title : 如何使用hexo搭建个人博客
 date: 2021-12-08 11:04:26
 img: https://s6.jpg.cm/2021/12/07/LQeBat.jpg
+top: true
 tags:
  - hexo
  - 搭建博客
@@ -98,8 +99,12 @@ $ npm install hexo
 访问[GitHub 地址](https://github.com/)注册一个账户
 或者
 访问[GitLab 地址](https://about.gitlab.com/)注册一个账户
-
 注册账户步骤就不详细说明啦！
+
+配置SSH key
+setting -> SSH and GPG keys -> New SSH key
+![配置SSH key](./ssh.jpg)
+
 
 ## 三、搭建博客
 ### 1.初始化博客
