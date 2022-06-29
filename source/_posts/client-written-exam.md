@@ -1,5 +1,5 @@
 ---
-title: 复盘前端笔试问题（一）
+title: 如何优雅的处理前端一些小问题（一）
 date: 2021-12-17 14:42:00
 img: https://s4.ax1x.com/2021/12/17/TFqoy8.jpg
 tags:
@@ -131,7 +131,7 @@ function deepClone(target, map = new WeakMap()) {
 }
 ```
 
-### 4. 数组去重、数组扁平化
+### 4. 数组去重、数组扁平化、一维数组转二维数组
 
 ```js
 // 补充：普通一维数组可以通过Set来实现去重
@@ -157,7 +157,23 @@ function flatten1(arr) {
     return prev.concat(Array.isArray(next) ? flatten1(next) : next);
   }, []);
 }
-
+// 一维数组转二维数组
+/**
+ * oneArray： 要分割的一维数组
+ * num： 几个为一个数组的数量
+ */
+function oneTransTwo(oneArray, num) {
+  return oneArray.reduce((v, item, index) => {
+    let r = null;
+    if (index % num === 0) {
+      r = [...v, [item]];
+    } else {
+      v[v.length - 1].push(item);
+      r = v;
+    }
+    return r;
+  }, []);
+};
 ```
 
 ### 5. 获取数组中最大值
