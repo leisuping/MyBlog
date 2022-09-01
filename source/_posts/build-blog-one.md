@@ -118,6 +118,11 @@ $ npm i hexo --save
 $ npx hexo init myblog
 ```
 
+```bash
+#启动博客
+npx hexo server
+```
+
 构建好博客之后的目录：
 ![](./myblog01.jpg)
 
