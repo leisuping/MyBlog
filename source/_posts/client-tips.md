@@ -1,7 +1,7 @@
 ---
 title : 卑微小前端每日一个“离职”小技巧
 date: 2021-12-03
-img: https://s6.jpg.cm/2021/12/07/LQe1fH.jpg
+img: https://s1.ax1x.com/2022/12/07/zcDD1O.jpg
 tags:
  - ES6
  - css

@@ -1,7 +1,7 @@
 ---
 title : 用JS获取地址栏参数
 date: 2021-12-23 21:04:26
-img: https://s6.jpg.cm/2021/12/07/LQeCH4.jpg
+img: https://s4.ax1x.com/2022/02/11/HUWvFO.png
 tags:
  - js
  - 前端

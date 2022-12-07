@@ -1,7 +1,7 @@
 ---
 title : 一定要懂的js基础，你会了吗？
 date: 2021-12-07 17:03:20
-img: https://s6.jpg.cm/2021/12/07/LQevZr.jpg
+img: https://s1.ax1x.com/2022/12/07/zcDwh6.jpg
 tags:
  - 前端
  - 事件循环

@@ -1,7 +1,7 @@
 ---
 title : 微信小程序
 date: 2022-09-30 18:47:34
-img: https://s6.jpg.cm/2021/12/07/LQcetR.png
+img: https://s1.ax1x.com/2022/12/07/zcrxII.jpg
 tags:
  - 微信小程序
 categories: 

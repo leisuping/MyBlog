@@ -1,7 +1,7 @@
 ---
 title : js基础篇之“深入浅出”
 date: 2021-12-07 19:46:20
-img: https://s6.jpg.cm/2021/12/07/LQeoX5.png
+img: https://s1.ax1x.com/2022/12/07/zcDaA1.jpg
 tags:
  - 前端
  - 原型链、作用域
