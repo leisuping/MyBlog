@@ -1,7 +1,7 @@
 ---
 title : js数组map()方法是否会改变原数组？
 date: 2021-12-22 21:00:00
-img: https://s1.ax1x.com/2022/12/07/zcDN7R.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-63918233668cc.jpg
 tags:
  - js
  - 前端

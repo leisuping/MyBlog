@@ -1,7 +1,7 @@
 ---
 title : 前端页面优化之防抖节流
 date: 2021-11-19
-img: https://s1.ax1x.com/2022/12/07/zcsiQS.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-6391845103c5e.jpg
 tags:
  - Vue
  - 防抖

@@ -1,7 +1,7 @@
 ---
 title : 前端系统添加水印
 date: 2021-12-01
-img: https://s1.ax1x.com/2022/12/07/zcDdtx.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-6391832f7a680.jpeg
 tags:
  - Vue
  - elementUI

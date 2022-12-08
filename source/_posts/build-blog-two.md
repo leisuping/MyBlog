@@ -1,7 +1,7 @@
 ---
 title : 将hexo搭建的个人博客部署到GitHub
 date: 2021-12-09 09:40:26
-img: https://s4.ax1x.com/2022/02/11/HUfRcd.png
+img: https://s2.232232.xyz/static/384/2022/12/08-6391832e0c607.jpeg
 top: true
 tags:
  - hexo

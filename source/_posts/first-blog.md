@@ -1,7 +1,7 @@
 ---
 title: 老板让你抗住千万级流量，你如何做架构系统设计？
 date: 2019-05-16 17:46:45
-img: https://s1.ax1x.com/2022/12/07/zcIvjA.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-6391848427d48.jpeg
 tags:
  - 高并发
  - 服务端

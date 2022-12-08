@@ -1,7 +1,7 @@
 ---
 title : Vue3 引入 Echart
 date: 2022-06-30 18:04:20
-img: https://s4.ax1x.com/2022/02/11/HUfRcd.png
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f425b03f.jpg
 tags:
  - Vue
  - Element+

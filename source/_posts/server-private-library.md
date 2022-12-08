@@ -1,7 +1,7 @@
 ---
 title : 在私服创建私有库
 date: 2022-06-25 22:04:06
-img: https://s4.ax1x.com/2022/02/11/HUf100.png
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f69127b2.jpg
 tags:
  - server
  - 私有库

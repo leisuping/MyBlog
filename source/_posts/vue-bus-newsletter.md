@@ -1,7 +1,7 @@
 ---
 title: Vue使用eventBus总线，实现非父子组件间的通信
 date: 2021-11-30
-img: https://s1.ax1x.com/2022/12/07/zcDB9K.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-63918450d197f.jpg
 tags:
  - Vue
  - Bus

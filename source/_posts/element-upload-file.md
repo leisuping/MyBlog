@@ -1,7 +1,7 @@
 ---
 title : el-upload自定义文件上传
 date: 2022-06-10
-img: https://s4.ax1x.com/2022/02/11/HUfulj.png
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f4285adf.jpg
 tags:
  - Vue
  - ElementUI

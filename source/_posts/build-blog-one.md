@@ -1,7 +1,7 @@
 ---
 title : 如何使用hexo搭建个人博客
 date: 2021-12-08 11:04:26
-img: https://s1.ax1x.com/2022/12/07/zcsFsg.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-6391832fa8506.jpg
 top: true
 tags:
  - hexo

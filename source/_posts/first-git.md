@@ -1,7 +1,7 @@
 ---
 title: 使用git上传代码至GitHub仓库
 date: 2019-05-16 19:46:45
-img: https://s1.ax1x.com/2022/12/07/zcIjcd.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-63918483a4689.jpg
 tags:
  - Git
  - GitHub

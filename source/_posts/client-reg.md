@@ -1,7 +1,7 @@
 ---
 title : 前端之正则校验（一）
 date: 2021-11-24
-img: https://s1.ax1x.com/2022/12/07/zcsCz8.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-639184480d1df.jpg
 tags:
  - js
  - jquery

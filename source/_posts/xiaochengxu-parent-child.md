@@ -1,7 +1,7 @@
 ---
 title : 微信小程序父组件调用子组件的方法
 date: 2022-06-15 13:05:16
-img: https://s4.ax1x.com/2022/02/11/HUfNp4.png
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f72511cf.jpg
 tags:
  - 小程序
 categories: 

@@ -1,7 +1,7 @@
 ---
 title : 动态加载系统文字
 date: 2022-04-01
-img: https://s4.ax1x.com/2022/02/11/HUfVk8.png
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f7578903.jpg
 tags:
  - Vue
  - js

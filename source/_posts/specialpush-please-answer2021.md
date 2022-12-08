@@ -1,7 +1,7 @@
 ---
 title : 请回答2021｜2021倒计时11天
 date: 2021-12-20 16:10:08
-img: https://s4.ax1x.com/2021/12/20/TupZf1.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-63918224d1ac9.jpeg
 tags:
  - special push
 categories: 

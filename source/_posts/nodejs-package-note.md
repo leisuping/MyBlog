@@ -1,7 +1,7 @@
 ---
 title: NodeJS包管理工具 n 的使用
 date: 2022-06-07
-img: https://s4.ax1x.com/2022/02/11/HUfPOI.png
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f6e08672.jpeg
 tags:
  - nodejs
 categories: 

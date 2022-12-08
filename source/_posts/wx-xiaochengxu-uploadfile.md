@@ -1,7 +1,7 @@
 ---
 title : 微信小程序上传文件
 date: 2022-07-12 15:35:34
-img: https://s1.ax1x.com/2022/12/07/zcsSit.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-63917eecadee7.jpg
 tags:
  - 微信小程序
  - upload

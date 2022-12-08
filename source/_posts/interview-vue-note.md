@@ -1,7 +1,7 @@
 ---
 title: 一年前端求职准备 —— vue篇
 date: 2022-02-11 12:14:00
-img: https://s4.ax1x.com/2022/02/11/HUWrWQ.jpg
+img: https://s2.232232.xyz/static/384/2022/12/08-63917f77eace2.jpg
 tags:
  - 前端
  - vue
