@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>楠竹菇凉</title>
+  
+  <subtitle>楠竹</subtitle>
+  <link href="https://leisuping.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://leisuping.github.io/"/>
+  <updated>2023-03-16T02:34:02.743Z</updated>
+  <id>https://leisuping.github.io/</id>
+  
+  <author>
+    <name>nzgl</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>go语言环境搭建及本地项目运行笔记</title>
+    <link href="https://leisuping.github.io/go/"/>
+    <id>https://leisuping.github.io/go/</id>
+    <published>2023-03-16T10:04:26.000Z</published>
+    <updated>2023-03-16T02:34:02.743Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、引题&quot;&gt;&lt;a href=&quot;#一、引题&quot; class=&quot;headerlink&quot; title=&quot;一、引题&quot;&gt;&lt;/a&gt;一、引题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 昨天弄了一下go</summary>
+        
+      
+    
+    
+    
+    <category term="nodejs" scheme="https://leisuping.github.io/categories/nodejs/"/>
+    
+    <category term="go" scheme="https://leisuping.github.io/categories/nodejs/go/"/>
+    
+    
+    <category term="go" scheme="https://leisuping.github.io/tags/go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Happy new year 2023</title>
+    <link href="https://leisuping.github.io/happy-new-year2023/"/>
+    <id>https://leisuping.github.io/happy-new-year2023/</id>
+    <published>2023-01-30T11:44:26.000Z</published>
+    <updated>2023-02-15T04:28:01.758Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;img src=&quot;https://image.dbbqb.com/202301301122/9b45ac73762277515ef49f748c557585/p31X&quot;&gt;
+
+&lt;h2 id=&quot;一、制定新年flag&quot;&gt;&lt;a href=&quot;#一、制定新年flag&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="special push" scheme="https://leisuping.github.io/tags/special-push/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SortableJS拖拽排序</title>
+    <link href="https://leisuping.github.io/client-sort/"/>
+    <id>https://leisuping.github.io/client-sort/</id>
+    <published>2023-01-09T11:46:26.000Z</published>
+    <updated>2023-02-15T04:28:01.490Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;近期使用SortableJS插件实现了前端页面table行拖拽排序，在这里📝一下&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/js/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js日期操作工具类</title>
+    <link href="https://leisuping.github.io/client-date-time-utils/"/>
+    <id>https://leisuping.github.io/client-date-time-utils/</id>
+    <published>2022-12-05T11:04:20.000Z</published>
+    <updated>2023-02-15T04:28:01.484Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、说明&quot;&gt;&lt;a href=&quot;#一、说明&quot; class=&quot;headerlink&quot; title=&quot;一、说明&quot;&gt;&lt;/a&gt;一、说明&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/js/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lighter and princess outfit</title>
+    <link href="https://leisuping.github.io/ase/"/>
+    <id>https://leisuping.github.io/ase/</id>
+    <published>2022-11-15T11:44:26.000Z</published>
+    <updated>2023-02-15T04:28:01.432Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;img src=&quot;./l&amp;amp;p.jpg&quot; width=&quot;100%&quot; alt=&quot;L&amp;amp;P&quot;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;👸</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/js/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序</title>
+    <link href="https://leisuping.github.io/wx-xiaochengxu-note-one/"/>
+    <id>https://leisuping.github.io/wx-xiaochengxu-note-one/</id>
+    <published>2022-09-30T10:47:34.000Z</published>
+    <updated>2023-02-15T04:28:01.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、引题&quot;&gt;&lt;a href=&quot;#一、引题&quot; class=&quot;headerlink&quot; title=&quot;一、引题&quot;&gt;&lt;/a&gt;一、引题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="微信小程序" scheme="https://leisuping.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/js/"/>
+    
+    
+    <category term="微信小程序" scheme="https://leisuping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue-cropper图片裁剪</title>
+    <link href="https://leisuping.github.io/vue-cropper-page/"/>
+    <id>https://leisuping.github.io/vue-cropper-page/</id>
+    <published>2022-09-01T08:47:34.000Z</published>
+    <updated>2023-02-15T04:28:01.791Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、引题&quot;&gt;&lt;a href=&quot;#一、引题&quot; class=&quot;headerlink&quot; title=&quot;一、引题&quot;&gt;&lt;/a&gt;一、引题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="https://leisuping.github.io/categories/vue/"/>
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/vue/js/"/>
+    
+    
+    <category term="vue" scheme="https://leisuping.github.io/tags/vue/"/>
+    
+    <category term="vue-cropper图片裁剪" scheme="https://leisuping.github.io/tags/vue-cropper%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序上传文件</title>
+    <link href="https://leisuping.github.io/wx-xiaochengxu-uploadfile/"/>
+    <id>https://leisuping.github.io/wx-xiaochengxu-uploadfile/</id>
+    <published>2022-07-12T07:35:34.000Z</published>
+    <updated>2023-02-15T04:28:01.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、引题&quot;&gt;&lt;a href=&quot;#一、引题&quot; class=&quot;headerlink&quot; title=&quot;一、引题&quot;&gt;&lt;/a&gt;一、引题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="微信小程序" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="微信小程序" scheme="https://leisuping.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="upload" scheme="https://leisuping.github.io/tags/upload/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue3 引入 Echart</title>
+    <link href="https://leisuping.github.io/client-vue3-echarts/"/>
+    <id>https://leisuping.github.io/client-vue3-echarts/</id>
+    <published>2022-06-30T10:04:20.000Z</published>
+    <updated>2023-02-15T04:28:01.492Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Vue3-引入-Echart&quot;&gt;&lt;a href=&quot;#一、Vue3-引入-Echart&quot; class=&quot;headerlink&quot; title=&quot;一、Vue3 引入 Echart&quot;&gt;&lt;/a&gt;一、Vue3 引入</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
+    
+    <category term="Element+" scheme="https://leisuping.github.io/tags/Element/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在私服创建私有库</title>
+    <link href="https://leisuping.github.io/server-private-library/"/>
+    <id>https://leisuping.github.io/server-private-library/</id>
+    <published>2022-06-25T14:04:06.000Z</published>
+    <updated>2023-02-15T04:28:01.760Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、引题&quot;&gt;&lt;a href=&quot;#一、引题&quot; class=&quot;headerlink&quot; title=&quot;一、引题&quot;&gt;&lt;/a&gt;一、引题&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="server" scheme="https://leisuping.github.io/categories/server/"/>
+    
+    <category term="repository" scheme="https://leisuping.github.io/categories/server/repository/"/>
+    
+    
+    <category term="server" scheme="https://leisuping.github.io/tags/server/"/>
+    
+    <category term="私有库" scheme="https://leisuping.github.io/tags/%E7%A7%81%E6%9C%89%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序父组件调用子组件的方法</title>
+    <link href="https://leisuping.github.io/xiaochengxu-parent-child/"/>
+    <id>https://leisuping.github.io/xiaochengxu-parent-child/</id>
+    <published>2022-06-15T05:05:16.000Z</published>
+    <updated>2023-02-15T04:28:01.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、微信小程序父组件调用子组件的方法&quot;&gt;&lt;a href=&quot;#一、微信小程序父组件调用子组件的方法&quot; class=&quot;headerlink&quot; title=&quot;一、微信小程序父组件调用子组件的方法&quot;&gt;&lt;/a&gt;一、微信小程序父组件调用子组件的方法&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="小程序" scheme="https://leisuping.github.io/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="小程序" scheme="https://leisuping.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>el-upload自定义文件上传</title>
+    <link href="https://leisuping.github.io/element-upload-file/"/>
+    <id>https://leisuping.github.io/element-upload-file/</id>
+    <published>2022-06-09T16:00:00.000Z</published>
+    <updated>2023-02-15T04:28:01.750Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、为啥会有这篇烂文&quot;&gt;&lt;a href=&quot;#一、为啥会有这篇烂文&quot; class=&quot;headerlink&quot; title=&quot;一、为啥会有这篇烂文&quot;&gt;&lt;/a&gt;一、为啥会有这篇烂文&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    <category term="ElementUI" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/ElementUI/"/>
+    
+    
+    <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
+    
+    <category term="ElementUI" scheme="https://leisuping.github.io/tags/ElementUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJS包管理工具 n 的使用</title>
+    <link href="https://leisuping.github.io/nodejs-package-note/"/>
+    <id>https://leisuping.github.io/nodejs-package-note/</id>
+    <published>2022-06-06T16:00:00.000Z</published>
+    <updated>2023-02-15T04:28:01.760Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、NodeJS包管理工具-n-的使用&quot;&gt;&lt;a href=&quot;#一、NodeJS包管理工具-n-的使用&quot; class=&quot;headerlink&quot; title=&quot;一、NodeJS包管理工具 n 的使用&quot;&gt;&lt;/a&gt;一、NodeJS包管理工具 n</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="nodejs" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/nodejs/"/>
+    
+    
+    <category term="nodejs" scheme="https://leisuping.github.io/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>动态加载系统文字</title>
+    <link href="https://leisuping.github.io/client-dynamicloading-font/"/>
+    <id>https://leisuping.github.io/client-dynamicloading-font/</id>
+    <published>2022-03-31T16:00:00.000Z</published>
+    <updated>2023-02-15T04:28:01.484Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;img src=&quot;https://s6.jpg.cm/2021/12/07/LQe3WG.jpg&quot; width=&quot;90%&quot;&gt;
+
+&lt;h2 id=&quot;一、需求&quot;&gt;&lt;a href=&quot;#一、需求&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/js/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
+    
+    <category term="font" scheme="https://leisuping.github.io/tags/font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一年前端求职准备 —— vue篇</title>
+    <link href="https://leisuping.github.io/interview-vue-note/"/>
+    <id>https://leisuping.github.io/interview-vue-note/</id>
+    <published>2022-02-11T04:14:00.000Z</published>
+    <updated>2023-02-15T04:28:01.758Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、故事分享&quot;&gt;&lt;a href=&quot;#一、故事分享&quot; class=&quot;headerlink&quot; title=&quot;一、故事分享&quot;&gt;&lt;/a&gt;一、故事分享&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/vue/"/>
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="vue" scheme="https://leisuping.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用JS获取地址栏参数</title>
+    <link href="https://leisuping.github.io/client-js-note/"/>
+    <id>https://leisuping.github.io/client-js-note/</id>
+    <published>2021-12-23T13:04:26.000Z</published>
+    <updated>2023-02-15T04:28:01.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、用JS获取地址栏参数&quot;&gt;&lt;a href=&quot;#一、用JS获取地址栏参数&quot; class=&quot;headerlink&quot; title=&quot;一、用JS获取地址栏参数&quot;&gt;&lt;/a&gt;一、用JS获取地址栏参数&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/js/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js数组map()方法是否会改变原数组？</title>
+    <link href="https://leisuping.github.io/client-map/"/>
+    <id>https://leisuping.github.io/client-map/</id>
+    <published>2021-12-22T13:00:00.000Z</published>
+    <updated>2023-02-15T04:28:01.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;JavaScript-Array-map-方法&quot;&gt;&lt;a href=&quot;#JavaScript-Array-map-方法&quot; class=&quot;headerlink&quot; title=&quot;JavaScript Array map() 方法&quot;&gt;&lt;/a&gt;JavaScript</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/js/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>请回答2021｜2021倒计时11天</title>
+    <link href="https://leisuping.github.io/specialpush-please-answer2021/"/>
+    <id>https://leisuping.github.io/specialpush-please-answer2021/</id>
+    <published>2021-12-20T08:10:08.000Z</published>
+    <updated>2023-02-15T04:28:01.760Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;img src=&quot;./image03.jpg&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="nzgl回忆录" scheme="https://leisuping.github.io/categories/nzgl%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
+    
+    
+    <category term="special push" scheme="https://leisuping.github.io/tags/special-push/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何优雅的处理前端一些小问题（一）</title>
+    <link href="https://leisuping.github.io/client-written-exam/"/>
+    <id>https://leisuping.github.io/client-written-exam/</id>
+    <published>2021-12-17T06:42:00.000Z</published>
+    <updated>2023-02-15T04:28:01.493Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、故事分享&quot;&gt;&lt;a href=&quot;#一、故事分享&quot; class=&quot;headerlink&quot; title=&quot;一、故事分享&quot;&gt;&lt;/a&gt;一、故事分享&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 之前有分享过一些理论知识&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="prototype" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/prototype/"/>
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="prototype" scheme="https://leisuping.github.io/tags/prototype/"/>
+    
+    <category term="constructor" scheme="https://leisuping.github.io/tags/constructor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将hexo搭建的个人博客部署到GitHub</title>
+    <link href="https://leisuping.github.io/build-blog-two/"/>
+    <id>https://leisuping.github.io/build-blog-two/</id>
+    <published>2021-12-09T01:40:26.000Z</published>
+    <updated>2023-02-15T04:28:01.463Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、新建仓库&quot;&gt;&lt;a href=&quot;#一、新建仓库&quot; class=&quot;headerlink&quot; title=&quot;一、新建仓库&quot;&gt;&lt;/a&gt;一、新建仓库&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 上一篇&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="nodejs" scheme="https://leisuping.github.io/categories/nodejs/"/>
+    
+    <category term="hexo" scheme="https://leisuping.github.io/categories/nodejs/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://leisuping.github.io/tags/hexo/"/>
+    
+    <category term="部署博客" scheme="https://leisuping.github.io/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
