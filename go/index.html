@@ -517,7 +517,7 @@
 </blockquote>
 <img src="./001.png" width="98%" title="下载安装包">
 
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 安装成功之后，查看版本
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 安装成功之后，查看版本</span>
 go version
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
@@ -527,21 +527,21 @@ go version
 
 
 <p>配置 GOPROXY 环境变量，<a target="_blank" rel="noopener" href="https://learnku.com/go/wikis/38122">可参考官方文档</a></p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 启用 Go Modules 功能
-go env -w GO111MODULE=on
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># 启用 Go Modules 功能</span>
+go <span class="token function">env</span> -w <span class="token assign-left variable">GO111MODULE</span><span class="token operator">=</span>on
 
-# 配置 GOPROXY 环境变量，以下三选一
-# 1. 七牛 CDN
-go env -w  GOPROXY=https://goproxy.cn,direct
+<span class="token comment"># 配置 GOPROXY 环境变量，以下三选一</span>
+<span class="token comment"># 1. 七牛 CDN</span>
+go <span class="token function">env</span> -w  <span class="token assign-left variable">GOPROXY</span><span class="token operator">=</span>https://goproxy.cn,direct
 
-# 2. 阿里云
-go env -w GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
+<span class="token comment"># 2. 阿里云</span>
+go <span class="token function">env</span> -w <span class="token assign-left variable">GOPROXY</span><span class="token operator">=</span>https://mirrors.aliyun.com/goproxy/,direct
 
-# 3. 官方(个人推荐使用官方镜像)
-go env -w  GOPROXY=https://goproxy.io,direct
+<span class="token comment"># 3. 官方(个人推荐使用官方镜像)</span>
+go <span class="token function">env</span> -w  <span class="token assign-left variable">GOPROXY</span><span class="token operator">=</span>https://goproxy.io,direct
 
-# 配置成功之后，查看一下是否配置成功
-go env
+<span class="token comment"># 配置成功之后，查看一下是否配置成功</span>
+go <span class="token function">env</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <img src="./003.png" width="98%" title="查看go环境配置">
@@ -1077,17 +1077,16 @@ pm2 restart wifi<span aria-hidden="true" class="line-numbers-rows"><span></span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/MyBlog/go/">
+                <a href="/MyBlog/sourcetree-note/">
                     <div class="card-image">
                         
-                        <img src="https://s2.232232.xyz/static/384/2022/12/08-6391832fa8506.jpg" class="responsive-img" alt="go语言环境搭建及本地项目运行笔记">
+                        <img src="https://s2.232232.xyz/static/384/2022/12/08-639182393258e.jpg" class="responsive-img" alt="sourcetree使用详解">
                         
-                        <span class="card-title">go语言环境搭建及本地项目运行笔记</span>
+                        <span class="card-title">sourcetree使用详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1097,31 +1096,34 @@ pm2 restart wifi<span aria-hidden="true" class="line-numbers-rows"><span></span>
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/MyBlog/categories/nodejs/" class="post-category">
-                                    nodejs
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/MyBlog/categories/nodejs/go/" class="post-category">
-                                    go
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/sourcetree/" class="post-category">
+                                    sourcetree
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MyBlog/tags/go/">
-                        <span class="chip bg-color">go</span>
+                    <a href="/MyBlog/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                    <a href="/MyBlog/tags/sourcetree/">
+                        <span class="chip bg-color">sourcetree</span>
                     </a>
                     
                 </div>
@@ -1369,7 +1371,7 @@ pm2 restart wifi<span aria-hidden="true" class="line-numbers-rows"><span></span>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">39.1k</span>
+                        class="white-color">40.1k</span>
             
             
             

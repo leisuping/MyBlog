@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2023-03-16T02:34:02.743Z</updated>
+  <updated>2023-03-22T07:14:01.732Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sourcetree使用详解</title>
+    <link href="https://leisuping.github.io/sourcetree-note/"/>
+    <id>https://leisuping.github.io/sourcetree-note/</id>
+    <published>2023-03-18T16:04:20.000Z</published>
+    <updated>2023-03-22T07:14:01.732Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="sourcetree" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/sourcetree/"/>
+    
+    
+    <category term="git" scheme="https://leisuping.github.io/tags/git/"/>
+    
+    <category term="sourcetree" scheme="https://leisuping.github.io/tags/sourcetree/"/>
+    
+  </entry>
+  
+  <entry>
     <title>go语言环境搭建及本地项目运行笔记</title>
     <link href="https://leisuping.github.io/go/"/>
     <id>https://leisuping.github.io/go/</id>
     <published>2023-03-16T10:04:26.000Z</published>
-    <updated>2023-03-16T02:34:02.743Z</updated>
+    <updated>2023-03-16T02:40:38.276Z</updated>
     
     
       
@@ -569,36 +599,6 @@
     <category term="prototype" scheme="https://leisuping.github.io/tags/prototype/"/>
     
     <category term="constructor" scheme="https://leisuping.github.io/tags/constructor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将hexo搭建的个人博客部署到GitHub</title>
-    <link href="https://leisuping.github.io/build-blog-two/"/>
-    <id>https://leisuping.github.io/build-blog-two/</id>
-    <published>2021-12-09T01:40:26.000Z</published>
-    <updated>2023-02-15T04:28:01.463Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、新建仓库&quot;&gt;&lt;a href=&quot;#一、新建仓库&quot; class=&quot;headerlink&quot; title=&quot;一、新建仓库&quot;&gt;&lt;/a&gt;一、新建仓库&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;🎯 上一篇&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="nodejs" scheme="https://leisuping.github.io/categories/nodejs/"/>
-    
-    <category term="hexo" scheme="https://leisuping.github.io/categories/nodejs/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://leisuping.github.io/tags/hexo/"/>
-    
-    <category term="部署博客" scheme="https://leisuping.github.io/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

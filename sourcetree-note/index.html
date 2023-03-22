@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vue,Vue3引入Echart并使用">
-    <meta name="description" content="一、Vue3 引入 Echart
-🎯 Echarts 版本5+ 更新后引入方式也发生了一点小改变老版本：import echarts from ‘echarts’5+版本：import * as echarts from ‘echarts">
+    <meta name="keywords" content="sourcetree,sourcetree使用详解">
+    <meta name="description" content="一、前言
+🎯 最近遇到一个很奇怪的问题，使用sourcetree这么多年，第一次遇到之前常用的都是使用sourcetree连接的远程仓库（Gitlab、GitHub、Gitee之类的）这次是连接本地服务器私有库，在Mac上配置好信息之后使">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Vue3 引入 Echart | 楠竹菇凉</title>
+    <title>sourcetree使用详解 | 楠竹菇凉</title>
     <link rel="icon" type="image/jpeg" href="/MyBlog/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/MyBlog/libs/awesome/css/all.min.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.232232.xyz/static/384/2022/12/08-63917f425b03f.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.232232.xyz/static/384/2022/12/08-639182393258e.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Vue3 引入 Echart</h1>
+                    <h1 class="description center-align post-title">sourcetree使用详解</h1>
                 </div>
             </div>
         </div>
@@ -444,12 +444,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/MyBlog/tags/Vue/">
-                                <span class="chip bg-color">Vue</span>
+                            <a href="/MyBlog/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
-                            <a href="/MyBlog/tags/Element/">
-                                <span class="chip bg-color">Element+</span>
+                            <a href="/MyBlog/tags/sourcetree/">
+                                <span class="chip bg-color">sourcetree</span>
                             </a>
                         
                     </div>
@@ -464,8 +464,8 @@
                                 前端
                             </a>
                         
-                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/Vue/" class="post-category">
-                                Vue
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/sourcetree/" class="post-category">
+                                sourcetree
                             </a>
                         
                     </div>
@@ -477,7 +477,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-30
+                    2023-03-19
                 </div>
                 
 
@@ -486,7 +486,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    458
+                    1.1k
                 </div>
                 
 
@@ -506,128 +506,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、Vue3-引入-Echart"><a href="#一、Vue3-引入-Echart" class="headerlink" title="一、Vue3 引入 Echart"></a>一、Vue3 引入 Echart</h2><blockquote>
-<p>🎯 Echarts 版本5+ 更新后引入方式也发生了一点小改变<br>老版本：import echarts from ‘echarts’<br>5+版本：import * as echarts from ‘echarts’<br>详情参照<a target="_blank" rel="noopener" href="https://echarts.apache.org/handbook/zh/basics/import">Echarts官网</a></p>
+                <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><blockquote>
+<p>🎯 最近遇到一个很奇怪的问题，使用sourcetree这么多年，第一次遇到<br>之前常用的都是使用sourcetree连接的远程仓库（Gitlab、GitHub、Gitee之类的）<br>这次是连接本地服务器私有库，在Mac上配置好信息之后使用也没有任何问题，但是在Windows上始终无法连接到服务器，呃，都不清楚是啥原因，目前正在探索中…</p>
 </blockquote>
-<h3 id="1-安装echarts依赖"><a href="#1-安装echarts依赖" class="headerlink" title="1. 安装echarts依赖"></a>1. 安装echarts依赖</h3><pre class="line-numbers language-none"><code class="language-none">npm i echarts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="二、Tips"><a href="#二、Tips" class="headerlink" title="二、Tips"></a>二、Tips</h2><h3 id="1、Sourcetree中的基本名词说明："><a href="#1、Sourcetree中的基本名词说明：" class="headerlink" title="1、Sourcetree中的基本名词说明："></a>1、Sourcetree中的基本名词说明：</h3><p> 克隆/新建(clone)：从远程仓库URL加载创建一个与远程仓库一样的本地仓库。<br> 提交(commit)：将暂存区文件提交到本地仓库 ，相当于git commit -m ‘提交的内容’。<br> 拉取(pull)：从远程仓库获取信息并同步至本地仓库，并且自动执行合并（merge）操作（git pull=git fetch+git merge）。git pull<br> 推送(push)：将本地仓库同步至远程仓库，一般推送（push）前先拉取（pull）一次，确保一致。git push<br> 获取(fetch)：从远程仓库获取信息并同步至本地仓库。<br> 分支(branch)：创建/修改/删除分枝。<br> 合并(merge)：将多个同名文件合并为一个文件，该文件包含多个同名文件的所有内容，相同内容抵消。<br> 贮藏(git stash)：保存工作现场。<br> 丢弃(Discard)：丢弃更改,恢复文件改动/重置所有改动,即将已暂存的文件丢回未暂存的文件。<br> 标签(tag)：给项目增添标签。<br> 工作流(Git Flow)：团队工作时，每个人创建属于自己的分枝（branch），确定无误后提交到master分支。<br> 终端(terminal)：可以输入git命令行。每次拉取和推送的时候不用每次输入密码的命令行：git config credential.helper osxkeychain sourcetree。<br> 检出(checkout)：切换不同分支。<br> 添加（add）：添加文件到缓存区。<br> 移除（remove）：移除文件至缓存区。<br> 重置(reset)：回到最近添加(add)/提交(commit)状态。<br> 抓取：检测远程是否有更新，如果有变动会在拉取右上角出现数字角标。从远程获取最新版本到本地 , 不会自动合并 相当于git</p>
+<p> <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1650541">参考</a></p>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//也可以打开sourcetree右上角的git面板使用命令行提交代码</span>
+<span class="token comment">// 1.提交推送</span>
+git add file_1 file_2 <span class="token comment">//添加暂存文件</span>
+git commit <span class="token operator">-</span>m <span class="token string">'提交的内容'</span> <span class="token comment">//将本地改动代码存储到本地仓库</span>
+git pull <span class="token comment">// 获取最新的代码</span>
+git push <span class="token comment">//推送至远程</span>
 
-<h3 id="2-在页面上使用"><a href="#2-在页面上使用" class="headerlink" title="2. 在页面上使用"></a>2. 在页面上使用</h3><pre class="line-numbers language-ts" data-language="ts"><code class="language-ts">import * as echarts from 'echarts'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<span class="token comment">// 2.贮藏工作区</span>
+git stash <span class="token comment">//存储工作区</span>
+git stash save <span class="token string">'msg1'</span> <span class="token comment">// 存储工作区并备注</span>
+git stash list <span class="token comment">//展示存储区列表</span>
+git stash apply <span class="token comment">//应用存储区第一个 （不删除）</span>
+git stash pop <span class="token comment">//应用存储区第一个 （并删除）</span>
+git stash drop <span class="token comment">//删除存储区最新的内容</span>
+git stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span> <span class="token operator">*</span>apply <span class="token operator">/</span> pop <span class="token operator">/</span> drop 第<span class="token number">1</span>个 ，git stash list获取下标
 
-<blockquote>
-<p>注意：如果引入方式出错可能会导致echarts.init()方法报错<br>报错信息：Cannot read property ‘init’ of undefined</p>
+<span class="token comment">// 3.回撤版本</span>
+git reset <span class="token operator">--</span>soft <span class="token number">34524234</span> <span class="token comment">// 将版本重置到34524234 版本，</span>
+git reset <span class="token operator">--</span>soft <span class="token constant">HEAD</span><span class="token operator">^</span> 将版本重置到上一个版本
+git reset <span class="token operator">--</span>hard <span class="token number">34524234</span>
+
+<span class="token comment">// 4.其他</span>
+git remote update origin <span class="token operator">--</span>prune <span class="token comment">// 拉取/更新远程分支</span>
+git fetch <span class="token operator">--</span>unshallow <span class="token comment">// 拉取履历</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2、git-常用操作命令"><a href="#2、git-常用操作命令" class="headerlink" title="2、git 常用操作命令"></a>2、git 常用操作命令</h3><blockquote>
+<p>分支操作：<br>1.git branch //查看当前使用分支(结果列表中前面标*号的表示当前使用分支)<br>2.git branch -a //查看远程分支(列出远程分支以及本地分支名)<br>3.git branch -r  //列出远程分支(远程所有分支名)<br>4.git branch -v // 查看分支以及提交hash值和commit信息</p>
 </blockquote>
-<h3 id="3-定义初始化函数渲染图表"><a href="#3-定义初始化函数渲染图表" class="headerlink" title="3. 定义初始化函数渲染图表"></a>3. 定义初始化函数渲染图表</h3><pre class="line-numbers language-ts" data-language="ts"><code class="language-ts">&lt;script lang="ts" setup&gt;
-import * as echarts from 'echarts'
-type EChartsOption = echarts.EChartsOption
-
-// 饼图
-const myPieLoad = () =&gt; {
-    var myChart = echarts.init(document.getElementById('main'))
-    var option: EChartsOption
-
-    option = {
-        dataset: [
-            {
-                source: [
-                    ['Product', 'Sales', 'Price', 'Year'],
-                    ['Cake', 123, 32, 2011],
-                    ['Cereal', 231, 14, 2011],
-                    ['Tofu', 235, 5, 2011],
-                    ['Dumpling', 341, 25, 2011],
-                    ['Biscuit', 122, 29, 2011],
-
-                    ['Cake', 143, 30, 2012],
-                    ['Cereal', 201, 19, 2012],
-                    ['Tofu', 255, 7, 2012],
-                    ['Dumpling', 241, 27, 2012],
-                    ['Biscuit', 102, 34, 2012],
-
-                    ['Cake', 153, 28, 2013],
-                    ['Cereal', 181, 21, 2013],
-                    ['Tofu', 395, 4, 2013],
-                    ['Dumpling', 281, 31, 2013],
-                    ['Biscuit', 92, 39, 2013],
-                ]
-            },
-            {
-                transform: {
-                    type: 'filter',
-                    config: { dimension: 'Year', value: 2011 }
-                }
-            },
-            {
-                transform: {
-                    type: 'filter',
-                    config: { dimension: 'Year', value: 2012 }
-                }
-            },
-            {
-                transform: {
-                    type: 'filter',
-                    config: { dimension: 'Year', value: 2013 }
-                }
-            }
-        ],
-        series: [
-            {
-            type: 'pie',
-            radius: 50,
-            center: ['50%', '25%'],
-            datasetIndex: 1
-            },
-            {
-            type: 'pie',
-            radius: 50,
-            center: ['50%', '50%'],
-            datasetIndex: 2
-            },
-            {
-            type: 'pie',
-            radius: 50,
-            center: ['50%', '75%'],
-            datasetIndex: 3
-            }
-        ],
-        media: [
-            {
-            query: { minAspectRatio: 1 },
-            option: {
-                series: [
-                { center: ['25%', '50%'] },
-                { center: ['50%', '50%'] },
-                { center: ['75%', '50%'] }
-                ]
-            }
-            },
-            {
-            option: {
-                series: [
-                { center: ['50%', '25%'] },
-                { center: ['50%', '50%'] },
-                { center: ['50%', '75%'] }
-                ]
-            }
-            }
-        ]
-    }
-    option &amp;&amp; myChart.setOption(option)
-
-}
-
-// 当页面DOM元素挂载完毕之后开始调用饼图的初始化函数
-onMounted(() =&gt; {
-    myPieLoad()
-})
-
-&lt;/script&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <blockquote>
-<p>页面html只需要放置一个div标签用来展示饼图即可</p>
-</blockquote>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100%</span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<blockquote>
-<p>如果出现错误信息：Initialize failed: invalid dom<br>dom加载出现的问题，那么可能就是页面在dom元素还没加载完就执行了echarts.init(document.getElementById(‘main’))<br>而Vue3 的 setup 中直接调用，是在页面初始化时就调用了（beforeCreat / created）<br>因此强烈建议在 onMounted 中对图表进行初始化渲染，组装数据可以在页面加载时向服务端请求数据。</p>
+<p>1.git branch 分支名 //新建分支，本地没有就创建/获取<br>2.git checkout 分支名  //切换分支 或 检出分支<br>3.git checkout -b 分支名 //创建并切换分支，例如：git checkout -b test c6f68a8 在提交记录（c6f68a8）上创建一个名为test的分支<br>4.git branch -d 分支名 //删除分支<br>5.git branch -D 分支名 // 强制删除 若没有其他分支合并就删除 d会提示 D不会<br>6.git branch -m 旧分支名 新分支名 // 修改分支名<br>7.git branch -M 旧分支名 新分支名 // 修改分支名 M强制修改 若与其他分支有冲突也会创建(慎用)<br>8.git push  origin 分支名 // 将本地分支推送到远程<br>9.git merge 分支名 // 把该分支的内容合并到现有分支上</p>
 </blockquote>
 
                 
@@ -655,7 +569,7 @@ onMounted(() =&gt; {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://leisuping.github.io/MyBlog/client-vue3-echarts/">https://leisuping.github.io/MyBlog/client-vue3-echarts/</a>
+                    <a href="https://leisuping.github.io/MyBlog/sourcetree-note/">https://leisuping.github.io/MyBlog/sourcetree-note/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -693,12 +607,12 @@ onMounted(() =&gt; {
                     
                         <div class="article-tag">
                             
-                                <a href="/MyBlog/tags/Vue/">
-                                    <span class="chip bg-color">Vue</span>
+                                <a href="/MyBlog/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
-                                <a href="/MyBlog/tags/Element/">
-                                    <span class="chip bg-color">Element+</span>
+                                <a href="/MyBlog/tags/sourcetree/">
+                                    <span class="chip bg-color">sourcetree</span>
                                 </a>
                             
                         </div>
@@ -1138,16 +1052,17 @@ onMounted(() =&gt; {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/MyBlog/wx-xiaochengxu-uploadfile/">
+                <a href="/MyBlog/sourcetree-note/">
                     <div class="card-image">
                         
-                        <img src="https://s2.232232.xyz/static/384/2022/12/08-63917eecadee7.jpg" class="responsive-img" alt="微信小程序上传文件">
+                        <img src="https://s2.232232.xyz/static/384/2022/12/08-639182393258e.jpg" class="responsive-img" alt="sourcetree使用详解">
                         
-                        <span class="card-title">微信小程序上传文件</span>
+                        <span class="card-title">sourcetree使用详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1157,9 +1072,9 @@ onMounted(() =&gt; {
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1168,23 +1083,24 @@ onMounted(() =&gt; {
                                     前端
                                 </a>
                             
-                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="post-category">
-                                    微信小程序
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/sourcetree/" class="post-category">
+                                    sourcetree
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MyBlog/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                        <span class="chip bg-color">微信小程序</span>
+                    <a href="/MyBlog/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
-                    <a href="/MyBlog/tags/upload/">
-                        <span class="chip bg-color">upload</span>
+                    <a href="/MyBlog/tags/sourcetree/">
+                        <span class="chip bg-color">sourcetree</span>
                     </a>
                     
                 </div>
@@ -1198,12 +1114,12 @@ onMounted(() =&gt; {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/MyBlog/server-private-library/">
+                <a href="/MyBlog/go/">
                     <div class="card-image">
                         
-                        <img src="https://s2.232232.xyz/static/384/2022/12/08-63917f69127b2.jpg" class="responsive-img" alt="在私服创建私有库">
+                        <img src="https://s2.232232.xyz/static/384/2022/12/08-6391832fa8506.jpg" class="responsive-img" alt="go语言环境搭建及本地项目运行笔记">
                         
-                        <span class="card-title">在私服创建私有库</span>
+                        <span class="card-title">go语言环境搭建及本地项目运行笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1214,18 +1130,18 @@ onMounted(() =&gt; {
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/MyBlog/categories/server/" class="post-category">
-                                    server
+                            <a href="/MyBlog/categories/nodejs/" class="post-category">
+                                    nodejs
                                 </a>
                             
-                            <a href="/MyBlog/categories/server/repository/" class="post-category">
-                                    repository
+                            <a href="/MyBlog/categories/nodejs/go/" class="post-category">
+                                    go
                                 </a>
                             
                             
@@ -1235,12 +1151,8 @@ onMounted(() =&gt; {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MyBlog/tags/server/">
-                        <span class="chip bg-color">server</span>
-                    </a>
-                    
-                    <a href="/MyBlog/tags/%E7%A7%81%E6%9C%89%E5%BA%93/">
-                        <span class="chip bg-color">私有库</span>
+                    <a href="/MyBlog/tags/go/">
+                        <span class="chip bg-color">go</span>
                     </a>
                     
                 </div>
