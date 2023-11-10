@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>多个nodejs版本切换</title>
+      <link href="/MyBlog/nvm-change-node/"/>
+      <url>/MyBlog/nvm-change-node/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、引文"><a href="#一、引文" class="headerlink" title="一、引文"></a>一、引文</h2><blockquote><p>🎯 nodejs是前端开发必备的环境之一，但其版本迭代更新比较迅速(当前最新的版本21.1.0)<br>所以可能会碰到运行老项目，出现当前nodejs版本过高的情况。<br>为了兼容新老项目，保证其正常运行，通常我们都会在本地安装多个版本的nodejs。今天我们就来聊聊如何安装多个版本并切换吧~</p></blockquote><h3 id="需要用的管理工具nvm"><a href="#需要用的管理工具nvm" class="headerlink" title="需要用的管理工具nvm"></a>需要用的管理工具nvm</h3><blockquote><p>nvm 是一个简单的bash脚本，主要用它来管理系统中多个nodejs版本。<br>安装：github下载地址[<a href="https://github.com/coreybutler/nvm-windows/releases]">https://github.com/coreybutler/nvm-windows/releases]</a><br>windows 选择安装exe后缀的即可。（安装之后会自动配置环境信息）</p></blockquote><p><img src="./GitHub.png"></p><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">## 安装nvm后，可查看一下版本信息nvm -v## nvm管理node常用命令## 安装最新版$ nvm install stable## 安装指定版本的$ nvm install [版本号]## 切换到指定版本的nodenvm use [版本号]## 设置默认版本nvm alias default [版本号]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="./nvmlist.png"><br><img src="./nvmuse.png"><br><img src="./nvm.png"></p><h2 id="二、具体操作"><a href="#二、具体操作" class="headerlink" title="二、具体操作"></a>二、具体操作</h2><h3 id="1-Windows系统"><a href="#1-Windows系统" class="headerlink" title="1.Windows系统"></a>1.Windows系统</h3><h4 id="安装指定的nodejs版本并切换版本"><a href="#安装指定的nodejs版本并切换版本" class="headerlink" title="安装指定的nodejs版本并切换版本"></a>安装指定的nodejs版本并切换版本</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">## 查看nodejs版本</span>$ nvm list available<span class="token comment">## 安装nodejs(我这里安装的是长期维护版本)</span>$ nvm <span class="token function">install</span> <span class="token number">18.18</span>.0<span class="token comment">## 查看已安装的nodejs版本</span>$ nvm list<span class="token comment">## 切换nodejs版本</span>$ nvm use <span class="token number">18.18</span>.0<span class="token comment">## 查看nodejs版本</span>$ node -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="2-MAC系统"><a href="#2-MAC系统" class="headerlink" title="2.MAC系统"></a>2.MAC系统</h3><h4 id="管理工具，可以是nvm或者n"><a href="#管理工具，可以是nvm或者n" class="headerlink" title="管理工具，可以是nvm或者n"></a>管理工具，可以是nvm或者n</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">## nvm安装方式同上</span><span class="token comment">## 安装n管理工具</span>$ <span class="token function">npm</span> <span class="token function">install</span> -g n<span class="token comment">## 查看n是否安装成功</span>$ n --version<span class="token comment">## 安装nodejs(sudo是使用的超级管理员权限)</span>$ n <span class="token number">18.18</span>.0$ <span class="token function">sudo</span> n <span class="token number">18.18</span>.0<span class="token comment">## 安装最新版本</span>$ n latest<span class="token comment">## 查看已安装的版本，结果用键盘上下键，回车切换版本</span>$ <span class="token function">sudo</span> n<span class="token comment">## 卸载已安装的版本</span>$ n <span class="token function">rm</span> <span class="token number">18.18</span>.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="./hexo02.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> nodejs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sourcetree使用详解</title>
       <link href="/MyBlog/sourcetree-note/"/>
       <url>/MyBlog/sourcetree-note/</url>
@@ -1169,11 +1194,11 @@
       
         <tags>
             
-            <tag> JAVA </tag>
-            
             <tag> 高并发 </tag>
             
             <tag> 服务端 </tag>
+            
+            <tag> JAVA </tag>
             
         </tags>
       
@@ -1200,9 +1225,9 @@
       
         <tags>
             
-            <tag> IO </tag>
-            
             <tag> JAVA </tag>
+            
+            <tag> IO </tag>
             
             <tag> ZIP </tag>
             
