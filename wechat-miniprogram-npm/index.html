@@ -4,11 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java,MYSQL,MySql日期函数的使用与批量更新">
-    <meta name="description" content="
-目前MySQL版本已经更新到8.0.15，但是大部分企业中使用的还是MySQL5.7的。我本地安装的是MySQL5.7.20，因为MySQL版本的不同可能对某些SQL语句的支持度也不同，所以特地在此说明。
+    <meta name="keywords" content="nodejs,npm,多个nodejs版本切换">
+    <meta name="description" content="一、随记
+🎯 问题：微信小程序在初始化项目后构建npm没有生成miniprogram_npm文件
 
-最近使用到MySQL中这两个日">
+解决办法
+1、初始化npm init2、安装依赖 npm install XXXX3、设置project.config.json文件
+
+#">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +23,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>MySql日期函数的使用与批量更新 | 楠竹菇凉</title>
+    <title>微信小程序npm构建报错，无法生成miniprogram_npm | 楠竹菇凉</title>
     <link rel="icon" type="image/jpeg" href="/MyBlog/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/MyBlog/libs/awesome/css/all.min.css">
@@ -325,12 +328,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.232232.xyz/static/384/2022/12/08-639184691131f.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://z1.ax1x.com/2023/11/10/pi8keGn.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">MySql日期函数的使用与批量更新</h1>
+                    <h1 class="description center-align post-title">微信小程序npm构建报错，无法生成miniprogram_npm</h1>
                 </div>
             </div>
         </div>
@@ -446,8 +449,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/MyBlog/tags/MYSQL/">
-                                <span class="chip bg-color">MYSQL</span>
+                            <a href="/MyBlog/tags/nodejs/">
+                                <span class="chip bg-color">nodejs</span>
                             </a>
                         
                     </div>
@@ -458,12 +461,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/MyBlog/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                后端
-                            </a>
-                        
-                            <a href="/MyBlog/categories/%E5%90%8E%E7%AB%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                数据库
+                            <a href="/MyBlog/categories/nodejs/" class="post-category">
+                                nodejs
                             </a>
                         
                     </div>
@@ -475,7 +474,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-17
+                    2023-11-09
                 </div>
                 
 
@@ -484,7 +483,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    644
+                    168
                 </div>
                 
 
@@ -504,82 +503,46 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>目前MySQL版本已经更新到8.0.15，但是大部分企业中使用的还是MySQL5.7的。我本地安装的是MySQL5.7.20，因为MySQL版本的不同可能对某些SQL语句的支持度也不同，所以特地在此说明。</p>
+                <h2 id="一、随记"><a href="#一、随记" class="headerlink" title="一、随记"></a>一、随记</h2><blockquote>
+<p>🎯 问题：微信小程序在初始化项目后构建npm没有生成miniprogram_npm文件</p>
 </blockquote>
-<h3 id="最近使用到MySQL中这两个日期函数："><a href="#最近使用到MySQL中这两个日期函数：" class="headerlink" title="最近使用到MySQL中这两个日期函数："></a>最近使用到MySQL中这两个日期函数：</h3><p>1、date_sub(date，interval num 单位); 返回date减去num 时间间隔后的时间</p>
-<pre class="line-numbers language-none"><code class="language-none">例如：
-select date_sub(date, interval 1 year);
-select date_sub(date, interval 1 quarter);
-select date_sub(date, interval 1 month);
-select date_sub(date, interval 1 week);
-select date_sub(date, interval 1 day);  等同于 date_add(date, interval -1 day);
-select date_sub(date, interval 1 hour);
-select date_sub(date, interval 1 minute);
-select date_sub(date, interval 1 second);
-select date_sub(date, interval 1 microsecond);
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote>
+<p>1、初始化npm init<br>2、安装依赖 npm install XXXX<br>3、设置project.config.json文件</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">## 初始化npm init</span>
+$ <span class="token function">npm</span> init
+<span class="token comment">## 安装依赖 npm install XXXX</span>
+$ <span class="token function">npm</span> i
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p>注：date_sub(date，interval num 单位) 里面的 num 是数字类型的参数，单位则是 年(year)、半年(quarter)、月(month)、日(day)、周(week)、小时(hour)、分钟(minute)、秒(second)、毫秒(microsecond)。【与之对应的还有 date_add() 函数用法与 date_sub() 一样】</p>
+<p>设置好project.config.json文件之后再次构建npm<br>开发者工具–&gt;工具–&gt;构建npm 就会生成 miniprogram_npm 文件夹了</p>
 </blockquote>
-<p>2、datediff(date1,date2); 返回date1减去date2的差值</p>
-<pre class="line-numbers language-none"><code class="language-none">例如：
-select datediff('2019-05-17', '2019-05-11'); -- 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>如果使用这两个函数来查询最近一周、一个月、半年、一年…的数据会有什么不同的效果呢？</p>
-<p>1、使用函数 date_sub()：</p>
-<pre class="line-numbers language-none"><code class="language-none">select date_sub(date, interval 1 day); -- 当天
-select date_sub(date, interval 7 day); -- 最近一周
-select date_sub(date, interval 30 day); -- 最近一个月
-select date_sub(date, interval 365 day); -- 最近一年
-......
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>2、使用函数 datediff():</p>
-<pre class="line-numbers language-none"><code class="language-none">第一个参数作为动态参数输入，第二个为数据库中的时间字段
-select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
-
-显然是没有问题的，但是当第二个参数的天数大于第一个参数的天数时则会出现问题。
-
-例如：select datediff('2019-05-01', '2019-04-11') &lt;= 7 ;
-     select datediff('2019-05-01', '2019-05-11') &lt;= 7 ;
-
-这两条语句会使得时间范围判断无效!!!!
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">## project.config.json
+"packNpmManually": false,
+"packNpmRelationList": [
+    {
+    "packageJsonPath": "./package.json",
+    "miniprogramNpmDistDir": "./"
+    }
+]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<p>总结：函数 date_sub() 与 date_add() 都可以做时间范围的判断，而 datediff() 更适用做时间差。这几个函数各司其职，大大简化了数据库的时间操作。</p>
+<p>页面中引入组件使用地址路径</p>
 </blockquote>
-<h3 id="关于MySQL语句的批量更新操作"><a href="#关于MySQL语句的批量更新操作" class="headerlink" title="关于MySQL语句的批量更新操作"></a>关于MySQL语句的批量更新操作</h3><p>一般需要用到批量添加或者更新的，我们都会想到用循环迭代。sql中使用when … then …</p>
-<pre class="line-numbers language-jsp" data-language="jsp"><code class="language-jsp">&lt;!-- 批量修改 --&gt;
-&lt;update id="updateBatch" parameterType="java.util.List"&gt;
-     update hnca_licetype set
-     PARAM_TOP =
-     &lt;foreach collection="list" item="licetypes" index="index"
-                    separator=" " open="case LICETYPEID" close="end"&gt;
-          when #{licetypes.lICETYPEID} then #{licetypes.pARAMTOP}
-     &lt;/foreach&gt;
-     ,PARAM_LEFT =
-     &lt;foreach collection="list" item="licetypes" index="index"
-                    separator=" " open="case LICETYPEID" close="end"&gt;
-          when #{licetypes.lICETYPEID} then #{licetypes.pARAMLEFT}
-     &lt;/foreach&gt;
-     where LICETYPEID in
-     &lt;foreach collection="list" item="licetypeIds" index="index"
-                    separator="," open="(" close=")"&gt;
-          #{licetypeIds.lICETYPEID}
-     &lt;/foreach&gt;
-&lt;/update&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
-<p>参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/ggjucheng/p/3352280.html">https://www.cnblogs.com/ggjucheng/p/3352280.html</a></p>
-
+<pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"navigationBarTitleText"</span><span class="token operator">:</span> <span class="token string">"测试页面"</span><span class="token punctuation">,</span>
+   <span class="token property">"usingComponents"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"van-image"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/image/index"</span><span class="token punctuation">,</span>
+    <span class="token property">"van-tag"</span><span class="token operator">:</span><span class="token string">"@vant/weapp/tag/index"</span><span class="token punctuation">,</span>
+    <span class="token property">"van-cell"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/cell/index"</span><span class="token punctuation">,</span>
+    <span class="token property">"van-cell-group"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/cell-group/index"</span><span class="token punctuation">,</span>
+    <span class="token property">"van-row"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/row/index"</span><span class="token punctuation">,</span>
+    <span class="token property">"van-col"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/col/index"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -605,7 +568,7 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://leisuping.github.io/MyBlog/first-mysql/">https://leisuping.github.io/MyBlog/first-mysql/</a>
+                    <a href="https://leisuping.github.io/MyBlog/wechat-miniprogram-npm/">https://leisuping.github.io/MyBlog/wechat-miniprogram-npm/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -643,8 +606,8 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                     
                         <div class="article-tag">
                             
-                                <a href="/MyBlog/tags/MYSQL/">
-                                    <span class="chip bg-color">MYSQL</span>
+                                <a href="/MyBlog/tags/nodejs/">
+                                    <span class="chip bg-color">nodejs</span>
                                 </a>
                             
                         </div>
@@ -1088,12 +1051,12 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/MyBlog/virtual-machine/">
+                <a href="/MyBlog/nvm-change-node/">
                     <div class="card-image">
                         
-                        <img src="https://s2.232232.xyz/static/384/2022/12/08-6391846756f0e.jpg" class="responsive-img" alt="👨‍💻mac安装win10虚拟机">
+                        <img src="https://z1.ax1x.com/2023/11/09/pi33TpT.jpg" class="responsive-img" alt="多个nodejs版本切换">
                         
-                        <span class="card-title">👨‍💻mac安装win10虚拟机</span>
+                        <span class="card-title">多个nodejs版本切换</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1104,18 +1067,14 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-10
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/MyBlog/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/" class="post-category">
-                                    虚拟机
-                                </a>
-                            
-                            <a href="/MyBlog/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/win10/" class="post-category">
-                                    win10
+                            <a href="/MyBlog/categories/nodejs/" class="post-category">
+                                    nodejs
                                 </a>
                             
                             
@@ -1125,12 +1084,8 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MyBlog/tags/Mac/">
-                        <span class="chip bg-color">Mac</span>
-                    </a>
-                    
-                    <a href="/MyBlog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
-                        <span class="chip bg-color">服务器</span>
+                    <a href="/MyBlog/tags/nodejs/">
+                        <span class="chip bg-color">nodejs</span>
                     </a>
                     
                 </div>
@@ -1144,12 +1099,12 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/MyBlog/mysql-time/">
+                <a href="/MyBlog/sourcetree-note/">
                     <div class="card-image">
                         
-                        <img src="https://s2.232232.xyz/static/384/2022/12/08-6391846a5a2f7.jpg" class="responsive-img" alt="MySQL页面上时间展示与数据库中时间相差8个小时">
+                        <img src="https://s2.232232.xyz/static/384/2022/12/08-639182393258e.jpg" class="responsive-img" alt="sourcetree使用详解">
                         
-                        <span class="card-title">MySQL页面上时间展示与数据库中时间相差8个小时</span>
+                        <span class="card-title">sourcetree使用详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1160,18 +1115,18 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-05-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/MyBlog/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                    后端
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/MyBlog/categories/%E5%90%8E%E7%AB%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/sourcetree/" class="post-category">
+                                    sourcetree
                                 </a>
                             
                             
@@ -1181,16 +1136,12 @@ select datediff('2019-05-17', '2019-05-11') &lt;= 7 ; -- 最近一周
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MyBlog/tags/MYSQL/">
-                        <span class="chip bg-color">MYSQL</span>
+                    <a href="/MyBlog/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
-                    <a href="/MyBlog/tags/Date/">
-                        <span class="chip bg-color">Date</span>
-                    </a>
-                    
-                    <a href="/MyBlog/tags/Spring/">
-                        <span class="chip bg-color">Spring</span>
+                    <a href="/MyBlog/tags/sourcetree/">
+                        <span class="chip bg-color">sourcetree</span>
                     </a>
                     
                 </div>

@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>微信小程序npm构建报错，无法生成miniprogram_npm</title>
+      <link href="/MyBlog/wechat-miniprogram-npm/"/>
+      <url>/MyBlog/wechat-miniprogram-npm/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、随记"><a href="#一、随记" class="headerlink" title="一、随记"></a>一、随记</h2><blockquote><p>🎯 问题：微信小程序在初始化项目后构建npm没有生成miniprogram_npm文件</p></blockquote><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><blockquote><p>1、初始化npm init<br>2、安装依赖 npm install XXXX<br>3、设置project.config.json文件</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">## 初始化npm init</span>$ <span class="token function">npm</span> init<span class="token comment">## 安装依赖 npm install XXXX</span>$ <span class="token function">npm</span> i<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>设置好project.config.json文件之后再次构建npm<br>开发者工具–&gt;工具–&gt;构建npm 就会生成 miniprogram_npm 文件夹了</p></blockquote><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">## project.config.json"packNpmManually": false,"packNpmRelationList": [    {    "packageJsonPath": "./package.json",    "miniprogramNpmDistDir": "./"    }]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>页面中引入组件使用地址路径</p></blockquote><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">{</span>  <span class="token property">"navigationBarTitleText"</span><span class="token operator">:</span> <span class="token string">"测试页面"</span><span class="token punctuation">,</span>   <span class="token property">"usingComponents"</span><span class="token operator">:</span> <span class="token punctuation">{</span>    <span class="token property">"van-image"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/image/index"</span><span class="token punctuation">,</span>    <span class="token property">"van-tag"</span><span class="token operator">:</span><span class="token string">"@vant/weapp/tag/index"</span><span class="token punctuation">,</span>    <span class="token property">"van-cell"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/cell/index"</span><span class="token punctuation">,</span>    <span class="token property">"van-cell-group"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/cell-group/index"</span><span class="token punctuation">,</span>    <span class="token property">"van-row"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/row/index"</span><span class="token punctuation">,</span>    <span class="token property">"van-col"</span><span class="token operator">:</span> <span class="token string">"@vant/weapp/col/index"</span>  <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> nodejs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sourcetree使用详解</title>
       <link href="/MyBlog/sourcetree-note/"/>
       <url>/MyBlog/sourcetree-note/</url>
