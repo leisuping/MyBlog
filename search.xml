@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>初识arkTs</title>
+      <link href="/MyBlog/arkts-1/"/>
+      <url>/MyBlog/arkts-1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h2><blockquote><p>🎯 “Termux 是一款 Android 终端模拟器和 Linux 环境应用程序，无需 root 或设置即可直接运行。自动安装最小的基本系统，使用包管理器可以使用其他包。”<br>它就是一个普通的APP，可以在手机的应用商城下载安装，不需要任何配置，打开即用。</p></blockquote><h2 id="二、准备环境"><a href="#二、准备环境" class="headerlink" title="二、准备环境"></a>二、准备环境</h2><h3 id="1-安装-Termux"><a href="#1-安装-Termux" class="headerlink" title="1.安装 Termux"></a>1.安装 Termux</h3><blockquote><p>在手机的应用商城下载并安装，打开后是一个全屏的命令面板。<br>1.更新系统</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 连接远程仓库，获取软件包信息</span>$ <span class="token function">apt</span> update<span class="token comment"># 更新本地已经安装的软件包</span>$ <span class="token function">apt</span> upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>2.测试系统</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 安装 sl 软件包</span>$ <span class="token function">apt</span> <span class="token function">install</span> sl<span class="token comment"># 运行(正常会显示一个火车的命令行动画)</span>$ sl<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>3.访问本机存储</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 访问本机存储，手机会弹出对话框，询问是否允许 Termux 访问手机存储，点击"允许"。</span><span class="token comment"># 之后会在当前目录生成storage子目录，它是手机存储的符号链接，下载文件就是到这个目录去下载。</span>$ termux-setup-storage<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>Termux除了封装了apt命令，还封装了pkg一些基础命令，比如：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pkg search <span class="token operator">&lt;</span>query<span class="token operator">&gt;</span>              <span class="token comment"># 搜索包</span>pkg <span class="token function">install</span> <span class="token operator">&lt;</span>package<span class="token operator">&gt;</span>           <span class="token comment"># 安装包</span>pkg uninstall <span class="token operator">&lt;</span>package<span class="token operator">&gt;</span>         <span class="token comment"># 卸载包</span>pkg reinstall <span class="token operator">&lt;</span>package<span class="token operator">&gt;</span>         <span class="token comment"># 重新安装包</span>pkg list-all                    <span class="token comment"># 列出可供安装的所有包</span>pkg list-installed              <span class="token comment"># 列出已经安装的包</span>pkg show <span class="token operator">&lt;</span>package<span class="token operator">&gt;</span>              <span class="token comment"># 显示某个包的详细信息</span>pkg files <span class="token operator">&lt;</span>package<span class="token operator">&gt;</span>             <span class="token comment"># 显示某个包的相关文件夹路径</span>pkg update                      <span class="token comment"># 更新源（自动切换源）</span>pkg upgrade                     <span class="token comment"># 升级软件包</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p>4.安装nodejs</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">apt</span> <span class="token function">install</span> nodejs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>(未完待续…)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> nodejs </category>
+          
+          <category> arkTs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> arkTs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用termux在安卓系统上搭建网站</title>
       <link href="/MyBlog/termux/"/>
       <url>/MyBlog/termux/</url>
@@ -1246,11 +1273,11 @@
       
         <tags>
             
-            <tag> JAVA </tag>
-            
             <tag> 高并发 </tag>
             
             <tag> 服务端 </tag>
+            
+            <tag> JAVA </tag>
             
         </tags>
       
@@ -1277,9 +1304,9 @@
       
         <tags>
             
-            <tag> IO </tag>
-            
             <tag> JAVA </tag>
+            
+            <tag> IO </tag>
             
             <tag> ZIP </tag>
             

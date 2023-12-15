@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2023-12-15T02:54:06.451Z</updated>
+  <updated>2023-12-15T07:18:26.195Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>初识arkTs</title>
+    <link href="https://leisuping.github.io/arkts-1/"/>
+    <id>https://leisuping.github.io/arkts-1/</id>
+    <published>2023-12-15T07:24:26.000Z</published>
+    <updated>2023-12-15T07:18:26.195Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、介绍&quot;&gt;&lt;a href=&quot;#一、介绍&quot; class=&quot;headerlink&quot; title=&quot;一、介绍&quot;&gt;&lt;/a&gt;一、介绍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯 “Termux 是一款 Android 终端模拟器和 Linux 环境应用程序，无需</summary>
+        
+      
+    
+    
+    
+    <category term="nodejs" scheme="https://leisuping.github.io/categories/nodejs/"/>
+    
+    <category term="arkTs" scheme="https://leisuping.github.io/categories/nodejs/arkTs/"/>
+    
+    
+    <category term="arkTs" scheme="https://leisuping.github.io/tags/arkTs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用termux在安卓系统上搭建网站</title>
     <link href="https://leisuping.github.io/termux/"/>
     <id>https://leisuping.github.io/termux/</id>
     <published>2023-12-14T08:22:26.000Z</published>
-    <updated>2023-12-15T02:54:06.451Z</updated>
+    <updated>2023-12-15T03:39:10.364Z</updated>
     
     
       
@@ -564,35 +592,6 @@
     <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
     <category term="vue" scheme="https://leisuping.github.io/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用JS获取地址栏参数</title>
-    <link href="https://leisuping.github.io/client-js-note/"/>
-    <id>https://leisuping.github.io/client-js-note/</id>
-    <published>2021-12-23T13:04:26.000Z</published>
-    <updated>2023-02-15T04:28:01.485Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、用JS获取地址栏参数&quot;&gt;&lt;a href=&quot;#一、用JS获取地址栏参数&quot; class=&quot;headerlink&quot; title=&quot;一、用JS获取地址栏参数&quot;&gt;&lt;/a&gt;一、用JS获取地址栏参数&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="js" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/js/"/>
-    
-    
-    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
-    
-    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
