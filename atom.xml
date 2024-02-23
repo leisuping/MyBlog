@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2023-12-15T07:18:26.195Z</updated>
+  <updated>2024-02-23T05:59:59.298Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>初识arkTs</title>
+    <title>js 日期格式转换</title>
+    <link href="https://leisuping.github.io/jsnote-one/"/>
+    <id>https://leisuping.github.io/jsnote-one/</id>
+    <published>2024-02-23T11:44:26.000Z</published>
+    <updated>2024-02-23T05:59:59.298Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1、js-获取当前日期前后几分钟（-n-n分钟）&quot;&gt;&lt;a href=&quot;#1、js-获取当前日期前后几分钟（-n-n分钟）&quot; class=&quot;headerlink&quot; title=&quot;1、js 获取当前日期前后几分钟（+n/-n分钟）&quot;&gt;&lt;/a&gt;1、js</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/js/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初识arkUI</title>
     <link href="https://leisuping.github.io/arkts-1/"/>
     <id>https://leisuping.github.io/arkts-1/</id>
     <published>2023-12-15T07:24:26.000Z</published>
-    <updated>2023-12-15T07:18:26.195Z</updated>
+    <updated>2023-12-15T08:29:01.281Z</updated>
     
     
       
@@ -29,15 +58,13 @@
         
         
     <summary type="html">&lt;h2 id=&quot;一、介绍&quot;&gt;&lt;a href=&quot;#一、介绍&quot; class=&quot;headerlink&quot; title=&quot;一、介绍&quot;&gt;&lt;/a&gt;一、介绍&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;🎯 “Termux 是一款 Android 终端模拟器和 Linux 环境应用程序，无需</summary>
+&lt;p&gt;🎯 什么？HarmonyOS</summary>
         
       
     
     
     
-    <category term="nodejs" scheme="https://leisuping.github.io/categories/nodejs/"/>
-    
-    <category term="arkTs" scheme="https://leisuping.github.io/categories/nodejs/arkTs/"/>
+    <category term="arkTs" scheme="https://leisuping.github.io/categories/arkTs/"/>
     
     
     <category term="arkTs" scheme="https://leisuping.github.io/tags/arkTs/"/>
@@ -49,7 +76,7 @@
     <link href="https://leisuping.github.io/termux/"/>
     <id>https://leisuping.github.io/termux/</id>
     <published>2023-12-14T08:22:26.000Z</published>
-    <updated>2023-12-15T03:39:10.364Z</updated>
+    <updated>2023-12-18T01:48:02.369Z</updated>
     
     
       
@@ -562,36 +589,6 @@
     <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
     
     <category term="font" scheme="https://leisuping.github.io/tags/font/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一年前端求职准备 —— vue篇</title>
-    <link href="https://leisuping.github.io/interview-vue-note/"/>
-    <id>https://leisuping.github.io/interview-vue-note/</id>
-    <published>2022-02-11T04:14:00.000Z</published>
-    <updated>2023-02-15T04:28:01.758Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、故事分享&quot;&gt;&lt;a href=&quot;#一、故事分享&quot; class=&quot;headerlink&quot; title=&quot;一、故事分享&quot;&gt;&lt;/a&gt;一、故事分享&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;🎯</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/vue/"/>
-    
-    
-    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="vue" scheme="https://leisuping.github.io/tags/vue/"/>
     
   </entry>
   
