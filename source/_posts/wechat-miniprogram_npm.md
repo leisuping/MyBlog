@@ -2,7 +2,6 @@
 title : 微信小程序npm构建报错，无法生成miniprogram_npm
 date: 2023-11-09 8:32:24
 img: https://z1.ax1x.com/2023/11/10/pi8keGn.jpg
-top: true
 tags:
  - nodejs
 categories: 
