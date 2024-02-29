@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2024-02-23T05:59:59.298Z</updated>
+  <updated>2024-02-29T02:32:20.369Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>element日期组件时间校验精确到时分秒</title>
+    <link href="https://leisuping.github.io/element-datetimerange/"/>
+    <id>https://leisuping.github.io/element-datetimerange/</id>
+    <published>2024-02-29T04:34:00.000Z</published>
+    <updated>2024-02-29T02:32:20.369Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;DateTimePicker 日期时间选择器，能够选择开始时间-结束时间（精确到时分秒）&lt;br&gt;在项目中也使用的比较多了，如果需要对选择的日期时间有条件限制就要在该组件提供的事件中自定义了&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="https://leisuping.github.io/categories/vue/"/>
+    
+    <category term="element" scheme="https://leisuping.github.io/categories/vue/element/"/>
+    
+    
+    <category term="element" scheme="https://leisuping.github.io/tags/element/"/>
+    
+    <category term="DateTimePicker" scheme="https://leisuping.github.io/tags/DateTimePicker/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js 日期格式转换</title>
     <link href="https://leisuping.github.io/jsnote-one/"/>
     <id>https://leisuping.github.io/jsnote-one/</id>
     <published>2024-02-23T11:44:26.000Z</published>
-    <updated>2024-02-23T05:59:59.298Z</updated>
+    <updated>2024-02-29T02:34:46.539Z</updated>
     
     
       
@@ -104,7 +134,7 @@
     <link href="https://leisuping.github.io/nvm-change-node/"/>
     <id>https://leisuping.github.io/nvm-change-node/</id>
     <published>2023-11-10T01:42:24.000Z</published>
-    <updated>2023-11-10T08:36:52.906Z</updated>
+    <updated>2024-02-29T02:37:42.028Z</updated>
     
     
       
@@ -130,7 +160,7 @@
     <link href="https://leisuping.github.io/wechat-miniprogram-npm/"/>
     <id>https://leisuping.github.io/wechat-miniprogram-npm/</id>
     <published>2023-11-09T00:32:24.000Z</published>
-    <updated>2023-11-10T08:13:44.451Z</updated>
+    <updated>2024-02-29T02:37:07.061Z</updated>
     
     
       
@@ -554,41 +584,6 @@
     
     
     <category term="nodejs" scheme="https://leisuping.github.io/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>动态加载系统文字</title>
-    <link href="https://leisuping.github.io/client-dynamicloading-font/"/>
-    <id>https://leisuping.github.io/client-dynamicloading-font/</id>
-    <published>2022-03-31T16:00:00.000Z</published>
-    <updated>2023-02-15T04:28:01.484Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;img src=&quot;https://s6.jpg.cm/2021/12/07/LQe3WG.jpg&quot; width=&quot;90%&quot;&gt;
-
-&lt;h2 id=&quot;一、需求&quot;&gt;&lt;a href=&quot;#一、需求&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
-    
-    <category term="js" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/js/"/>
-    
-    
-    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
-    
-    <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
-    
-    <category term="font" scheme="https://leisuping.github.io/tags/font/"/>
     
   </entry>
   
