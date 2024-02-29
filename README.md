@@ -48,6 +48,10 @@ npm install hexo-deployer-git --save
 ```
 
 ```bash
+npx hexo serve
+```
+
+```bash
 npx hexo clean
 npx hexo g && npx hexo d
 ```
