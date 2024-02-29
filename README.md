@@ -58,6 +58,7 @@ npx hexo g && npx hexo d
 博客文章特征图的存储最好是使用图床
 我个人使用的是免费的图床[路过图床](https://imgse.com/)无需注册或者[img.show](https://img.show/)。
 最大限制单张图片 5M，注册登录后可上传 10M 大小图片，支持 HTTPS。
+博客封面图片来源[三千图片](https://www.win3000.com/tags/gongqijun/)
 ## 博客评论（待更新）
 配置的 valine 插件
 

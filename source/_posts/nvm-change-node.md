@@ -1,7 +1,7 @@
 ---
 title : 多个nodejs版本切换
 date: 2023-11-10 9:42:24
-img: https://z1.ax1x.com/2023/11/09/pi33TpT.jpg
+img: https://s11.ax1x.com/2024/02/29/pFwtxzj.jpg
 tags:
  - nodejs
 categories: 
