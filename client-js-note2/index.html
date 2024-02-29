@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo,将hexo搭建的个人博客部署到GitHub">
-    <meta name="description" content="一、新建仓库
-🎯 上一篇如何使用hexo搭建个人博客中准备环境有提到要注册GitHub/GitLab账号今天我们要登录GitHub新建博客仓库，准备将博客部署到GitHub Pages
-
-
-1.登入 github 账号2.New repo">
+    <meta name="keywords" content="js,JS进制转换">
+    <meta name="description" content="1、ArrayBuffer转16进度字符串let ab2hex=(buffer) =&amp;gt; {
+  var hexArr = Array.prototype.map.call(
+    new Uint8Array(buffer),
+  ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>将hexo搭建的个人博客部署到GitHub | 楠竹菇凉</title>
+    <title>JS进制转换 | 楠竹菇凉</title>
     <link rel="icon" type="image/jpeg" href="/MyBlog/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/MyBlog/libs/awesome/css/all.min.css">
@@ -326,12 +325,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.232232.xyz/static/384/2022/12/08-6391832e0c607.jpeg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s11.ax1x.com/2024/02/29/pFwD8b9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">将hexo搭建的个人博客部署到GitHub</h1>
+                    <h1 class="description center-align post-title">JS进制转换</h1>
                 </div>
             </div>
         </div>
@@ -447,12 +446,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/MyBlog/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/MyBlog/tags/js/">
+                                <span class="chip bg-color">js</span>
                             </a>
                         
-                            <a href="/MyBlog/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/">
-                                <span class="chip bg-color">部署博客</span>
+                            <a href="/MyBlog/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -463,12 +462,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/MyBlog/categories/nodejs/" class="post-category">
-                                nodejs
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
-                            <a href="/MyBlog/categories/nodejs/hexo/" class="post-category">
-                                hexo
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/js/" class="post-category">
+                                js
                             </a>
                         
                     </div>
@@ -480,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-09
+                    2023-12-20
                 </div>
                 
 
@@ -489,7 +488,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    677
+                    669
                 </div>
                 
 
@@ -509,92 +508,166 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、新建仓库"><a href="#一、新建仓库" class="headerlink" title="一、新建仓库"></a>一、新建仓库</h2><blockquote>
-<p>🎯 上一篇<a href="https://leisuping.github.io/MyBlog/build-blog-one/">如何使用hexo搭建个人博客</a>中准备环境有提到要注册GitHub/GitLab账号<br>今天我们要登录GitHub新建博客仓库，准备将博客部署到GitHub Pages</p>
-</blockquote>
-<p><img src="./github01.jpg"></p>
-<p>1.登入 github 账号<br>2.New repository 在 github 新建一个名为：username用户名.github.io 的 Repository（我这里在用户名下建了一个与本地博客同名的目录）<br>3.注意要公开仓库，私有库是无法访问的（GitHub Pages 在公共存储库中可用）<br>4.建议选择使用 README 初始化此存储库</p>
-<p><img src="./github02.jpg"></p>
-<h2 id="二、配置博客"><a href="#二、配置博客" class="headerlink" title="二、配置博客"></a>二、配置博客</h2><blockquote>
-<p>copy GitHub博客仓库的地址 <a target="_blank" rel="noopener" href="https://github.com/leisuping/">https://username.github.io/MyBlog</a><br>在博客根目录下的 _config.yml 中配置 GitHub 仓库地址（博客部署/访问的地址）</p>
-</blockquote>
-<h3 id="1-博客部署地址相关配置"><a href="#1-博客部署地址相关配置" class="headerlink" title="1.博客部署地址相关配置"></a>1.博客部署地址相关配置</h3><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">url: https://username.github.io/
-root: /BlogName
-permalink: :title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除
-  trailing_html: true # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="1、ArrayBuffer转16进度字符串"><a href="#1、ArrayBuffer转16进度字符串" class="headerlink" title="1、ArrayBuffer转16进度字符串"></a>1、ArrayBuffer转16进度字符串</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> <span class="token function-variable function">ab2hex</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">buffer</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> hexArr <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>
+    <span class="token keyword">new</span> <span class="token class-name">Uint8Array</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">bit</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token string">'00'</span> <span class="token operator">+</span> bit<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">)</span>
+  <span class="token keyword">return</span> hexArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"># 配置博客静态文件部署地址，分支
-deploy:
-  type: git
-  repo: git@github.com: username/BlogName
-  branch: gh-pages<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//根据key值得到数组的下标  arr:数组  key:比较key  val:比较内容    （-1 没有匹配到</span>
+<span class="token keyword">let</span> <span class="token function-variable function">inArray</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> key<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">===</span> val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="2-博客样式相关配置"><a href="#2-博客样式相关配置" class="headerlink" title="2.博客样式相关配置"></a>2.博客样式相关配置</h3><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"># 中文链接转拼音
-permalink_pinyin:
-  enable: true
-  separator: '-'
+<h2 id="2、16进制字符串转换为字符串文本"><a href="#2、16进制字符串转换为字符串文本" class="headerlink" title="2、16进制字符串转换为字符串文本"></a>2、16进制字符串转换为字符串文本</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> <span class="token function-variable function">hexToString</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">hex</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>hex<span class="token punctuation">.</span>length <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> hex<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          tmp <span class="token operator">+=</span> <span class="token string">'%'</span> <span class="token operator">+</span> hex<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">+</span> hex<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-# 添加emoji表情支持
-githubEmojis:
-  enable: true
-  className: github-emoji
-  inject: true
-  styles:
-  customEmojis:
+<h2 id="3、字符串转16进制"><a href="#3、字符串转16进制" class="headerlink" title="3、字符串转16进制"></a>3、字符串转16进制</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> <span class="token function-variable function">stringToHex</span> <span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> hex <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      hex <span class="token operator">+=</span> str<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> hex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-# 博客搜索
-# 安装搜索插件：npm install hexo-generator-search --save
-search:
-  path: search.xml
-  field: post
+<h2 id="4、int转byte"><a href="#4、int转byte" class="headerlink" title="4、int转byte"></a>4、int转byte</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> <span class="token function-variable function">intToByte</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> i <span class="token operator">&amp;</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">&gt;=</span> <span class="token number">128</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      c <span class="token operator">=</span> b <span class="token operator">%</span> <span class="token number">128</span><span class="token punctuation">;</span>
+      c <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">128</span> <span class="token operator">-</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      c <span class="token operator">=</span> b<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> c
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-# 安装动画插件：npm install live2d-widget-model-z16 -D
-# 安装具体的动画人物：npm install --save hexo-helper-live2d 
-# 配置博客动漫人物（动画跟不蒜子统计会有冲突，建议两者不要一起使用）
-live2d: 
-  enable: true 
-  scriptFrom: local 
-  pluginRootPath: live2dw/ 
-  pluginJsPath: lib/ 
-  pluginModelPath: assets/ 
-  tagMode: false 
-  log: false 
-  model: 
-    use: live2d-widget-model-tororo # live2d-widget-model-shizuku # live2d-widget-model-z16
-  display: 
-    position: right 
-    width: 150 
-    height: 300 
-  mobile: 
-    show: true 
-    react: 
-      opacity: 0.7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>其他的一些配置根据主题，可能会有些略微不同，大家参考主题下的 README_CN.md 说明文件配置就好啦！</p>
-<h2 id="三、上传部署博客"><a href="#三、上传部署博客" class="headerlink" title="三、上传部署博客"></a>三、上传部署博客</h2><blockquote>
-<p>1.将本地的 myblog 与 GitHub仓库关联（配置ssh），将代码提交到仓库的 master分支下<br>2.在博客仓库下新建 gh-pages 分支，用来存储博客编译后要部署的静态文件<br>3.在仓库下配置发布源 Settings =&gt; Pages 在 GitHub Pages 下设置发布源分支 gh-pages<br>4.在 _config.yml 中配置博客部署信息</p>
-</blockquote>
-<p><img src="./githubPages.jpg"></p>
-<p>配置博客部署信息</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">deploy:
-  type: git
-  repo: git@github.com:username/MyBlog
-  branch: gh-pages
+<h2 id="5、十六进制字符串转换为数组"><a href="#5、十六进制字符串转换为数组" class="headerlink" title="5、十六进制字符串转换为数组"></a>5、十六进制字符串转换为数组</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">let</span> hexStringToArray<span class="token operator">=</span><span class="token punctuation">(</span>str<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> pos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> len <span class="token operator">=</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>len <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  len <span class="token operator">/=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> arrBytes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> s <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>pos<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    arrBytes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">"0x"</span><span class="token operator">+</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pos <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> arrBytes<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-search:
-  path: search.xml
-  field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="6、不足4位前面补0"><a href="#6、不足4位前面补0" class="headerlink" title="6、不足4位前面补0"></a>6、不足4位前面补0</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">//+0不足4位,不足则在前面补充0。四位数 12 得到 0012、270得到0270、1234得到1234、 27023 得到 27023</span>
+<span class="token keyword">let</span> <span class="token function-variable function">addPreZero</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    s <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">4</span> <span class="token operator">-</span> t<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    s <span class="token operator">+=</span> <span class="token string">'0'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> s <span class="token operator">+</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<p>配置好之后，重新构建博客生成静态文件并部署到 GitHub Pages</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ npx hexo clean
-$ npx hexo g
-$ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">//+0不足8位,不足则在前面补充0</span>
+<span class="token keyword">let</span> <span class="token function-variable function">addPreZero8</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token punctuation">(</span>num <span class="token operator">+</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+    s <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">8</span> <span class="token operator">-</span> t<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    s <span class="token operator">+=</span> <span class="token string">'0'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> s <span class="token operator">+</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="7、一维数组转二维数组"><a href="#7、一维数组转二维数组" class="headerlink" title="7、一维数组转二维数组"></a>7、一维数组转二维数组</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/*一维数组转二维数组
+source： 要分割的一维数组
+num： 几个为一个数组的数量
+ */</span>
+<span class="token keyword">let</span> <span class="token function-variable function">oneTransTwo</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">source<span class="token punctuation">,</span> num</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> source<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> r <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">%</span> num <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      r <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>v<span class="token punctuation">,</span> <span class="token punctuation">[</span>item<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      v<span class="token punctuation">[</span>v<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      r <span class="token operator">=</span> v<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="./hexo02.jpg"></p>
-<p>部署成功之后就可以直接访问你的博客啦！<br><a href="https://leisuping.github.io/MyBlog/">https://username.github.io/MyBlog</a></p>
-<img src="https://s6.jpg.cm/2021/12/08/LdjVpU.gif" width="200px">
+<h2 id="8、2进制-bit-转16进制-byte"><a href="#8、2进制-bit-转16进制-byte" class="headerlink" title="8、2进制(bit)转16进制(byte)"></a>8、2进制(bit)转16进制(byte)</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/**
+ * 2进制(bit)转16进制(byte)
+ */</span>
+<span class="token keyword">let</span> <span class="token function-variable function">binaryNumberToBhex</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">binary</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>binary<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="9、转16进制补0"><a href="#9、转16进制补0" class="headerlink" title="9、转16进制补0"></a>9、转16进制补0</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/**
+ * 不足两位补0
+ * @param {*} yn16 是否转16进制
+ * @param {*} fq 1:前补0，后补0
+ */</span>
+<span class="token keyword">let</span> <span class="token function-variable function">to16add0</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">num<span class="token punctuation">,</span>yn16<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">,</span>fq<span class="token operator">=</span><span class="token number">1</span></span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+<span class="token keyword">let</span> str <span class="token operator">=</span> yn16 <span class="token operator">?</span>num<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token operator">:</span><span class="token function">String</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>length<span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    
+    <span class="token keyword">return</span> fq<span class="token operator">==</span><span class="token number">1</span><span class="token operator">?</span><span class="token string">'0'</span><span class="token operator">+</span>str<span class="token operator">:</span>str<span class="token operator">+</span><span class="token string">'0'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> str
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="10、数组转16进制字符串"><a href="#10、数组转16进制字符串" class="headerlink" title="10、数组转16进制字符串"></a>10、数组转16进制字符串</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/* 数组转16进制字符串*/</span>
+<span class="token keyword">let</span> <span class="token function-variable function">byteArrayToHex</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">arrayValue</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> hexStr <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> arrayItem <span class="token keyword">of</span> arrayValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> charHex <span class="token operator">=</span> arrayItem<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        charHex <span class="token operator">=</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>charHex<span class="token punctuation">.</span>length <span class="token operator">%</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> charHex <span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">0</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>charHex<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+        hexStr <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>hexStr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>charHex<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> hexStr<span class="token punctuation">.</span><span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="11、16进制转2进制"><a href="#11、16进制转2进制" class="headerlink" title="11、16进制转2进制"></a>11、16进制转2进制</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/* 16进制转2进制  -byte转bit，不足前位+0*/</span>
+<span class="token keyword">let</span> <span class="token function-variable function">hexStringToBinary</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">hex</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token string">"00000000"</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span>hex<span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="12、位异或"><a href="#12、位异或" class="headerlink" title="12、位异或"></a>12、位异或</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token comment">/* 位异或  yn16:是否转换得到16进制字符串*/</span>
+<span class="token keyword">let</span> <span class="token function-variable function">toNor</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">str<span class="token punctuation">,</span>yn16<span class="token operator">=</span><span class="token boolean">false</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    str <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> crc <span class="token operator">=</span> <span class="token string">'00'</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> len <span class="token operator">=</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> code <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        crc <span class="token operator">=</span> crc <span class="token operator">^</span> code<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>yn16<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        crc <span class="token operator">=</span> crc<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>crc<span class="token punctuation">.</span>length<span class="token operator">&lt;</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">'0'</span><span class="token operator">+</span>crc<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> crc
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> crc<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>[待完善… ]</p>
 
                 
             </div>
@@ -621,7 +694,7 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://leisuping.github.io/MyBlog/build-blog-two/">https://leisuping.github.io/MyBlog/build-blog-two/</a>
+                    <a href="https://leisuping.github.io/MyBlog/client-js-note2/">https://leisuping.github.io/MyBlog/client-js-note2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -659,12 +732,12 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                     
                         <div class="article-tag">
                             
-                                <a href="/MyBlog/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/MyBlog/tags/js/">
+                                    <span class="chip bg-color">js</span>
                                 </a>
                             
-                                <a href="/MyBlog/tags/%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/">
-                                    <span class="chip bg-color">部署博客</span>
+                                <a href="/MyBlog/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
                                 </a>
                             
                         </div>
@@ -1108,12 +1181,12 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/MyBlog/client-written-exam/">
+                <a href="/MyBlog/jsnote-one/">
                     <div class="card-image">
                         
-                        <img src="https://s4.ax1x.com/2021/12/17/TFqoy8.jpg" class="responsive-img" alt="如何优雅的处理前端一些小问题（一）">
+                        <img src="https://s11.ax1x.com/2024/02/29/pFwtDz9.jpg" class="responsive-img" alt="js 日期格式转换">
                         
-                        <span class="card-title">如何优雅的处理前端一些小问题（一）</span>
+                        <span class="card-title">js 日期格式转换</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1124,18 +1197,18 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-17
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-02-23
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/MyBlog/categories/js/" class="post-category">
+                                    js
                                 </a>
                             
-                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/prototype/" class="post-category">
-                                    prototype
+                            <a href="/MyBlog/categories/js/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1145,16 +1218,12 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/MyBlog/tags/js/">
+                        <span class="chip bg-color">js</span>
+                    </a>
+                    
                     <a href="/MyBlog/tags/%E5%89%8D%E7%AB%AF/">
                         <span class="chip bg-color">前端</span>
-                    </a>
-                    
-                    <a href="/MyBlog/tags/prototype/">
-                        <span class="chip bg-color">prototype</span>
-                    </a>
-                    
-                    <a href="/MyBlog/tags/constructor/">
-                        <span class="chip bg-color">constructor</span>
                     </a>
                     
                 </div>
@@ -1168,12 +1237,12 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/MyBlog/build-blog-one/">
+                <a href="/MyBlog/arkts-1/">
                     <div class="card-image">
                         
-                        <img src="https://s2.232232.xyz/static/384/2022/12/08-6391832fa8506.jpg" class="responsive-img" alt="如何使用hexo搭建个人博客">
+                        <img src="https://s11.ax1x.com/2023/12/15/pi4Vq5d.jpg" class="responsive-img" alt="初识arkUI">
                         
-                        <span class="card-title">如何使用hexo搭建个人博客</span>
+                        <span class="card-title">初识arkUI</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1184,18 +1253,14 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/MyBlog/categories/nodejs/" class="post-category">
-                                    nodejs
-                                </a>
-                            
-                            <a href="/MyBlog/categories/nodejs/hexo/" class="post-category">
-                                    hexo
+                            <a href="/MyBlog/categories/arkTs/" class="post-category">
+                                    arkTs
                                 </a>
                             
                             
@@ -1205,12 +1270,8 @@ $ npx hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><spa
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MyBlog/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                    <a href="/MyBlog/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">搭建博客</span>
+                    <a href="/MyBlog/tags/arkTs/">
+                        <span class="chip bg-color">arkTs</span>
                     </a>
                     
                 </div>

@@ -51,7 +51,7 @@
     <link href="https://leisuping.github.io/jsnote-one/"/>
     <id>https://leisuping.github.io/jsnote-one/</id>
     <published>2024-02-23T11:44:26.000Z</published>
-    <updated>2024-02-29T02:34:46.539Z</updated>
+    <updated>2024-02-29T05:11:29.081Z</updated>
     
     
       
@@ -67,6 +67,35 @@
     <category term="js" scheme="https://leisuping.github.io/categories/js/"/>
     
     <category term="前端" scheme="https://leisuping.github.io/categories/js/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS进制转换</title>
+    <link href="https://leisuping.github.io/client-js-note2/"/>
+    <id>https://leisuping.github.io/client-js-note2/</id>
+    <published>2023-12-20T12:04:06.000Z</published>
+    <updated>2024-02-29T05:36:15.313Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1、ArrayBuffer转16进度字符串&quot;&gt;&lt;a href=&quot;#1、ArrayBuffer转16进度字符串&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/js/"/>
     
     
     <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
@@ -557,33 +586,6 @@
     <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
     
     <category term="ElementUI" scheme="https://leisuping.github.io/tags/ElementUI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NodeJS包管理工具 n 的使用</title>
-    <link href="https://leisuping.github.io/nodejs-package-note/"/>
-    <id>https://leisuping.github.io/nodejs-package-note/</id>
-    <published>2022-06-06T16:00:00.000Z</published>
-    <updated>2023-02-15T04:28:01.760Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、NodeJS包管理工具-n-的使用&quot;&gt;&lt;a href=&quot;#一、NodeJS包管理工具-n-的使用&quot; class=&quot;headerlink&quot; title=&quot;一、NodeJS包管理工具 n 的使用&quot;&gt;&lt;/a&gt;一、NodeJS包管理工具 n</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="nodejs" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/nodejs/"/>
-    
-    
-    <category term="nodejs" scheme="https://leisuping.github.io/tags/nodejs/"/>
     
   </entry>
   
