@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2024-02-29T02:32:20.369Z</updated>
+  <updated>2024-05-16T09:02:47.877Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>canvas 资料收录</title>
+    <link href="https://leisuping.github.io/canvas-note/"/>
+    <id>https://leisuping.github.io/canvas-note/</id>
+    <published>2024-05-16T03:04:20.000Z</published>
+    <updated>2024-05-16T09:02:47.877Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;教程&quot;&gt;&lt;a href=&quot;#教程&quot; class=&quot;headerlink&quot; title=&quot;教程&quot;&gt;&lt;/a&gt;教程&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="canvas" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/canvas/"/>
+    
+    
+    <category term="canvas" scheme="https://leisuping.github.io/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
     <title>element日期组件时间校验精确到时分秒</title>
     <link href="https://leisuping.github.io/element-datetimerange/"/>
     <id>https://leisuping.github.io/element-datetimerange/</id>
     <published>2024-02-29T04:34:00.000Z</published>
-    <updated>2024-02-29T02:32:20.369Z</updated>
+    <updated>2024-05-16T09:03:50.176Z</updated>
     
     
       
@@ -51,7 +79,7 @@
     <link href="https://leisuping.github.io/jsnote-one/"/>
     <id>https://leisuping.github.io/jsnote-one/</id>
     <published>2024-02-23T11:44:26.000Z</published>
-    <updated>2024-02-29T05:11:29.081Z</updated>
+    <updated>2024-05-16T09:06:15.706Z</updated>
     
     
       
@@ -80,7 +108,7 @@
     <link href="https://leisuping.github.io/client-js-note2/"/>
     <id>https://leisuping.github.io/client-js-note2/</id>
     <published>2023-12-20T12:04:06.000Z</published>
-    <updated>2024-02-29T05:36:15.313Z</updated>
+    <updated>2024-02-29T05:36:52.339Z</updated>
     
     
       
@@ -554,38 +582,6 @@
     
     
     <category term="小程序" scheme="https://leisuping.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>el-upload自定义文件上传</title>
-    <link href="https://leisuping.github.io/element-upload-file/"/>
-    <id>https://leisuping.github.io/element-upload-file/</id>
-    <published>2022-06-09T16:00:00.000Z</published>
-    <updated>2023-02-15T04:28:01.750Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、为啥会有这篇烂文&quot;&gt;&lt;a href=&quot;#一、为啥会有这篇烂文&quot; class=&quot;headerlink&quot; title=&quot;一、为啥会有这篇烂文&quot;&gt;&lt;/a&gt;一、为啥会有这篇烂文&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;🎯</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="Vue" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
-    
-    <category term="ElementUI" scheme="https://leisuping.github.io/categories/%E5%89%8D%E7%AB%AF/Vue/ElementUI/"/>
-    
-    
-    <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
-    
-    <category term="ElementUI" scheme="https://leisuping.github.io/tags/ElementUI/"/>
     
   </entry>
   

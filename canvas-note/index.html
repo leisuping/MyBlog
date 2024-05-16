@@ -1,0 +1,1961 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="canvas">
+    <meta name="description" content="教程
+Web绘图
+图可视化美学
+计算机图形与可视化
+HTML5 Canvas MDN教程
+Internet Explorer 9 开发人员指南：HTML5 Canvas
+HTML5草案标准中的Canvas元素文档
+HTML5 Canvas ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>canvas 资料收录 | 楠竹菇凉</title>
+    <link rel="icon" type="image/jpeg" href="/MyBlog/medias/avatar.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/MyBlog/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/MyBlog/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/MyBlog/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/MyBlog/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/MyBlog/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/MyBlog/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/MyBlog/css/my.css">
+
+    <script src="/MyBlog/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/MyBlog/atom.xml" title="楠竹菇凉" type="application/atom+xml">
+</head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/MyBlog/" class="waves-effect waves-light">
+                    
+                    <img src="/MyBlog/medias/avatar.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">楠竹菇凉</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/MyBlog/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/MyBlog/medias/avatar.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">楠竹菇凉</div>
+        <div class="logo-desc">
+            
+            当然，还是会有不可逾越的界限
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/MyBlog/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/leisuping/" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/leisuping/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s21.ax1x.com/2024/05/16/pknWBu9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">canvas 资料收录</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/MyBlog/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/MyBlog/tags/canvas/">
+                                <span class="chip bg-color">canvas</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
+                            </a>
+                        
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/canvas/" class="post-category">
+                                canvas
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-05-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.7k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/MyBlog/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://airingursb.gitbooks.io/canvas/content/">Web绘图</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.researchgate.net/publication/220795329_The_Aesthetics_of_Graph_Visualization">图可视化美学</a></li>
+<li><a target="_blank" rel="noopener" href="https://ng-tech.icu/CGDataVis-Series/#/">计算机图形与可视化</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API">HTML5 Canvas MDN教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/previous-versions/hh410106(v=msdn.10)?redirectedfrom=MSDN#_HTML5_canvas">Internet Explorer 9 开发人员指南：HTML5 Canvas</a></li>
+<li><a target="_blank" rel="noopener" href="https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element">HTML5草案标准中的Canvas元素文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://dev.opera.com/articles/html5-canvas-basics/">HTML5 Canvas 基础教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/html/html5-canvas.html">HTML5 Canvas 菜鸟教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/html/html5_canvas.asp">HTML5 Canvas W3school教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022423592576">HTML5 Canvas 廖雪峰教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.imooc.com/wiki/html5/canvas.html">HTML5 Canvas 慕课网教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/827652549/CanvasStudy">HTML5 Canvas的中文系列学习教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://graphin.antv.vision/solution/database/graph-database">AntV Graphin 图数据库解决方案</a></li>
+<li><a target="_blank" rel="noopener" href="https://graphin.antv.vision/solution/knowledge-graph">AntV Graphin 知识图谱解决方案</a></li>
+<li><a target="_blank" rel="noopener" href="https://graphin.antv.vision/solution/security">AntV Graphin 网络安全解决方案</a></li>
+<li><a target="_blank" rel="noopener" href="https://graphin.antv.vision/solution/enterprise/enterprise-risk-control">AntV Graphin 企业风控解决方案</a></li>
+</ul>
+<h2 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h2><ul>
+<li>《<a target="_blank" rel="noopener" href="http://product.dangdang.com/11012245144.html">HTML5 Canvas开发详解</a>》 作者: Steve Fulton,Jeff Fulton <a target="_blank" rel="noopener" href="http://product.dangdang.com/11012245144.html">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="http://product.dangdang.com/28499406.html">TypeScript图形渲染实战：2D架构设计与实现</a>》 作者: 步磊峰 <a target="_blank" rel="noopener" href="http://product.dangdang.com/28499406.html">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://item.jd.com/11312007.html?cu=true&amp;utm_source=kong&amp;utm_medium=tuiguang&amp;utm_campaign=t_1001542270_53285100_0_1932113745&amp;utm_term=2f9a0a9984c64a1983d8e5eff928839a">HTML5 Canvas核心技术：图形、动画与游戏开发</a>》 作者: David Geary</li>
+<li>《<a target="_blank" rel="noopener" href="https://item.jd.com/25570817493.html?cu=true&amp;utm_source=kong&amp;utm_medium=tuiguang&amp;utm_campaign=t_1001542270_53285100_0_1932113745&amp;utm_term=ea99fc143d004c78b5b3bd12381b357e">HTML5 2D游戏编程核心技术</a>》 作者: David Geary</li>
+<li>《<a target="_blank" rel="noopener" href="http://e.dangdang.com/products/1900396102.html">HTML5 Canvas游戏开发实战</a>》 作者: 张路斌 <a target="_blank" rel="noopener" href="http://e.dangdang.com/products/1900396102.html">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="http://product.dangdang.com/28549249.html">从0到1 HTML5 Canvas动画开发</a>》 作者: 莫振杰 <a target="_blank" rel="noopener" href="http://product.dangdang.com/28549249.html">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="http://product.dangdang.com/1798930436.html">HTML5 Canvas核心技术: 图形、动画与游戏开发</a>》 作者: 美基瑞 <a target="_blank" rel="noopener" href="http://product.dangdang.com/1798930436.html">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="http://product.dangdang.com/28556039.html">快学熟用D3</a>》 作者: 菲利普·K.贾纳特 <a target="_blank" rel="noopener" href="http://product.dangdang.com/28556039.html">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://juejin.cn/book/6844723714655780871">如何使用 Canvas 制作出炫酷的网页背景特效</a>》 作者: sunshine小小倩 <a target="_blank" rel="noopener" href="https://juejin.cn/book/6844723714655780871">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://juejin.cn/book/7031893648145186824">可视化入门：从 0 到 1 开发一个图表库</a>》 作者: AntV <a target="_blank" rel="noopener" href="https://juejin.cn/book/7031893648145186824">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26756024/">图分析与可视化</a>》 作者: 理查德·布莱斯 / 大卫·琼克 <a target="_blank" rel="noopener" href="https://book.douban.com/subject/26756024/">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/25665238/">视觉繁美 - 信息可视化方法与案例解析</a>》 作者: Manuel Lima <a target="_blank" rel="noopener" href="https://book.douban.com/subject/25665238/">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://book.douban.com/subject/25760272/">数据可视化</a>》 作者: 陈为 / 沈则潜 <a target="_blank" rel="noopener" href="https://book.douban.com/subject/25760272/">链接地址🔗</a></li>
+<li>《<a target="_blank" rel="noopener" href="https://wzf1997.github.io/learn-visualization/blog/three/3dearth.html">从0-1入门数据可视化</a>》 作者: Fly</li>
+</ul>
+<h2 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h2><h3 id="图形绘制"><a href="#图形绘制" class="headerlink" title="图形绘制"></a>图形绘制</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://fabricjs.com/">fabric.js</a> [<a target="_blank" rel="noopener" href="http://fabricjs.com/demos/">在线演示</a>] - 轻松处理Canvas元素的框架、Canvas和SVG的转换解析器 <img src="https://img.shields.io/github/stars/fabricjs/fabric.js?style=social"> <img src="https://img.shields.io/github/forks/fabricjs/fabric.js?style=social"><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/MattKetmo/darkroomjs">DarkroomJS</a> [<a target="_blank" rel="noopener" href="https://pqina.nl/pintura/?affiliate_id=854594675">在线演示</a>] - 浏览器端可扩展的图像编辑工具 <img src="https://img.shields.io/github/stars/MattKetmo/darkroomjs?style=social"> <img src="https://img.shields.io/github/forks/MattKetmo/darkroomjs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/salgum1114/react-design-editor">react-design-editor</a> [<a target="_blank" rel="noopener" href="https://salgum1114.github.io/react-design-editor/">在线演示</a>] - 基于React、Fabricjs的编辑设计工具 <img src="https://img.shields.io/github/stars/salgum1114/react-design-editor?style=social"> <img src="https://img.shields.io/github/forks/salgum1114/react-design-editor?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/nihaojob/vue-fabric-editor">vue-fabric-editor</a> [<a target="_blank" rel="noopener" href="https://nihaojob.github.io/vue-fabric-editor/">在线演示</a>] - 基于Vue、Fabricjs的编辑设计工具 <img src="https://img.shields.io/github/stars/nihaojob/vue-fabric-editor?style=social"> <img src="https://img.shields.io/github/forks/nihaojob/vue-fabric-editor?style=social">    </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tbolis/react-sketch">react-sketch</a> [<a target="_blank" rel="noopener" href="http://tbolis.github.io/showcase/react-sketch/">在线演示</a>] - 基于React、Fabricjs的素描应用 <img src="https://img.shields.io/github/stars/tbolis/react-sketch?style=social"> <img src="https://img.shields.io/github/forks/tbolis/react-sketch?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/purestart/vue-fabric">vue-fabric</a> - 基于Fabric.js的Vue组件，定制画板，图片组合绘制 <img src="https://img.shields.io/github/stars/purestart/vue-fabric?style=social"> <img src="https://img.shields.io/github/forks/purestart/vue-fabric?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/michaeljcalkins/angular-fabric">angular-fabric</a> [<a target="_blank" rel="noopener" href="https://codepen.io/michaeljcalkins/full/Imupw">在线演示</a>] - 使用AngularJS控制Fabricjs Canvas <img src="https://img.shields.io/github/stars/michaeljcalkins/angular-fabric?style=social"> <img src="https://img.shields.io/github/forks/michaeljcalkins/angular-fabric?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/danielktaylor/fabric-js-editor">fabric-js-editor</a> - 基于Fabric.js的HTML5矢量图像编辑器 <img src="https://img.shields.io/github/stars/danielktaylor/fabric-js-editor?style=social"> <img src="https://img.shields.io/github/forks/danielktaylor/fabric-js-editor?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tennisonchan/fabric-brush">fabric-brush</a> [<a target="_blank" rel="noopener" href="https://tennisonchan.github.io/fabric-brush/">在线演示</a>] - 基于Fabric.js的Canvas笔刷工具 <img src="https://img.shields.io/github/stars/tennisonchan/fabric-brush?style=social"> <img src="https://img.shields.io/github/forks/tennisonchan/fabric-brush?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/pegasus1982/fabricjs-image-editor-origin">fabricjs-image-editor-origin</a> [<a target="_blank" rel="noopener" href="https://fabricjs-image-editor-f62330.netlify.app/">在线演示</a>] - Fabricjs图像编辑器 <img src="https://img.shields.io/github/stars/pegasus1982/fabricjs-image-editor-origin?style=social"> <img src="https://img.shields.io/github/forks/pegasus1982/fabricjs-image-editor-origin?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/carstenschaefer/DrawerJs">DrawerJs</a> [<a target="_blank" rel="noopener" href="https://carstenschaefer.github.io/DrawerJs/examples/standalone/">在线演示</a>] - 可定制的所见即所得的HTML Canvas编辑器 <img src="https://img.shields.io/github/stars/carstenschaefer/DrawerJs?style=social"> <img src="https://img.shields.io/github/forks/carstenschaefer/DrawerJs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/OvidijusParsiunas/myvision">myvision</a> - 免费的在线图像注释工具，用于生成基于计算机视觉的 ML 训练数据 <img src="https://img.shields.io/github/stars/OvidijusParsiunas/myvision?style=social"> <img src="https://img.shields.io/github/forks/OvidijusParsiunas/myvision?style=social"></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://konvajs.org/">konva</a> [<a target="_blank" rel="noopener" href="https://konvajs.org/docs/sandbox/index.html">在线演示</a>] - 通过扩展2D Context让桌面和移动端Canvas支持交互特性 <img src="https://img.shields.io/github/stars/konvajs/konva?style=social"> <img src="https://img.shields.io/github/forks/konvajs/konva?style=social"><ul>
+<li><a target="_blank" rel="noopener" href="http://konvajs-doc.bluehymn.com/docs/">konva中文文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://konvajs.org/">react-konva</a> [<a target="_blank" rel="noopener" href="https://codesandbox.io/s/5m3nwp787x">在线演示</a>] - 基于React和<a target="_blank" rel="noopener" href="https://konvajs.org/">konva</a>绘制复杂Canvas图形的JS库 <img src="https://img.shields.io/github/stars/konvajs/react-konva?style=social"> <img src="https://img.shields.io/github/forks/konvajs/react-konva?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/konvajs/vue-konva">vue-konva</a> - 基于Vue和<a target="_blank" rel="noopener" href="https://konvajs.org/">konva</a>绘制复杂canvas图形的JS库 <img src="https://img.shields.io/github/stars/konvajs/vue-konva?style=social"> <img src="https://img.shields.io/github/forks/konvajs/vue-konva?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/React-Proto/react-proto">react-proto</a> - 为开发人员和设计人员的React原型工具应用 <img src="https://img.shields.io/github/stars/React-Proto/react-proto?style=social"> <img src="https://img.shields.io/github/forks/React-Proto/react-proto?style=social"></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://two.js.org/#introduction">two.js</a> [<a target="_blank" rel="noopener" href="https://two.js.org/examples/">在线演示</a>] - 一个渲染器无关的Web 2D绘图API <img src="https://img.shields.io/github/stars/jonobr1/two.js?style=social"> <img src="https://img.shields.io/github/forks/jonobr1/two.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://www.createjs.com/getting-started/easeljs">EaselJS</a> - EaselJS是一个用于在HTML5中构建高性能交互式2D内容的库 <img src="https://img.shields.io/github/stars/CreateJS/EaselJS?style=social"> <img src="https://img.shields.io/github/forks/CreateJS/EaselJS?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://spritejs.org/#/">spritejs</a> [<a target="_blank" rel="noopener" href="https://spritejs.org/demo/">在线演示</a>] - 一个跨平台的高性能图形系统 <img src="https://img.shields.io/github/stars/spritejs/spritejs?style=social"> <img src="https://img.shields.io/github/forks/spritejs/spritejs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="http://www.concretejs.com/">concretejs</a> [<a target="_blank" rel="noopener" href="http://www.concretejs.com/#examples">在线演示</a>]- 超快、轻量的Canvas框架，支持hit检测、分层、像素比率管理、导出和下载 <img src="https://img.shields.io/github/stars/ericdrowell/concrete?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dntzhang/cax/blob/master/README.CN.md">cax</a> [<a target="_blank" rel="noopener" href="https://github.com/dntzhang/cax/blob/master/README.CN.md">在线演示</a>] - 小程序、小游戏以及 Web 通用 Canvas 渲染引擎 <img src="https://img.shields.io/github/stars/dntzhang/cax?style=social"> <img src="https://img.shields.io/github/forks/dntzhang/cax?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://bobiscool.github.io/wxDrawDocs/#/">wxDraw</a> [<a target="_blank" rel="noopener" href="https://github.com/bobiscool/wxDraw#wxdraw%E5%88%9B%E4%BD%9C%E7%9A%84%E5%8A%A8%E7%94%BB%E6%BC%94%E7%A4%BA">在线演示</a>] - 微信小程序2d动画库 <img src="https://img.shields.io/github/stars/bobiscool/wxDraw?style=social"> <img src="https://img.shields.io/github/forks/bobiscool/wxDraw?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jakubfiala/atrament.js">atrament.js</a> - 一个小型 JS 库，用于在 HTML Canvas 上进行漂亮的绘图和手绘 <img src="https://img.shields.io/github/stars/jakubfiala/atrament.js?style=social"> <img src="https://img.shields.io/github/forks/jakubfiala/atrament.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://raphamorim.io/origamijs/docs/">origami.js</a> - 强大且轻量的Canvas库 <img src="https://img.shields.io/github/stars/raphamorim/origami.js?style=social"> <img src="https://img.shields.io/github/forks/raphamorim/origami.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/terrylinla/react-native-sketch-canvas">react-native-sketch-canvas</a> [<a href="">在线演示</a>] - 支持在iOS和Android上触摸绘图React Native组件 <img src="https://img.shields.io/github/stars/terrylinla/react-native-sketch-canvas?style=social"> <img src="https://img.shields.io/github/forks/terrylinla/react-native-sketch-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mesh-js/mesh.js">mesh.js</a> [<a target="_blank" rel="noopener" href="https://meshjs.webgl.group/demo/#/docs/index">在线演示</a>] - 为可视化而生的图形系统 <img src="https://img.shields.io/github/stars/mesh-js/mesh.js?style=social"> <img src="https://img.shields.io/github/forks/mesh-js/mesh.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/chuyun/taro-plugin-canvas">taro-plugin-canvas</a> - 基于 Taro 框架的微信小程序 canvas 绘图组件，封装了常用的操作，通过配置的方式生成分享图片 <img src="https://img.shields.io/github/stars/chuyun/taro-plugin-canvas?style=social"> <img src="https://img.shields.io/github/forks/chuyun/taro-plugin-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/pencil-js/pencil.js">pencil.js</a> [<a target="_blank" rel="noopener" href="https://pencil.js.org/">在线演示</a>] - 一款很棒的模块化2D交互式绘图库 <img src="https://img.shields.io/github/stars/pencil-js/pencil.js?style=social"> <img src="https://img.shields.io/github/forks/pencil-js/pencil.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/processing/p5.js">p5.js</a> [<a target="_blank" rel="noopener" href="https://p5js.org/zh-Hans/examples/">在线演示</a>] - JS客户端库，用于创建图形和交互体验库 <img src="https://img.shields.io/github/stars/processing/p5.js?style=social"> <img src="https://img.shields.io/github/forks/processing/p5.js?style=social"><h3 id="3D库"><a href="#3D库" class="headerlink" title="3D库"></a>3D库</h3></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js">three.js</a> [<a target="_blank" rel="noopener" href="https://threejs.org/examples/">在线演示</a>] - 创建易于使用、轻量级、跨浏览器的通用3d js库 <img src="https://img.shields.io/github/stars/mrdoob/three.js?style=social"> <img src="https://img.shields.io/github/forks/mrdoob/three.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/metafizzy/zdog">zdog</a> [<a target="_blank" rel="noopener" href="https://zzz.dog/">在线演示</a>] - 基于canvas和SVG设计师友好的伪3D引擎 <img src="https://img.shields.io/github/stars/metafizzy/zdog?style=social"> <img src="https://img.shields.io/github/forks/metafizzy/zdog?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://www.curtainsjs.com/get-started.html">curtainsjs</a> [<a target="_blank" rel="noopener" href="https://www.curtainsjs.com/get-started.html#basic-setup">在线演示</a>] - 轻量级的WebGL库，将DOM元素转换为交互式纹理平面 <img src="https://img.shields.io/github/stars/martinlaxenaire/curtainsjs?style=social"> <img src="https://img.shields.io/github/forks/martinlaxenaire/curtainsjs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/nosir/obelisk.js">obelisk.js</a> - 用HTML5 canvas构建立体图形库 <img src="https://img.shields.io/github/stars/nosir/obelisk.js?style=social"> <img src="https://img.shields.io/github/forks/nosir/obelisk.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="http://seenjs.io/">seen</a> [<a target="_blank" rel="noopener" href="http://seenjs.io/demo-simple-interactive.html">在线演示</a>] - 使用SVG或Canvas渲染3D场景 <img src="https://img.shields.io/github/stars/themadcreator/seen?style=social"> <img src="https://img.shields.io/github/forks/themadcreator/seen?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/lo-th/Oimo.js">Oimo.js</a> [<a target="_blank" rel="noopener" href="http://lo-th.github.io/Oimo.js/index.html#basic">在线演示</a>] - 轻量级的JS 3D物理引擎 <img src="https://img.shields.io/github/stars/lo-th/Oimo.js?style=social"> <img src="https://img.shields.io/github/forks/lo-th/Oimo.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://protectwise.github.io/troika/">troika</a> [<a href="">在线演示</a>] - 用于交互式 3D 和 2D 可视化的 JavaScript 框架 <img src="https://img.shields.io/github/stars/protectwise/troika?style=social"> <img src="https://img.shields.io/github/forks/protectwise/troika?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kevinroast/phoria.js">phoria.js</a> [<a target="_blank" rel="noopener" href="http://www.kevs3d.co.uk/dev/phoria/index.html">在线演示</a>] - 用于在 HTML5 画布 2D 渲染器上进行简单 3D 图形和可视化的 JavaScript 库。它不使用 WebGL。适用于所有 HTML5 浏览器，包括桌面、iOS 和 Android <img src="https://img.shields.io/github/stars/kevinroast/phoria.js?style=social"> <img src="https://img.shields.io/github/forks/kevinroast/phoria.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jdan/isomer">isomer</a> [<a target="_blank" rel="noopener" href="http://jdan.github.io/isomer/">在线示例</a>] - 基于HTML5 Canvas的简单等距图形库。 <img src="https://img.shields.io/github/stars/jdan/isomer?style=social"> <img src="https://img.shields.io/github/forks/jdan/isomer?style=social"></li>
+</ul>
+<h3 id="VR-AR"><a href="#VR-AR" class="headerlink" title="VR/AR"></a>VR/AR</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/pchen66/panolens.js">Panolens.js</a> [<a target="_blank" rel="noopener" href="https://pchen66.github.io/Panolens/">在线演示</a>] - Panolens.js基于Three.JS，主要研究领域是全景、虚拟现实和潜在的增强现实。 <img src="https://img.shields.io/github/stars/pchen66/panolens.js?style=social"> <img src="https://img.shields.io/github/forks/pchen66/panolens.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mpetroff/pannellum">Pannellum</a> [<a target="_blank" rel="noopener" href="https://pannellum.org/">在线演示</a>] - 轻量、免费、开源的web全景查看器。 <img src="https://img.shields.io/github/stars/mpetroff/pannellum?style=social"> <img src="https://img.shields.io/github/forks/mpetroff/pannellum?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/google/marzipano">Marzipano</a> [<a target="_blank" rel="noopener" href="https://www.marzipano.net/demos/sample-tour/">在线演示</a>] 可让您轻松为您的网站创建 360 度媒体播放器。 <img src="https://img.shields.io/github/stars/google/marzipano?style=social"> <img src="https://img.shields.io/github/forks/google/marzipano?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/scaleflex/js-cloudimage-360-view">JS-Cloudimage-360-View</a> [<a target="_blank" rel="noopener" href="https://scaleflex.github.io/js-cloudimage-360-view/">在线演示</a>] 一个简单的、交互式的资源，可以用来提供您的产品的虚拟游览。 <img src="https://img.shields.io/github/stars/scaleflex/js-cloudimage-360-view?style=social"> <img src="https://img.shields.io/github/forks/scaleflex/js-cloudimage-360-view?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/aframevr/aframe">A-Frame</a> [<a target="_blank" rel="noopener" href="https://aframe.io/">在线演示</a>] A-Frame 除了帮助您构建 360 度媒体播放器外，它还提供了许多附加功能。其他功能可帮助您增强网站的虚拟现实体验。 <img src="https://img.shields.io/github/stars/aframevr/aframe?style=social"> <img src="https://img.shields.io/github/forks/aframevr/aframe?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/exokitxr/exokit">exokit</a> [<a target="_blank" rel="noopener" href="https://exokit.org/">在线演示</a>] - 基于JavaScript的原生VR / AR / XR引擎 <img src="https://img.shields.io/github/stars/exokitxr/exokit?style=social"> <img src="https://img.shields.io/github/forks/exokitxr/exokit?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/borismus/webvr-boilerplate">webvr-boilerplate</a> [<a target="_blank" rel="noopener" href="https://borismus.github.io/webvr-boilerplate/#">在线演示</a>] - 工作在VR头戴设备的基于Web的VR虚拟体验 <img src="https://img.shields.io/github/stars/borismus/webvr-boilerplate?style=social"> <img src="https://img.shields.io/github/forks/borismus/webvr-boilerplate?style=social"></li>
+</ul>
+<h3 id="物理引擎"><a href="#物理引擎" class="headerlink" title="物理引擎"></a>物理引擎</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://brm.io/matter-js/">matter-js</a> [<a target="_blank" rel="noopener" href="https://brm.io/matter-js/demo/#mixed">在线演示</a>] - 用于web的2D刚体物理引擎 <img src="https://img.shields.io/github/stars/liabru/matter-js?style=social"> <img src="https://img.shields.io/github/forks/liabru/matter-js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kripken/box2d.js">box2d.js</a> [<a target="_blank" rel="noopener" href="http://kripken.github.io/box2d.js/demo/webgl/box2d.html">在线示例</a>] - box2d.js是Box2D物理引擎的JS版本。 <img src="https://img.shields.io/github/stars/kripken/box2d.js?style=social"> <img src="https://img.shields.io/github/forks/kripken/box2d.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/schteppe/p2.js">p2.js</a> [<a target="_blank" rel="noopener" href="http://schteppe.github.io/p2.js/demos/springs.html">在线演示</a>] - JavaScript 2D 物理引擎库。 <img src="https://img.shields.io/github/stars/schteppe/p2.js?style=social"> <img src="https://img.shields.io/github/forks/schteppe/p2.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/shakiba/planck.js">planck.js</a> [<a target="_blank" rel="noopener" href="https://piqnt.com/planck.js/">在线演示</a>] - 2D JS物理引擎 <img src="https://img.shields.io/github/stars/shakiba/planck.js?style=social"> <img src="https://img.shields.io/github/forks/shakiba/planck.js?style=social"></li>
+</ul>
+<h3 id="游戏引擎"><a href="#游戏引擎" class="headerlink" title="游戏引擎"></a>游戏引擎</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/hiloteam/Hilo/blob/dev/README_ZH.md">Hilo</a> [<a target="_blank" rel="noopener" href="https://hiloteam.github.io/examples/index.html">在线演示</a>] - 阿里巴巴集团开发的跨平台HTML5游戏开发解决方案 <img src="https://img.shields.io/github/stars/hiloteam/Hilo?style=social"> <img src="https://img.shields.io/github/forks/hiloteam/Hilo?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://melonjs.org/">melonJS</a> [<a target="_blank" rel="noopener" href="https://www.melongaming.com/">在线演示</a>] - 一个全新的轻量级javascript游戏引擎 <img src="https://img.shields.io/github/stars/melonjs/melonJS?style=social"> <img src="https://img.shields.io/github/forks/melonjs/melonJS?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/BabylonJS/Babylon.js">Babylon.js</a> [<a target="_blank" rel="noopener" href="https://www.babylonjs.com/community/">在线演示</a>] - 功能强大、美观、简单、开源、封装友好的游戏渲染引擎 <img src="https://img.shields.io/github/stars/BabylonJS/Babylon.js?style=social"> <img src="https://img.shields.io/github/forks/BabylonJS/Babylon.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Cloud9c/taro">taro</a> [<a target="_blank" rel="noopener" href="https://www.echou.xyz/taro/examples/#Cube">在线演示</a>] - 轻量级3D游戏引擎。 <img src="https://img.shields.io/github/stars/Cloud9c/taro?style=social"> <img src="https://img.shields.io/github/forks/Cloud9c/taro?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/turbulenz/turbulenz_engine">turbulenz_engine</a> [<a target="_blank" rel="noopener" href="http://biz.turbulenz.com/samples">在线演示</a>] - 用于浏览器PC端和移动端模块化的3D/2D H5游戏框架 <img src="https://img.shields.io/github/stars/turbulenz/turbulenz_engine?style=social"> <img src="https://img.shields.io/github/forks/turbulenz/turbulenz_engine?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/eva-engine/eva.js">eva.js</a> [<a target="_blank" rel="noopener" href="https://eva.js.org/playground/#/resource">在线演示</a>] - 专注于开发互动游戏项目的前端游戏引擎 <img src="https://img.shields.io/github/stars/eva-engine/eva.js?style=social"> <img src="https://img.shields.io/github/forks/eva-engine/eva.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/playcanvas/engine">PlayCanvas</a> [<a target="_blank" rel="noopener" href="https://playcanvas.github.io/#/">在线演示</a>] - 使用H5和WebGL技术以及其他3D内容的开源游戏引擎 <img src="https://img.shields.io/github/stars/playcanvas/engine?style=social"> <img src="https://img.shields.io/github/forks/playcanvas/engine?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/swift502/Sketchbook">Sketchbook</a> [<a target="_blank" rel="noopener" href="https://jblaha.art/sketchbook/0.4/">在线演示</a>] - 基于three.js和cannon.js的3D游乐场 <img src="https://img.shields.io/github/stars/swift502/Sketchbook?style=social"> <img src="https://img.shields.io/github/forks/swift502/Sketchbook?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hiloteam/Sein.js">Sein.js</a> [<a target="_blank" rel="noopener" href="https://seinjs.com/cn/example/start/start">在线演示</a>]- 渐进式网页3D游戏引擎 <img src="https://img.shields.io/github/stars/hiloteam/Sein.js?style=social"> <img src="https://img.shields.io/github/forks/hiloteam/Sein.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/increpare/PuzzleScript">PuzzleScript</a> [<a target="_blank" rel="noopener" href="https://www.puzzlescript.net/">在线演示</a>] - 开源HTML5益智游戏引擎 <img src="https://img.shields.io/github/stars/increpare/PuzzleScript?style=social"> <img src="https://img.shields.io/github/forks/increpare/PuzzleScript?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/KilledByAPixel/LittleJS">LittleJS</a> [<a target="_blank" rel="noopener" href="https://killedbyapixel.github.io/LittleJS/examples/puzzle/">在线演示</a>] - 极小的js游戏引擎 <img src="https://img.shields.io/github/stars/KilledByAPixel/LittleJS?style=social"> <img src="https://img.shields.io/github/forks/KilledByAPixel/LittleJS?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/MassiveHeights/Black">Black</a> [<a target="_blank" rel="noopener" href="https://blacksmith2d.io/Docs/Examples">在线演示</a>] - 世界上最快的H5 2D游戏引擎 <img src="https://img.shields.io/github/stars/MassiveHeights/Black?style=social"> <img src="https://img.shields.io/github/forks/MassiveHeights/Black?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/pixijs/pixijs">pixijs</a> [<a target="_blank" rel="noopener" href="https://www.goodboydigital.com/pixijs/storm/?base=pixijs&amp;category=storm">在线演示</a>] - H5创建引擎，创建精美数字内容最快、最灵活的2D WebGL渲染器 <img src="https://img.shields.io/github/stars/pixijs/pixijs?style=social"> <img src="https://img.shields.io/github/forks/pixijs/pixijs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/shakiba/stage.js">stage.js</a> [<a target="_blank" rel="noopener" href="https://piqnt.com/stage.js/">在线演示</a>] - 用于游戏开发的2D HTML5渲染和布局引擎 <img src="https://img.shields.io/github/stars/shakiba/stage.js?style=social"> <img src="https://img.shields.io/github/forks/shakiba/stage.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/excaliburjs/Excalibur">Excalibur</a> [<a target="_blank" rel="noopener" href="https://excaliburjs.com/samples/">在线演示</a>] - 使用TS编写的易于使用的2D H5游戏引擎 <img src="https://img.shields.io/github/stars/excaliburjs/Excalibur?style=social"> <img src="https://img.shields.io/github/forks/excaliburjs/Excalibur?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kesiev/akihabara">Akihabara</a> [<a target="_blank" rel="noopener" href="http://www.kesiev.com/akihabara/">在线演示</a>] - 制作经典街机风格游戏的游戏引擎 <img src="https://img.shields.io/github/stars/kesiev/akihabara?style=social"> <img src="https://img.shields.io/github/forks/kesiev/akihabara?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sbiermanlytle/iioEngine">iioEngine</a> [<a target="_blank" rel="noopener" href="http://iioengine.com/">在线演示</a>] - HTML5 Canvas的Js游戏引擎 <img src="https://img.shields.io/github/stars/sbiermanlytle/iioEngine?style=social"> <img src="https://img.shields.io/github/forks/sbiermanlytle/iioEngine?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/cocos2d/cocos2d-js">cocos2d-js</a> [<a target="_blank" rel="noopener" href="https://www.cocos.com/">在线演示</a>] JS版本的cocos2d-x游戏引擎 <img src="https://img.shields.io/github/stars/cocos2d/cocos2d-js?style=social"> <img src="https://img.shields.io/github/forks/cocos2d/cocos2d-js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/photonstorm/phaser">Phaser</a> [<a target="_blank" rel="noopener" href="https://phaser.io/examples">在线演示</a>] - 用于桌面和移动端H5游戏制作的2D游戏框架 <img src="https://img.shields.io/github/stars/photonstorm/phaser?style=social"> <img src="https://img.shields.io/github/forks/photonstorm/phaser?style=social"><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/photonstorm/phaser-examples">phaser-examples</a> - 包含数百个Phaser HTML5 游戏框架的源代码示例 <img src="https://img.shields.io/github/stars/photonstorm/phaser-examples?style=social"> <img src="https://img.shields.io/github/forks/photonstorm/phaser-examples?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/channingbreeze/games">games</a> - 一个基于Phaser的小游戏集合 <img src="https://img.shields.io/github/stars/channingbreeze/games?style=social"> <img src="https://img.shields.io/github/forks/channingbreeze/games?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/photonstorm/phaser3-examples">phaser3-examples</a> - phaser3例子 <img src="https://img.shields.io/github/stars/photonstorm/phaser3-examples?style=social"> <img src="https://img.shields.io/github/forks/photonstorm/phaser3-examples?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/photonstorm/phaser-ce">phaser-ce</a> - 有趣、开源、快速且支持Canvas和WebGL渲染的H5 2D游戏框架 <img src="https://img.shields.io/github/stars/photonstorm/phaser-ce?style=social"> <img src="https://img.shields.io/github/forks/photonstorm/phaser-ce?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/photonstorm/phaser3-project-template">phaser3-project-template</a> - Phaser3项目模板 <img src="https://img.shields.io/github/stars/photonstorm/phaser3-project-template?style=social"> <img src="https://img.shields.io/github/forks/photonstorm/phaser3-project-template?style=social"></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/suchipi/hex-engine">hex-engine</a> [<a target="_blank" rel="noopener" href="https://hex-engine.dev/docs/examples">在线演示</a>] - 一个现代的浏览器2D游戏引擎 <img src="https://img.shields.io/github/stars/suchipi/hex-engine?style=social"> <img src="https://img.shields.io/github/forks/suchipi/hex-engine?style=social"></li>
+</ul>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://gojs.net/latest/index.html">GOJS</a> [<a target="_blank" rel="noopener" href="https://gojs.net/latest/samples/">在线演示</a>] - 用于流程图、组织图、设计工具、可视化语言等的JS图表库 <img src="https://img.shields.io/github/stars/NorthwoodsSoftware/GoJS?style=social"> <img src="https://img.shields.io/github/forks/NorthwoodsSoftware/GoJS?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jgraph/drawio">drawio</a> [<a target="_blank" rel="noopener" href="https://app.diagrams.net/">在线演示</a>] - 可配置的流程图应用程序 <img src="https://img.shields.io/github/stars/jgraph/drawio?style=social"> <img src="https://img.shields.io/github/forks/jgraph/drawio?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jerosoler/Drawflow">Drawflow</a> [<a target="_blank" rel="noopener" href="https://jerosoler.github.io/Drawflow/">在线演示</a>] - 仅用4行代码即可创建基于dom和svg的流程图 <img src="https://img.shields.io/github/stars/jerosoler/Drawflow?style=social"> <img src="https://img.shields.io/github/forks/jerosoler/Drawflow?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/alyssaxuu/flowy">Flowy</a> [<a target="_blank" rel="noopener" href="https://alyssax.com/x/flowy/">在线演示</a>] - 用于创建流程图的最小javascript库 <img src="https://img.shields.io/github/stars/alyssaxuu/flowy?style=social"> <img src="https://img.shields.io/github/forks/alyssaxuu/flowy?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/adrai/flowchart.js">flowchart.js</a> - 可以运行在浏览器和终端的流程图DSL和SVG流程图 <img src="https://img.shields.io/github/stars/adrai/flowchart.js?style=social"> <img src="https://img.shields.io/github/forks/adrai/flowchart.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mermaid-js/mermaid">mermaid</a> [<a target="_blank" rel="noopener" href="https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBW0hhcmRdIC0tPnxUZXh0fCBCKFJvdW5kKVxuICAgIEIgLS0-IEN7RGVjaXNpb259XG4gICAgQyAtLT58T25lfCBEW1Jlc3VsdCAxXVxuICAgIEMgLS0-fFR3b3wgRVtSZXN1bHQgMl0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ">在线演示</a>] - 通过解析类Markdown语法生成图表和流程图等 <img src="https://img.shields.io/github/stars/mermaid-js/mermaid?style=social"> <img src="https://img.shields.io/github/forks/mermaid-js/mermaid?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/vanila-io/wireflow">wireflow</a> [<a target="_blank" rel="noopener" href="https://app.wireflow.co/">在线演示</a>] - 用户流程图实时协作工具 <img src="https://img.shields.io/github/stars/vanila-io/wireflow?style=social"> <img src="https://img.shields.io/github/forks/vanila-io/wireflow?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/alibaba/butterfly">butterfly</a> [<a target="_blank" rel="noopener" href="https://butterfly-dag.gitee.io/butterfly-dag/demo/analysis">在线演示</a>] - 基于JavaScript/React/Vue2的流程图组件 <img src="https://img.shields.io/github/stars/alibaba/butterfly?style=social"> <img src="https://img.shields.io/github/forks/alibaba/butterfly?style=social"></li>
+</ul>
+<h3 id="甘特图"><a href="#甘特图" class="headerlink" title="甘特图"></a>甘特图</h3><ul>
+<li>以下甘特图不基于Canvas实现<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/frappe/gantt">gantt</a> [<a target="_blank" rel="noopener" href="https://frappe.io/gantt">在线演示</a>] - 开源的Javascript甘特图。基于SVG <img src="https://img.shields.io/github/stars/frappe/gantt?style=social"> <img src="https://img.shields.io/github/forks/frappe/gantt?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/robicch/jQueryGantt">jQueryGantt</a> [<a target="_blank" rel="noopener" href="https://gantt.twproject.com/">在线演示</a>] - Jquery甘特图编辑器 <img src="https://img.shields.io/github/stars/robicch/jQueryGantt?style=social"> <img src="https://img.shields.io/github/forks/robicch/jQueryGantt?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dk8996/Gantt-Chart">Gantt-Chart</a> [<a target="_blank" rel="noopener" href="http://bl.ocks.org/dk8996/5534835">在线演示</a>] - 基于D3的甘特图库 <img src="https://img.shields.io/github/stars/dk8996/Gantt-Chart?style=social"> <img src="https://img.shields.io/github/forks/dk8996/Gantt-Chart?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DHTMLX/gantt">dhtmlxGantt</a> [<a target="_blank" rel="noopener" href="https://docs.dhtmlx.com/gantt/samples/01_initialization/08_explicit_time_range.html">在线演示</a>] - GPL版的JS甘特图 <img src="https://img.shields.io/github/stars/DHTMLX/gantt?style=social"> <img src="https://img.shields.io/github/forks/DHTMLX/gantt?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hustcc/gantt-for-react">gantt-for-react</a> [<a target="_blank" rel="noopener" href="https://git.hust.cc/gantt-for-react/">在线演示</a>] - 一个简单的React甘特图组件 <img src="https://img.shields.io/github/stars/hustcc/gantt-for-react?style=social"> <img src="https://img.shields.io/github/forks/hustcc/gantt-for-react?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a> [<a target="_blank" rel="noopener" href="http://thegrubbsian.github.io/jquery.ganttView/example/index.html">在线演示</a>] - 一个可编辑的 jQuery 甘特图插件 <img src="https://img.shields.io/github/stars/thegrubbsian/jquery.ganttView?style=social"> <img src="https://img.shields.io/github/forks/thegrubbsian/jquery.ganttView?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hql7/wl-gantt">wl-gantt</a> - 简单易用且高度可配置的甘特图、进度计划项目管理插件 <img src="https://img.shields.io/github/stars/hql7/wl-gantt?style=social"> <img src="https://img.shields.io/github/forks/hql7/wl-gantt?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/neuronetio/gantt-schedule-timeline-calendar">gantt-schedule-timeline-calendar</a> [<a target="_blank" rel="noopener" href="https://gantt-schedule-timeline-calendar.neuronet.io/examples">在线演示</a>] - ] - 甘特图、时间线、调度图、预订时间线，支持React、Ng、Vue、svelte <img src="https://img.shields.io/github/stars/neuronetio/gantt-schedule-timeline-calendar?style=social"> <img src="https://img.shields.io/github/forks/neuronetio/gantt-schedule-timeline-calendar?style=social"></li>
+</ul>
+</li>
+</ul>
+<h3 id="组织图"><a href="#组织图" class="headerlink" title="组织图"></a>组织图</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/dabeng/OrgChart/blob/master/README.zh-cn.md">OrgChart</a> [<a target="_blank" rel="noopener" href="https://dabeng.github.io/OrgChart/">在线演示</a>] - 简单直接的组织图插件 <img src="https://img.shields.io/github/stars/dabeng/OrgChart?style=social"> <img src="https://img.shields.io/github/forks/dabeng/OrgChart?style=social"></li>
+</ul>
+<h3 id="UML"><a href="#UML" class="headerlink" title="UML"></a>UML</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/umlet/umlet">umlet</a> [<a target="_blank" rel="noopener" href="http://www.umletino.com/umletino.html">在线演示</a>] - 快速制作UML图的免费工具 <img src="https://img.shields.io/github/stars/umlet/umlet?style=social"> <img src="https://img.shields.io/github/forks/umlet/umlet?style=social"></li>
+</ul>
+<h3 id="图编辑"><a href="#图编辑" class="headerlink" title="图编辑"></a>图编辑</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/idrawjs/idraw">idraw</a> [<a target="_blank" rel="noopener" href="https://idraw.js.org/">在线示例</a>] - 一个简单的用于在 web 上绘图的 JavaScript 框架 <img src="https://img.shields.io/github/stars/idrawjs/idraw?style=social"> <img src="https://img.shields.io/github/forks/idrawjs/idraw?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/guozhaolong/wfd">Workflow Designer</a> [<a target="_blank" rel="noopener" href="https://guozhaolong.github.io/wfd/">在线示例</a>] - 基于G6和React的可视化流程编辑器 <img src="https://img.shields.io/github/stars/guozhaolong/wfd?style=social"> <img src="https://img.shields.io/github/forks/guozhaolong/wfd?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/caoyu48/vue-g6-editor">vue-g6-editor</a> [<a target="_blank" rel="noopener" href="https://github.com/caoyu48/vue-g6-editor/blob/master/1.gif">在线示例</a>] - 基于 G6 和 Vue 的可视化编辑器 <img src="https://img.shields.io/github/stars/caoyu48/vue-g6-editor?style=social"> <img src="https://img.shields.io/github/forks/caoyu48/vue-g6-editor?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/OXOYO/X-Flowchart-Vue">X-Flowchart-Vue</a> [<a target="_blank" rel="noopener" href="http://oxoyo.co/X-Flowchart-Vue/">在线演示</a>] - 基于G6和Vue的可视化图形编辑器 <img src="https://img.shields.io/github/stars/OXOYO/X-Flowchart-Vue?style=social"> <img src="https://img.shields.io/github/forks/OXOYO/X-Flowchart-Vue?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://erd.zyking.xyz/">web-pdm</a> [<a target="_blank" rel="noopener" href="https://erd.zyking.xyz/demo">在线示例</a>] - 基于G6的ER图工具，最终目标是在线版的PowerDesigner <img src="https://img.shields.io/github/stars/lusess123/web-pdm?style=social"> <img src="https://img.shields.io/github/forks/lusess123/web-pdm?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dappsnation/ng-antv">ng-antv</a> - 基于G6和Angular实现的编辑器。 <img src="https://img.shields.io/github/stars/dappsnation/ng-antv?style=social"> <img src="https://img.shields.io/github/forks/dappsnation/ng-antv?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/claudewowo/welabx-g6">welabx-g6</a> [<a target="_blank" rel="noopener" href="https://claudewowo.github.io/welabx-g6/dist/?_blank">在线示例</a>] - 基于G6和Vue的流程图编辑器 <img src="https://img.shields.io/github/stars/claudewowo/welabx-g6?style=social"> <img src="https://img.shields.io/github/forks/claudewowo/welabx-g6?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/le5le-com/topology/blob/master/README.CN.md">topology</a> [<a target="_blank" rel="noopener" href="http://topology.le5le.com/workspace">在线示例</a>] - 轻量（100k左右）且功能丰富的绘图工具（架构图、拓扑图、流程图、UML、脑图等） <img src="https://img.shields.io/github/stars/le5le-com/topology?style=social"> <img src="https://img.shields.io/github/forks/le5le-com/topology?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/excalidraw/excalidraw">excalidraw</a> [<a target="_blank" rel="noopener" href="https://excalidraw.com/">在线示例</a>] - 用于用于素描手绘的虚拟白板 <img src="https://img.shields.io/github/stars/excalidraw/excalidraw?style=social"> <img src="https://img.shields.io/github/forks/excalidraw/excalidraw?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/awslabs/diagram-maker">diagram-maker</a> [<a target="_blank" rel="noopener" href="https://awslabs.github.io/diagram-maker/examples/LeftRightRectangular.html">在线示例</a>] - 为任何图形类数据提供交互式编辑器的库 <img src="https://img.shields.io/github/stars/awslabs/diagram-maker?style=social"> <img src="https://img.shields.io/github/forks/awslabs/diagram-maker?style=social"></li>
+</ul>
+<h3 id="电子表格"><a href="#电子表格" class="headerlink" title="电子表格"></a>电子表格</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/myliang/x-spreadsheet">x-spreadsheet</a> [<a target="_blank" rel="noopener" href="https://myliang.github.io/x-spreadsheet/">在线演示</a>] - 基于webJavaScript(canvas)Excel表格 <img src="https://img.shields.io/github/stars/myliang/x-spreadsheet?style=social"> <img src="https://img.shields.io/github/forks/myliang/x-spreadsheet?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mengshukeji/Luckysheet/blob/master/README-zh.md">Luckysheet</a> [<a target="_blank" rel="noopener" href="https://mengshukeji.github.io/LuckysheetDemo/">在线演示</a>] - 在线电子表格，功能强大，配置简单，完全开源 <img src="https://img.shields.io/github/stars/mengshukeji/Luckysheet?style=social"> <img src="https://img.shields.io/github/forks/mengshukeji/Luckysheet?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jlord/sheetsee.js">sheetsee.js</a> - 可视化谷歌Spreadsheet的数据 <img src="https://img.shields.io/github/stars/jlord/sheetsee.js?style=social"> <img src="https://img.shields.io/github/forks/jlord/sheetsee.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/mleibman/SlickGrid">SlickGrid</a> [<a target="_blank" rel="noopener" href="http://6pac.github.io/SlickGrid/examples/example4-model.html">在线演示</a>] - 极快的JavaScript网格/电子表格 <img src="https://img.shields.io/github/stars/mleibman/SlickGrid?style=social"> <img src="https://img.shields.io/github/forks/mleibman/SlickGrid?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/handsontable/handsontable">handsontable</a> [<a target="_blank" rel="noopener" href="https://handsontable.com/demo">在线演示</a>] - 带电子表格的数据网格，可以在React、Ng、Vue中使用 <img src="https://img.shields.io/github/stars/handsontable/handsontable?style=social"> <img src="https://img.shields.io/github/forks/handsontable/handsontable?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/future-architect/cheetah-grid">cheetah-grid</a> [<a target="_blank" rel="noopener" href="https://future-architect.github.io/cheetah-grid/#/">在线演示</a>] - 最快的网络开源数据表 <img src="https://img.shields.io/github/stars/future-architect/cheetah-grid?style=social"> <img src="https://img.shields.io/github/forks/future-architect/cheetah-grid?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jspreadsheet/ce">Jspreadsheet CE</a> [<a target="_blank" rel="noopener" href="https://bossanova.uk/jspreadsheet/v4/examples">在线演示</a>] - 创建与其他软件兼容的web端交互式表格和电子表格 <img src="https://img.shields.io/github/stars/jspreadsheet/ce?style=social"> <img src="https://img.shields.io/github/forks/jspreadsheet/ce?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/TonyGermaneri/canvas-datagrid">canvas-datagrid</a> [<a target="_blank" rel="noopener" href="https://canvas-datagrid.js.org/demo.html">在线演示</a>] - 基于Canvas的数据网格web组件。能够在单个画布元素上显示数百万连续的分层行和列，而无需分页或加载 <img src="https://img.shields.io/github/stars/TonyGermaneri/canvas-datagrid?style=social"> <img src="https://img.shields.io/github/forks/TonyGermaneri/canvas-datagrid?style=social"></li>
+</ul>
+<h3 id="图表库"><a href="#图表库" class="headerlink" title="图表库"></a>图表库</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/d3/d3">D3</a> [<a target="_blank" rel="noopener" href="https://observablehq.com/@d3/gallery">在线演示</a>] - D3(或D3.js)是一个用于web标准可视化数据的JS库 <img src="https://img.shields.io/github/stars/d3/d3?style=social"> <img src="https://img.shields.io/github/forks/d3/d3?style=social"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/wbkd/awesome-d3">awesome-d3</a> - D3非资源集合 <img src="https://img.shields.io/github/stars/wbkd/awesome-d3?style=social"> <img src="https://img.shields.io/github/forks/wbkd/awesome-d3?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/chinmaymk/angular-charts">angular-charts</a> - 基于D3创建Angular创建图表的指令库 <img src="https://img.shields.io/github/stars/chinmaymk/angular-charts?style=social"> <img src="https://img.shields.io/github/forks/chinmaymk/angular-charts?style=social"></li>
+<li><a target="_blank" rel="noopener" href="http://nvd3-community.github.io/nvd3/examples/documentation.html">nvd3</a> [<a target="_blank" rel="noopener" href="http://nvd3-community.github.io/nvd3/">在线演示</a>] - 一个用d3.js编写的可重用图表库 <img src="https://img.shields.io/github/stars/novus/nvd3?style=social"> <img src="https://img.shields.io/github/forks/novus/nvd3?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://c3js.org/">c3</a> [<a target="_blank" rel="noopener" href="https://c3js.org/examples.html">在线演示</a>] - 一个基于D3的可重用图表库 <img src="https://img.shields.io/github/stars/c3js/c3?style=social"> <img src="https://img.shields.io/github/forks/c3js/c3?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dc-js/dc.js">dc.js</a> [<a target="_blank" rel="noopener" href="http://dc-js.github.io/dc.js/">在线演示</a>] - 基于D3使用corssfilter渲染的多维图表 <img src="https://img.shields.io/github/stars/dc-js/dc.js?style=social"> <img src="https://img.shields.io/github/forks/dc-js/dc.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://britecharts.github.io/britecharts/">britecharts</a> [<a target="_blank" rel="noopener" href="https://britecharts.github.io/britecharts/tutorial-bar.html">在线演示</a>] - 基于D3.js v5的客户端可重用图表库 <img src="https://img.shields.io/github/stars/britecharts/britecharts?style=social"> <img src="https://img.shields.io/github/forks/britecharts/britecharts?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/eisman/neo4jd3">neo4jd3</a> [<a target="_blank" rel="noopener" href="https://britecharts.github.io/britecharts/tutorial-bar.html">在线演示</a>] - 使用D3.js的Neo4j图形可视化。<img src="https://img.shields.io/github/stars/eisman/neo4jd3?style=social"> <img src="https://img.shields.io/github/forks/eisman/neo4jd3?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/plouc/nivo">nivo</a> [<a target="_blank" rel="noopener" href="https://nivo.rocks/components/">在线演示</a>] - 基于React和D3提供了一套丰富的数据可视化组件 <img src="https://img.shields.io/github/stars/plouc/nivo?style=social"> <img src="https://img.shields.io/github/forks/plouc/nivo?style=social"></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/apache/echarts">echarts</a> [<a target="_blank" rel="noopener" href="https://echarts.apache.org/examples/zh/index.html">在线演示</a>] - 一个强大的交互式图表和数据可视化库 <img src="https://img.shields.io/github/stars/apache/echarts?style=social"> <img src="https://img.shields.io/github/forks/apache/echarts?style=social"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://v-charts.js.org/#/">v-charts</a> [<a target="_blank" rel="noopener" href="https://codesandbox.io/s/z69myovqzx">在线演示</a>] - 基于 Vue2.0 和 ECharts 封装的图表组件 <img src="https://img.shields.io/github/stars/ElemeFE/v-charts?style=social"> <img src="https://img.shields.io/github/forks/ElemeFE/v-charts?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ecomfe/echarts-for-weixin">echarts-for-weixin</a> - Apache ECharts (incubating) 的微信小程序版本 <img src="https://img.shields.io/github/stars/ecomfe/echarts-for-weixin?style=social"> <img src="https://img.shields.io/github/forks/ecomfe/echarts-for-weixin?style=social"></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/chartjs/Chart.js">Chart.js</a> [<a target="_blank" rel="noopener" href="https://www.chartjs.org/docs/latest/samples/bar/vertical.html">在线演示</a>] - 给开发和设计人员的简单而灵活的js图表 <img src="https://img.shields.io/github/stars/chartjs/Chart.js?style=social"> <img src="https://img.shields.io/github/forks/chartjs/Chart.js?style=social"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://vue-chartjs.org/zh-cn/">vue-chartjs</a> [<a target="_blank" rel="noopener" href="http://demo.vue-chartjs.org/">在线演示</a>] - 基于Chart.js的Vue图表组件 <img src="https://img.shields.io/github/stars/apertureless/vue-chartjs?style=social"> <img src="https://img.shields.io/github/forks/apertureless/vue-chartjs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/reactjs/react-chartjs">react-chartjs</a> [<a href="">在线演示</a>] - 基于chart.js的React图表组件 <img src="https://img.shields.io/github/stars/reactjs/react-chartjs?style=social"> <img src="https://img.shields.io/github/forks/reactjs/react-chartjs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="http://jtblin.github.io/angular-chart.js/">angular-chart.js</a> [<a target="_blank" rel="noopener" href="http://jtblin.github.io/angular-chart.js/#top">在线演示</a>] - 基于Chart.js的AngularJS响应式、漂亮的图表库 <img src="https://img.shields.io/github/stars/jtblin/angular-chart.js?style=social"> <img src="https://img.shields.io/github/forks/jtblin/angular-chart.js?style=social"></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://antv.gitee.io/zh">AntV</a> - 蚂蚁集团全新一代数据可视化解决方案</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://antv-g-next.gitee.io/zh/docs/guide/introduce/">G</a> [<a target="_blank" rel="noopener" href="https://antv-g-next.gitee.io/zh/examples/shape">在线演示</a>] - AntV底层的2D/3D渲染引擎，适配Canvas2D/SVG/WebGL/WebGPU <img src="https://img.shields.io/github/stars/antvis/g?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/antvis/g2">G2</a> [<a target="_blank" rel="noopener" href="https://g2.antv.vision/zh/examples/gallery">在线演示</a>] - 一套面向常规统计图表，以数据驱动的高交互可视化图形语法。 <img src="https://img.shields.io/github/stars/antvis/g2?style=social"> <img src="https://img.shields.io/github/forks/antvis/g2?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/antvis/g2plot">G2Plot</a> [<a target="_blank" rel="noopener" href="https://antv-g2plot.gitee.io/zh/examples/gallery/">在线演示</a>] - 基于图形语法（the Grammar of Graphics）的图表库 <img src="https://img.shields.io/github/forks/antvis/g2plot?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-g6.gitee.io/zh/">G6</a> [<a target="_blank" rel="noopener" href="https://antv-g6.gitee.io/zh/examples/gallery">在线演示</a>] - ♾ G6 是一个简单、易用、完备的图可视化引擎 <img src="https://img.shields.io/github/stars/antvis/g6?style=social"> <img src="https://img.shields.io/github/forks/antvis/g6?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-f2.gitee.io/zh/docs/tutorial/getting-started">F2</a> [<a target="_blank" rel="noopener" href="https://antv-f2.gitee.io/zh/examples/gallery">在线演示</a>] - 开箱即用的移动端可视化解决方案，完美支持H5，兼容node、小程序、weex <img src="https://img.shields.io/github/stars/antvis/F2?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-f2native.gitee.io/zh">F2Native</a> [<a target="_blank" rel="noopener" href="https://antv-f2native.gitee.io/zh/docs/examples/line/line">在线演示</a>] - 专注于移动客户端，开箱即用、高性能的可视化解决方案 <img src="https://img.shields.io/github/stars/antvis/f2native?style=social"> <img src="https://img.shields.io/github/forks/antvis/f2native?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-f6.gitee.io/zh/">F6</a> [<a target="_blank" rel="noopener" href="https://antv-f6.gitee.io/zh/docs/examples/tree/compactBox">在线示例</a>] - F6是一款可以快速、流畅运行于移动设备中的图可视化引擎 <img src="https://img.shields.io/github/stars/antvis/f6?style=social"> <img src="https://img.shields.io/github/forks/antvis/f6?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-x6.gitee.io/zh/">X6</a> [<a target="_blank" rel="noopener" href="https://antv-x6.gitee.io/zh/examples/gallery">在线演示</a>] - 🚀 X6 是 AntV 旗下的图编辑引擎。 <img src="https://img.shields.io/github/stars/antvis/x6?style=social"> <img src="https://img.shields.io/github/forks/antvis/x6?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://xflow.antv.vision/zh-CN/">XFlow</a> [<a target="_blank" rel="noopener" href="https://xflow.antv.vision/docs/tutorial/intro/getting-started/">在线示例</a>] - 基于X6、面向React技术栈用户的专业图编辑应用级解决方案 <img src="https://img.shields.io/github/stars/antvis/XFlow?style=social"> <img src="https://img.shields.io/github/forks/antvis/XFlow?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/antvis/s2">S2</a> [<a target="_blank" rel="noopener" href="https://antv-s2.gitee.io/zh/examples/gallery/">在线演示</a>] - 数据驱动的多维分析表格。 <img src="https://img.shields.io/github/stars/antvis/s2?style=social"> <img src="https://img.shields.io/github/forks/antvis/s2?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-l7.gitee.io/zh">L7</a> [<a target="_blank" rel="noopener" href="https://l7.antv.vision/en/examples/gallery">在线演示</a>] - 🌎 基于WebGL开源的大规模地理空间数据可视分析开发框架 <img src="https://img.shields.io/github/stars/antvis/l7?style=social"> <img src="https://img.shields.io/github/forks/antvis/l7?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-l7plot.gitee.io/zh/">L7Plot</a> [<a target="_blank" rel="noopener" href="https://antv-l7plot.gitee.io/zh/examples/gallery">在线示例</a>] - 简单易用、图表丰富、支持定制的地理空间图表库 <img src="https://img.shields.io/github/stars/antvis/L7Plot?style=social"> <img src="https://img.shields.io/github/forks/antvis/L7Plot?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-graphin.gitee.io/">Graphin</a> [<a target="_blank" rel="noopener" href="https://antv-graphin.gitee.io/components/interaction/context-menu">在线示例</a>] - 基于G6封装的React组件库，专注在关系可视分析领域 <img src="https://img.shields.io/github/stars/antvis/graphin?style=social"> <img src="https://img.shields.io/github/forks/antvis/graphin?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://charts.ant.design/zh">Ant Design Charts</a> [<a target="_blank" rel="noopener" href="https://charts.ant.design/zh/examples/gallery">在线示例</a>] - 简单好用的 React 图表库。 <img src="https://img.shields.io/github/stars/ant-design/ant-design-charts?style=social"> <img src="https://img.shields.io/github/forks/ant-design/ant-design-charts?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://antv-ava.gitee.io/zh">AVA</a> [<a target="_blank" rel="noopener" href="https://antv-ava.gitee.io/zh/examples/gallery">在线示例</a>] - AVA 是为了更简便的可视分析而生的技术框架 <img src="https://img.shields.io/github/stars/antvis/ava?style=social"> <img src="https://img.shields.io/github/forks/antvis/ava?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://viserjs.github.io/">Viser</a> [<a target="_blank" rel="noopener" href="https://viserjs.github.io/demoHome.html">在线示例</a>] - 基于G2的数据可视化工具包，支持React、Vue和AngularJS <img src="https://img.shields.io/github/stars/viserjs/viser?style=social"> <img src="https://img.shields.io/github/forks/viserjs/viser?style=social"></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/highcharts/highcharts">highcharts</a> [<a target="_blank" rel="noopener" href="https://www.highcharts.com/demo">在线演示</a>] - 基于SVG的JavaScript图表库,支持旧浏览器 <img src="https://img.shields.io/github/stars/highcharts/highcharts?style=social"> <img src="https://img.shields.io/github/forks/highcharts/highcharts?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/xiaolin3303/wx-charts">wx-charts</a> [<a target="_blank" rel="noopener" href="https://github.com/xiaolin3303/wx-charts-demo">在线演示</a>] - 微信小程序图表charts组件 <img src="https://img.shields.io/github/stars/xiaolin3303/wx-charts?style=social"> <img src="https://img.shields.io/github/forks/xiaolin3303/wx-charts?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/timdream/wordcloud2.js">wordcloud2.js</a> [<a target="_blank" rel="noopener" href="https://wordcloud2-js.timdream.org/#love">在线演示</a>] - 2D Canvas/Html词云 <img src="https://img.shields.io/github/stars/timdream/wordcloud2.js?style=social"> <img src="https://img.shields.io/github/forks/timdream/wordcloud2.js?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/gionkunz/chartist-js">chartist-js</a> [<a target="_blank" rel="noopener" href="http://gionkunz.github.io/chartist-js/examples.html">在线演示</a>] - 简单的响应式图表 <img src="https://img.shields.io/github/stars/gionkunz/chartist-js?style=social"> <img src="https://img.shields.io/github/forks/gionkunz/chartist-js?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://frappe.io/charts/docs">charts</a> [<a target="_blank" rel="noopener" href="https://frappe.io/charts">在线演示</a>] - 零依赖的、简单的、响应快的、现代SVG图表 <img src="https://img.shields.io/github/stars/frappe/charts?style=social"> <img src="https://img.shields.io/github/forks/frappe/charts?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.flotcharts.org/">flot</a> [<a target="_blank" rel="noopener" href="http://www.flotcharts.org/flot/examples/">在线演示</a>] - 基于Jquery为工程和科学应用程序派生的JS绘图库 <img src="https://img.shields.io/github/stars/flot/flot?style=social"> <img src="https://img.shields.io/github/forks/flot/flot?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://apexcharts.com/">apexcharts.js</a> [<a target="_blank" rel="noopener" href="https://apexcharts.com/javascript-chart-demos/">在线演示</a>] - 基于SVG的交互式JavaScript图表 <img src="https://img.shields.io/github/stars/apexcharts/apexcharts.js?style=social"> <img src="https://img.shields.io/github/forks/apexcharts/apexcharts.js?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/plotly/plotly.js">plotly.js</a> [<a target="_blank" rel="noopener" href="https://plotly.com/javascript/">在线演示</a>] - Ploty和Dash的JavaScript版本的开源图表库 <img src="https://img.shields.io/github/stars/plotly/plotly.js?style=social"> <img src="https://img.shields.io/github/forks/plotly/plotly.js?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/rendro/easy-pie-chart">easy-pie-chart</a> - 一个轻量级插件，为单个值绘制简单带动画的饼图 <img src="https://img.shields.io/github/stars/rendro/easy-pie-chart?style=social"> <img src="https://img.shields.io/github/forks/rendro/easy-pie-chart?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/uber/react-vis">react-vis</a> [<a target="_blank" rel="noopener" href="http://uber.github.io/react-vis/examples/showcases/axes">在线演示</a>] - React的数据可视化组件 <img src="https://img.shields.io/github/stars/uber/react-vis?style=social"> <img src="https://img.shields.io/github/forks/uber/react-vis?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://vega.github.io/vega">vega</a> [<a target="_blank" rel="noopener" href="https://vega.github.io/vega/examples/">在线演示</a>] - 可视化语法，使用Vega，您可以用JSON格式描述数据可视化，并使用HTML5 Canvas或SVG生成交互式视图 <img src="https://img.shields.io/github/stars/vega/vega?style=social"> <img src="https://img.shields.io/github/forks/vega/vega?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/pa7/heatmap.js">heatmap.js</a> - 基于HTML5 Canvas的Js热力图 <img src="https://img.shields.io/github/stars/pa7/heatmap.js?style=social"> <img src="https://img.shields.io/github/forks/pa7/heatmap.js?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/shzlw/zeu">zeu</a> [<a target="_blank" rel="noopener" href="https://shzlw.github.io/zeu/examples/my-command-center.html">在线演示</a>] - 用于构建实时电视仪表板、监控UI和物联网Web界面的JS库 <img src="https://img.shields.io/github/stars/shzlw/zeu?style=social"> <img src="https://img.shields.io/github/forks/shzlw/zeu?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/jones2000/HQChart">HQChart</a> - HQChart - H5, 微信小程序 沪深/港股/数字货币/期货/美股 K线图(kline),走势图,缩放,拖拽,十字光标,画图工具,截图,筹码图 <img src="https://img.shields.io/github/stars/jones2000/HQChart?style=social"> <img src="https://img.shields.io/github/forks/jones2000/HQChart?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/Mikhus/canvas-gauges">canvas-gauges</a> [<a target="_blank" rel="noopener" href="http://canvas-gauges.com/documentation/examples/">在线演示</a>] - 使用纯 JavaScript 和 HTML5 画布的高度可配置仪表盘。没有依赖性。由于代码库最少，因此适用于物联网设备 <img src="https://img.shields.io/github/stars/Mikhus/canvas-gauges?style=social"> <img src="https://img.shields.io/github/forks/Mikhus/canvas-gauges?style=social"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/tradingview/lightweight-charts">lightweight-charts</a> [<a target="_blank" rel="noopener" href="https://www.tradingview.com/lightweight-charts/">在线演示</a>] - 使用H5 Canvas创建的财务轻量级图表 <img src="https://img.shields.io/github/stars/tradingview/lightweight-charts?style=social"> <img src="https://img.shields.io/github/forks/tradingview/lightweight-charts?style=social"></p>
+</li>
+</ul>
+<h3 id="海报截图"><a href="#海报截图" class="headerlink" title="海报截图"></a>海报截图</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://html2canvas.hertzen.com/">html2canvas</a> [<a target="_blank" rel="noopener" href="https://html2canvas.hertzen.com/">在线演示</a>] - JS截图插件 <img src="https://img.shields.io/github/stars/niklasvh/html2canvas?style=social"> <img src="https://img.shields.io/github/forks/niklasvh/html2canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tsayen/dom-to-image">dom-to-image</a> - 使用HTML5 Canvas从DOM节点生成图像 <img src="https://img.shields.io/github/stars/tsayen/dom-to-image?style=social"> <img src="https://img.shields.io/github/forks/tsayen/dom-to-image?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/bubkoo/html-to-image">html-to-image</a> - 使用HTML5 Canvas和SVG从DOM节点生成图像。 <img src="https://img.shields.io/github/stars/bubkoo/html-to-image?style=social"> <img src="https://img.shields.io/github/forks/bubkoo/html-to-image?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hongru/canvas2image">canvas2image</a> [<a target="_blank" rel="noopener" href="https://github.com/hongru/canvas2image/blob/master/index.html">在线演示</a>] - 用于保存或转换Canvas为图片的工具 <img src="https://img.shields.io/github/stars/hongru/canvas2image?style=social"> <img src="https://img.shields.io/github/forks/hongru/canvas2image?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kuckboy1994/mp_canvas_drawer">mp_canvas_drawer</a> [<a target="_blank" rel="noopener" href="https://github.com/kuckboy1994/mp_canvas_drawer#%E6%BC%94%E7%A4%BA">在线演示</a>] - 微信小程序绘图助手，通过json生成分享朋友圈的图片 <img src="https://img.shields.io/github/stars/kuckboy1994/mp_canvas_drawer?style=social"> <img src="https://img.shields.io/github/forks/kuckboy1994/mp_canvas_drawer?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sunniejs/vue-canvas-poster">vue-canvas-poster</a> [<a target="_blank" rel="noopener" href="https://www.sunniejs.cn/vant-demo/#/example/poster">在线演示</a>] - 通过CSS属性生成海报图的轻量级Vue组件 <img src="https://img.shields.io/github/stars/sunniejs/vue-canvas-poster?style=social"> <img src="https://img.shields.io/github/forks/sunniejs/vue-canvas-poster?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jasondu/wxa-plugin-canvas">wxa-plugin-canvas</a> - 小程序海报组件-生成朋友圈分享海报并生成图片 <img src="https://img.shields.io/github/stars/jasondu/wxa-plugin-canvas?style=social"> <img src="https://img.shields.io/github/forks/jasondu/wxa-plugin-canvas?style=social"></li>
+</ul>
+<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/eKoopmans/html2pdf.js">html2pdf.js</a> - 纯JS的客户端HTML生成PDF <img src="https://img.shields.io/github/stars/eKoopmans/html2pdf.js?style=social"> <img src="https://img.shields.io/github/forks/eKoopmans/html2pdf.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/cburgmer/rasterizeHTML.js">rasterizeHTML.js</a> - 将HTML渲染到浏览器的Canvas中 <img src="https://img.shields.io/github/stars/cburgmer/rasterizeHTML.js?style=social"> <img src="https://img.shields.io/github/forks/cburgmer/rasterizeHTML.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/blueimp/JavaScript-Canvas-to-Blob">JavaScript-Canvas-to-Blob</a> - 一个将Canvas元素转换为Blob对象的函数 <img src="https://img.shields.io/github/stars/blueimp/JavaScript-Canvas-to-Blob?style=social"> <img src="https://img.shields.io/github/forks/blueimp/JavaScript-Canvas-to-Blob?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/antimatter15/jsgif">jsgif</a> - 将HTML5 Canvas保存到GIF和动画。一个AS3GIF Gifplayer到JS的港口 <img src="https://img.shields.io/github/stars/antimatter15/jsgif?style=social"> <img src="https://img.shields.io/github/forks/antimatter15/jsgif?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/antimatter15/whammy">whammy</a> - 基于Canvas来Hack的实时JS webm编码器 <img src="https://img.shields.io/github/stars/antimatter15/whammy?style=social"> <img src="https://img.shields.io/github/forks/antimatter15/whammy?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/HumbleSoftware/js-imagediff">js-imagediff</a> - 带有Jasmine匹配器的Canvas图像差异比对程序，用于测试Canvas <img src="https://img.shields.io/github/stars/HumbleSoftware/js-imagediff?style=social"> <img src="https://img.shields.io/github/forks/HumbleSoftware/js-imagediff?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/gliffy/canvas2svg">canvas2svg</a> [<a target="_blank" rel="noopener" href="http://gliffy.github.io/canvas2svg/">在线演示</a>] - 将H5 Canvas绘图命令是转换成SVG <img src="https://img.shields.io/github/stars/gliffy/canvas2svg?style=social"> <img src="https://img.shields.io/github/forks/gliffy/canvas2svg?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/canvg/canvg">canvg</a> [<a target="_blank" rel="noopener" href="https://canvg.github.io/canvg/demo/index.html">在线演示</a>] - Canvas上的JS SVG解析器和渲染器 <img src="https://img.shields.io/github/stars/canvg/canvg?style=social"> <img src="https://img.shields.io/github/forks/canvg/canvg?style=social"></li>
+</ul>
+<h3 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/nhn/tui.image-editor">tui.image-editor</a> [<a target="_blank" rel="noopener" href="http://nhn.github.io/tui.image-editor/latest/tutorial-example01-includeUi">在线演示</a>] - 基于Canvas功能完整的照片图像编辑器。 <img src="https://img.shields.io/github/stars/nhn/tui.image-editor?style=social"> <img src="https://img.shields.io/github/forks/nhn/tui.image-editor?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/lukechilds/merge-images">merge-images</a> - 轻松将图像组合在一起，且不会弄脏周围的画布 <img src="https://img.shields.io/github/stars/lukechilds/merge-images?style=social"> <img src="https://img.shields.io/github/forks/lukechilds/merge-images?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://we-plugin.github.io/we-cropper/#/">we-cropper</a> [<a target="_blank" rel="noopener" href="https://unpkg.com/we-cropper@1.2.0/docs/assets/online.jpg">在线演示</a>] - 微信小程序图片裁剪工具 <img src="https://img.shields.io/github/stars/we-plugin/we-cropper?style=social"> <img src="https://img.shields.io/github/forks/we-plugin/we-cropper?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/viliusle/miniPaint">miniPaint</a> [<a target="_blank" rel="noopener" href="https://viliusle.github.io/miniPaint/">在线演示</a>] - 在线图片编辑器 <img src="https://img.shields.io/github/stars/viliusle/miniPaint?style=social"> <img src="https://img.shields.io/github/forks/viliusle/miniPaint?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/alyssaxuu/animockup">animockup</a> [<a target="_blank" rel="noopener" href="https://animockup.com/">在线演示</a>] - 在浏览器中创建动画模型，并导出为视频或动画GIF <img src="https://img.shields.io/github/stars/alyssaxuu/animockup?style=social"> <img src="https://img.shields.io/github/forks/alyssaxuu/animockup?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/rendro/vintageJS">vintageJS</a> - 使用HTML5 Canvas元素为图像添加复古/复古效果 <img src="https://img.shields.io/github/stars/rendro/vintageJS?style=social"> <img src="https://img.shields.io/github/forks/rendro/vintageJS?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/snorpey/glitch-canvas">glitch-canvas</a> [<a target="_blank" rel="noopener" href="https://snorpey.github.io/jpg-glitch/">在线演示</a>] - 给画布元素添加故障效果 <img src="https://img.shields.io/github/stars/snorpey/glitch-canvas?style=social"> <img src="https://img.shields.io/github/forks/snorpey/glitch-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/brunobar79/J-I-C">JIC</a> [<a target="_blank" rel="noopener" href="http://makeitsolutions.com/labs/jic/">在线演示</a>] - 使用Canvas和文件API的JS图像压缩器 <img src="https://img.shields.io/github/stars/brunobar79/J-I-C?style=social"> <img src="https://img.shields.io/github/forks/brunobar79/J-I-C?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Phrogz/context-blender">context-blender</a> - 与Photoshop混合模式功能相同的Canvas上下文 <img src="https://img.shields.io/github/stars/Phrogz/context-blender?style=social"> <img src="https://img.shields.io/github/forks/Phrogz/context-blender?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/stomita/ios-imagefile-megapixel">ios-imagefile-megapixel</a> - 修复iOS6 Safari的大尺寸图像（超过百万像素）的渲染问题 <img src="https://img.shields.io/github/stars/stomita/ios-imagefile-megapixel?style=social"> <img src="https://img.shields.io/github/forks/stomita/ios-imagefile-megapixel?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/fast-average-color/fast-average-color">fast-average-color</a> [<a target="_blank" rel="noopener" href="https://fast-average-color.github.io/examples/background.html">在线演示</a>] - 计算浏览器中图像或视频的主色/平均色的js库 <img src="https://img.shields.io/github/stars/fast-average-color/fast-average-color?style=social"> <img src="https://img.shields.io/github/forks/fast-average-color/fast-average-color?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/xd-tayde/mcanvas">mcanvas</a> [<a target="_blank" rel="noopener" href="http://guoxiaodong.net/">在线演示</a>] - 用于合成图片的canvas绘制库 <img src="https://img.shields.io/github/stars/xd-tayde/mcanvas?style=social"> <img src="https://img.shields.io/github/forks/xd-tayde/mcanvas?style=social"></li>
+</ul>
+<h3 id="滤镜"><a href="#滤镜" class="headerlink" title="滤镜"></a>滤镜</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/kig/canvasfilters">canvasfilters</a> [<a target="_blank" rel="noopener" href="http://fhtr.org/canvasfilters/">在线演示</a>] - Canvas图像滤镜 <img src="https://img.shields.io/github/stars/kig/canvasfilters?style=social"> <img src="https://img.shields.io/github/forks/kig/canvasfilters?style=social"></li>
+</ul>
+<h3 id="画板"><a href="#画板" class="headerlink" title="画板"></a>画板</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/1j01/jspaint">jspaint</a> [<a target="_blank" rel="noopener" href="https://jspaint.app/#local:5ee9c6aab5992">在线演示</a>] - Web版的经典MS Paint翻版 <img src="https://img.shields.io/github/stars/1j01/jspaint?style=social"> <img src="https://img.shields.io/github/forks/1j01/jspaint?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Leimi/drawingboard.js">drawingboard.js</a> [<a target="_blank" rel="noopener" href="http://leimi.github.io/drawingboard.js/">在线演示</a>] - 一个基于画布的绘图应用程序，您可以轻松集成到您的网站上。 <img src="https://img.shields.io/github/stars/Leimi/drawingboard.js?style=social"> <img src="https://img.shields.io/github/forks/Leimi/drawingboard.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/vipstone/drawingboard">drawingboard</a> [<a target="_blank" rel="noopener" href="https://vipstone.github.io/drawingboard/drawingboard/index.html">在线演示</a>] - 高级画板—自由绘、直/虚线、箭头、所有几何图形 <img src="https://img.shields.io/github/stars/vipstone/drawingboard?style=social"> <img src="https://img.shields.io/github/forks/vipstone/drawingboard?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/amoshydra/draw">draw</a> [<a target="_blank" rel="noopener" href="https://amoshydra.github.io/draw/">在线演示</a>] - 支持钢笔和触摸的Web端Canvas <img src="https://img.shields.io/github/stars/amoshydra/draw?style=social"> <img src="https://img.shields.io/github/forks/amoshydra/draw?style=social"></li>
+</ul>
+<h3 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/szimek/signature_pad">signature_pad</a> [<a target="_blank" rel="noopener" href="http://szimek.github.io/signature_pad/">在线演示</a>] - 基于HTML5画布的平滑签名绘图 <img src="https://img.shields.io/github/stars/szimek/signature_pad?style=social"> <img src="https://img.shields.io/github/forks/szimek/signature_pad?style=social"><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/neighborhood999/vue-signature-pad">vue-signature-pad</a> [<a target="_blank" rel="noopener" href="https://codesandbox.io/s/n5qjp3oqv4">在线演示</a>] - Vue版本的签名板 <img src="https://img.shields.io/github/stars/neighborhood999/vue-signature-pad?style=social"> <img src="https://img.shields.io/github/forks/neighborhood999/vue-signature-pad?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/blackjk3/react-signature-pad">react-signature-pad</a> - React版的签名板 <img src="https://img.shields.io/github/stars/blackjk3/react-signature-pad?style=social"> <img src="https://img.shields.io/github/forks/blackjk3/react-signature-pad?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/legalthings/angular-signature">angular-signature</a> - Angular版的签名板 <img src="https://img.shields.io/github/stars/legalthings/angular-signature?style=social"> <img src="https://img.shields.io/github/forks/legalthings/angular-signature?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kevinstumpf/react-native-signature-pad">react-native-signature-pad</a> - React-Native版的签名板 <img src="https://img.shields.io/github/stars/kevinstumpf/react-native-signature-pad?style=social"> <img src="https://img.shields.io/github/forks/kevinstumpf/react-native-signature-pad?style=social"></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/thread-pond/signature-pad">signature-pad</a> [<a target="_blank" rel="noopener" href="https://thread-pond.github.io/signature-pad/examples/require-drawn-signature.html">在线演示</a>] - JQ插件，创建基于Canvas的签名板 <img src="https://img.shields.io/github/stars/thread-pond/signature-pad?style=social"> <img src="https://img.shields.io/github/forks/thread-pond/signature-pad?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Louiszhai/canvas-draw">canvas-draw</a> [<a target="_blank" rel="noopener" href="http://louiszhai.github.io/res/canvasDraw/#/sign">在线演示</a>] - 使用Canvas手写签名或绘图，支持PC、Mobile和横屏 <img src="https://img.shields.io/github/stars/Louiszhai/canvas-draw?style=social"> <img src="https://img.shields.io/github/forks/Louiszhai/canvas-draw?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/linjc/smooth-signature">smooth-signature</a> [<a target="_blank" rel="noopener" href="https://l2j2c3.gitee.io/smooth-signature/demo/index.html">在线演示</a>] - H5带笔锋手写签名，支持PC端和移动端，任何前端框架均可使用 <img src="https://img.shields.io/github/stars/linjc/smooth-signature?style=social"> <img src="https://img.shields.io/github/forks/linjc/smooth-signature?style=social"></li>
+</ul>
+<h3 id="波纹动画"><a href="#波纹动画" class="headerlink" title="波纹动画"></a>波纹动画</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://wavesurfer-js.org/">wavesurfer.js</a> [<a target="_blank" rel="noopener" href="https://wavesurfer-js.org/examples/">在线演示</a>] - 以Web音频和Canvas的音频波纹 <img src="https://img.shields.io/github/stars/katspaugh/wavesurfer.js?style=social"> <img src="https://img.shields.io/github/forks/katspaugh/wavesurfer.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/joshwcomeau/waveforms">waveforms</a> - 一个互动的、可探索的声波纹描绘特效 <img src="https://img.shields.io/github/stars/joshwcomeau/waveforms?style=social"> [<a target="_blank" rel="noopener" href="https://pudding.cool/2018/02/waveforms/">在线演示</a>] <img src="https://img.shields.io/github/forks/joshwcomeau/waveforms?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kopiro/siriwave">siriwave</a> [<a target="_blank" rel="noopener" href="http://kopiro.github.io/siriwave/">在线演示</a>] - JS实现的Apple® Siri 波纹特效 <img src="https://img.shields.io/github/stars/kopiro/siriwave?style=social"> <img src="https://img.shields.io/github/forks/kopiro/siriwave?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/dli/waves">waves</a> [<a target="_blank" rel="noopener" href="http://david.li/waves/">在线演示</a>] - 模拟海浪效果 <img src="https://img.shields.io/github/stars/dli/waves?style=social"> <img src="https://img.shields.io/github/forks/dli/waves?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/naomiaro/waveform-playlist">waveform-playlist</a> [<a target="_blank" rel="noopener" href="http://naomiaro.github.io/waveform-playlist/">在线演示</a>] - 具有画布波形预览的多轨网络音频编辑器和播放器。 <img src="https://img.shields.io/github/stars/naomiaro/waveform-playlist?style=social"> <img src="https://img.shields.io/github/forks/naomiaro/waveform-playlist?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/wavedrom/wavedrom">wavedrom</a> [<a target="_blank" rel="noopener" href="https://wavedrom.com/editor.html">在线演示</a>] - 一个免费的开源在线数字时序图（波形）渲染引擎 <img src="https://img.shields.io/github/stars/wavedrom/wavedrom?style=social"> <img src="https://img.shields.io/github/forks/wavedrom/wavedrom?style=social"></li>
+</ul>
+<h3 id="粒子动画"><a href="#粒子动画" class="headerlink" title="粒子动画"></a>粒子动画</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://projects.jpeer.at/proton/">Proton</a> [<a target="_blank" rel="noopener" href="http://drawcall.github.io/Proton/#examples">在线演示</a>] - Javascript粒子动画库 <img src="https://img.shields.io/github/stars/drawcall/Proton?style=social"> <img src="https://img.shields.io/github/forks/drawcall/Proton?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/drawcall/three.proton/">three.proton</a> [<a href="">在线演示</a>] - 神奇的3D粒子引擎，使用了three.js库和Proton <img src="https://img.shields.io/github/stars/drawcall/three.proton?style=social"> <img src="https://img.shields.io/github/forks/drawcall/three.proton?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tipsy/bubbly-bg">bubbly-bg</a> [<a target="_blank" rel="noopener" href="https://tipsy.github.io/bubbly-bg/">在线演示</a>] - 小于 1kB 的漂亮气泡背景(750 字节 gzipped) <img src="https://img.shields.io/github/stars/tipsy/bubbly-bg?style=social"> <img src="https://img.shields.io/github/forks/tipsy/bubbly-bg?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/transitive-bullshit/react-particle-effect-button">react-particle-effect-button</a> [<a target="_blank" rel="noopener" href="https://transitive-bullshit.github.io/react-particle-effect-button/">在线演示</a>] - 基于React的爆裂粒子效果按钮 <img src="https://img.shields.io/github/stars/transitive-bullshit/react-particle-effect-button?style=social"> <img src="https://img.shields.io/github/forks/transitive-bullshit/react-particle-effect-button?style=social"></li>
+</ul>
+<h3 id="路径动画"><a href="#路径动画" class="headerlink" title="路径动画"></a>路径动画</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/dntzhang/pasition">pasition</a> [<a target="_blank" rel="noopener" href="https://dntzhang.github.io/pasition/">在线演示</a>] - 轻量级 Path 过渡库，可以渲染到任何地方 <img src="https://img.shields.io/github/stars/dntzhang/pasition?style=social"> <img src="https://img.shields.io/github/forks/dntzhang/pasition?style=social"></li>
+</ul>
+<h3 id="音视频"><a href="#音视频" class="headerlink" title="音视频"></a>音视频</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/gka/canvid">canvid</a> [<a target="_blank" rel="noopener" href="https://gka.github.io/canvid/">在线演示</a>] - 在Canvas上播放短视频的零依赖JS库 <img src="https://img.shields.io/github/stars/gka/canvid?style=social"> <img src="https://img.shields.io/github/forks/gka/canvid?style=social"></li>
+</ul>
+<h3 id="光标"><a href="#光标" class="headerlink" title="光标"></a>光标</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/gmrchk/blobity">blobity</a> [<a target="_blank" rel="noopener" href="https://blobity.dev/">在线演示</a>] - 一个效果不错的canvas光标插件 <img src="https://img.shields.io/github/stars/gmrchk/blobity?style=social"> <img src="https://img.shields.io/github/forks/gmrchk/blobity?style=social"></li>
+</ul>
+<h3 id="创意"><a href="#创意" class="headerlink" title="创意"></a>创意</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/williamngan/pts">pts</a> [<a target="_blank" rel="noopener" href="https://ptsjs.org/">在线演示</a>] - 一个可视化和创意库 <img src="https://img.shields.io/github/stars/williamngan/pts?style=social"> <img src="https://img.shields.io/github/forks/williamngan/pts?style=social"></li>
+</ul>
+<h3 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/neocotic/qrious">qrious</a> [<a target="_blank" rel="noopener" href="https://github.com/neocotic/qrious#examples">在线演示</a>] - 使用Canvas生成二维码的纯JavaScript库 <img src="https://img.shields.io/github/stars/neocotic/qrious?style=social"> <img src="https://img.shields.io/github/forks/neocotic/qrious?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/davidshimjs/qrcodejs">qrcodejs</a> - 基于JavaScript的跨浏览器二维码生成器 <img src="https://img.shields.io/github/stars/davidshimjs/qrcodejs?style=social"> <img src="https://img.shields.io/github/forks/davidshimjs/qrcodejs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/soldair/node-qrcode">node-qrcode</a> - 二维码生成器 <img src="https://img.shields.io/github/stars/soldair/node-qrcode?style=social"> <img src="https://img.shields.io/github/forks/soldair/node-qrcode?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/bndw/wifi-card">wifi-card</a> [<a target="_blank" rel="noopener" href="https://wificard.io/">在线演示</a>] - 打印您连接的 WiFi 二维码(wificard.io) <img src="https://img.shields.io/github/stars/bndw/wifi-card?style=social"> <img src="https://img.shields.io/github/forks/bndw/wifi-card?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/LazarSoft/jsqrcode">jsqrcode</a> [<a target="_blank" rel="noopener" href="https://webqr.com/">在线演示</a>] - Javascript 二维码生成器 <img src="https://img.shields.io/github/stars/LazarSoft/jsqrcode?style=social"> <img src="https://img.shields.io/github/forks/LazarSoft/jsqrcode?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/schmich/instascan">instascan</a> [<a target="_blank" rel="noopener" href="https://schmich.github.io/instascan/">在线演示</a>] - 使用网络摄像头的 HTML5 二维码扫描仪 <img src="https://img.shields.io/github/stars/schmich/instascan?style=social"> <img src="https://img.shields.io/github/forks/schmich/instascan?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/zpao/qrcode.react">qrcode.react</a> - 用于React的二维码组件 <img src="https://img.shields.io/github/stars/zpao/qrcode.react?style=social"> <img src="https://img.shields.io/github/forks/zpao/qrcode.react?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ciaochaos/qrbtf">qrbtf</a> [<a target="_blank" rel="noopener" href="https://qrbtf.com/">在线演示</a>] - 艺术二维码生成器 <img src="https://img.shields.io/github/stars/ciaochaos/qrbtf?style=social"> <img src="https://img.shields.io/github/forks/ciaochaos/qrbtf?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/SumiMakito/Awesome-qr.js">Awesome-qr.js</a> [<a href="">在线演示</a>] - 一个用 JavaScript 编写的很棒的二维码生成器 <img src="https://img.shields.io/github/stars/SumiMakito/Awesome-qr.js?style=social"> <img src="https://img.shields.io/github/forks/SumiMakito/Awesome-qr.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jeromeetienne/jquery-qrcode">jquery-qrcode</a> - JQ二维码独立生成（不依赖于外部服务） <img src="https://img.shields.io/github/stars/jeromeetienne/jquery-qrcode?style=social"> <img src="https://img.shields.io/github/forks/jeromeetienne/jquery-qrcode?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/gruhn/vue-qrcode-reader">vue-qrcode-reader</a> [<a target="_blank" rel="noopener" href="https://gruhn.github.io/vue-qrcode-reader/demos/DecodeAll.html">在线演示</a>] - 一组用于检测和解码二维码的 Vue.js 组件 <img src="https://img.shields.io/github/stars/gruhn/vue-qrcode-reader?style=social"> <img src="https://img.shields.io/github/forks/gruhn/vue-qrcode-reader?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/yingye/weapp-qrcode">weapp-qrcode</a> [<a target="_blank" rel="noopener" href="https://github.com/yingye/weapp-qrcode#demo">在线演示</a>] - 在 微信小程序 中，快速生成二维码 <img src="https://img.shields.io/github/stars/yingye/weapp-qrcode?style=social"> <img src="https://img.shields.io/github/forks/yingye/weapp-qrcode?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/alexeyten/qr-image">qr-image</a> - 另一个二维码生成器 <img src="https://img.shields.io/github/stars/alexeyten/qr-image?style=social"> <img src="https://img.shields.io/github/forks/alexeyten/qr-image?style=social"></li>
+</ul>
+<h3 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/yeild/jigsaw">jigsaw</a> [<a target="_blank" rel="noopener" href="https://yeild.github.io/jigsaw/demo.html">在线演示</a>] - canvas滑动验证码 <img src="https://img.shields.io/github/stars/yeild/jigsaw?style=social"> <img src="https://img.shields.io/github/forks/yeild/jigsaw?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://www.jq22.com/jquery-info21017">jq_slideImage</a> [<a target="_blank" rel="noopener" href="https://www.jq22.com/yanshi21017">在线演示</a>] - jQuery滑动拼图验证插件</li>
+<li><a target="_blank" rel="noopener" href="https://www.jq22.com/jquery-info19009">jigsaw</a> [<a target="_blank" rel="noopener" href="https://www.jq22.com/yanshi19009">在线演示</a>] - canvas滑动验证插件jigsaw</li>
+<li><a target="_blank" rel="noopener" href="https://www.jq22.com/search?seo=%E9%AA%8C%E8%AF%81%E7%A0%81">JQuery插件库验证码资源地址</a></li>
+</ul>
+<h3 id="运行时"><a href="#运行时" class="headerlink" title="运行时"></a>运行时</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Automattic/node-canvas">node-canvas</a> - 由Cairo支持的Node.js画布实现。 <img src="https://img.shields.io/github/stars/Automattic/node-canvas?style=social"> <img src="https://img.shields.io/github/forks/Automattic/node-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/samizdatco/skia-canvas">skia-canvas</a> - 关于Canvas的Node.js环境 <img src="https://img.shields.io/github/stars/samizdatco/skia-canvas?style=social"> <img src="https://img.shields.io/github/forks/samizdatco/skia-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/arv/ExplorerCanvas">ExplorerCanvas</a> - IE8以前的Canvas环境 <img src="https://img.shields.io/github/stars/arv/ExplorerCanvas?style=social"> <img src="https://img.shields.io/github/forks/arv/ExplorerCanvas?style=social"></li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://paperjs.org/">paper.js</a> [<a target="_blank" rel="noopener" href="http://paperjs.org/examples/">在线演示</a>] - 矢量图形脚本的瑞士军刀 <img src="https://img.shields.io/github/stars/paperjs/paper.js?style=social"> <img src="https://img.shields.io/github/forks/paperjs/paper.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Flipboard/react-canvas">react-canvas</a> - 将React组件渲染成Canvas而不是DOM <img src="https://img.shields.io/github/stars/Flipboard/react-canvas?style=social"> <img src="https://img.shields.io/github/forks/Flipboard/react-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/iddan/react-native-canvas">react-native-canvas</a> - React Native Canvas组件  <img src="https://img.shields.io/github/stars/iddan/react-native-canvas?style=social"> <img src="https://img.shields.io/github/forks/iddan/react-native-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://raphamorim.io/origamijs/docs/">origamijs</a> - 强大且轻量级的创建HTML5 Canvas的库 <img src="https://img.shields.io/github/stars/raphamorim/origami.js?style=social"> <img src="https://img.shields.io/github/forks/raphamorim/origami.js?style=social"></li>
+</ul>
+<h2 id="插件资源网站"><a href="#插件资源网站" class="headerlink" title="插件资源网站"></a>插件资源网站</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://codepen.io/search/pens?q=canvas">CodePen Canvas特效资源</a></li>
+<li><a target="_blank" rel="noopener" href="https://animpen.com/search/pens?q=canvas">ANIMPEN 码笔网 Canvas特效资源</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.htmleaf.com/html5/html5-canvas/">JQuery之家 Canvas特效资源</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jq22.com/search?seo=canvas">JQuery插件库 Canvas特效资源</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/nucliweb/People-You-Should-Follow-on-CodePen">CodePen上Canvas相关的你应该关注的人</a></li>
+</ul>
+<h2 id="效果-案例"><a href="#效果-案例" class="headerlink" title="效果/案例"></a>效果/案例</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/catdad/canvas-confetti">canvas-confetti</a> [<a target="_blank" rel="noopener" href="https://www.kirilv.com/canvas-confetti/">在线演示</a>] - 一个撒花/纸屑效果插件 <img src="https://img.shields.io/github/stars/catdad/canvas-confetti?style=social"> <img src="https://img.shields.io/github/forks/catdad/canvas-confetti?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://100px.net/">lucky-canvas</a> [<a target="_blank" rel="noopener" href="https://100px.net/demo/wheel.html">在线演示</a>] - 基于 TS + Canvas 开发的【大转盘 / 九宫格】抽奖插件，rainbow 一套源码适配多端框架 JS / Vue / React / Taro / UniApp / 微信小程序等 <img src="https://img.shields.io/github/stars/buuing/lucky-canvas?style=social"> <img src="https://img.shields.io/github/forks/buuing/lucky-canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/goldfire/CanvasInput">CanvasInput</a> [<a target="_blank" rel="noopener" href="https://goldfirestudios.com/canvasinput-html5-canvas-text-input">在线演示</a>] - HTML5 Canvas文本输入框 <img src="https://img.shields.io/github/stars/goldfire/CanvasInput?style=social"> <img src="https://img.shields.io/github/forks/goldfire/CanvasInput?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Esri/wind-js">wind-js</a> [<a target="_blank" rel="noopener" href="http://esri.github.io/wind-js/">在线演示</a>] - 使用JS API在Canvas中模拟风的演示动画 <img src="https://img.shields.io/github/stars/Esri/wind-js?style=social"> <img src="https://img.shields.io/github/forks/Esri/wind-js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/AlloyTeam/curvejs">curvejs</a> [<a target="_blank" rel="noopener" href="https://github.com/AlloyTeam/curvejs#demos">在线演示</a>] - 魔幻线条 <img src="https://img.shields.io/github/stars/AlloyTeam/curvejs?style=social"> <img src="https://img.shields.io/github/forks/AlloyTeam/curvejs?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js/blob/master/README-zh.md">canvas-nest.js</a> - 一个基于 html5 canvas 绘制的网页背景效果。 <img src="https://img.shields.io/github/stars/hustcc/canvas-nest.js?style=social"> <img src="https://img.shields.io/github/forks/hustcc/canvas-nest.js?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/bxm0927/">canvas-special</a> - 超多经典 Canvas 实例，动态离子背景、炫彩小球、贪吃蛇、坦克大战、是男人就下100层、心形文字等 <img src="https://img.shields.io/github/stars/bxm0927/canvas-special?style=social"> <img src="https://img.shields.io/github/forks/bxm0927/canvas-special?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sunshine940326/canvas">canvas效果集合</a> <img src="https://img.shields.io/github/stars/sunshine940326/canvas?style=social"> <img src="https://img.shields.io/github/forks/sunshine940326/canvas?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kennethcachia/shape-shifter">shape-shifter</a> [<a target="_blank" rel="noopener" href="http://www.kennethcachia.com/shape-shifter/">在线演示</a>] - 这是一个基于用户输入使用一组粒子来渲染不同形状的画布实验。它支持多种模式:文本，倒计时，时间和图标 <img src="https://img.shields.io/github/stars/kennethcachia/shape-shifter?style=social"> <img src="https://img.shields.io/github/forks/kennethcachia/shape-shifter?style=social"></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/whxaxes/canvas-test">canvas-test</a> - 小的canvas效果demo</li>
+</ul>
+<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.yuque.com/antv/blog/2021s2">可视化私房菜</a> - 可视化国家队的私房菜，用心烹调，以飨读者。</li>
+<li><a target="_blank" rel="noopener" href="https://www.yuque.com/antv/vis-library">体系化建设 BI 业务定制图表</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.yuque.com/antv/g6-blog">图可视化知多少</a> - 图可视化、图分析及图编辑知识库。</li>
+<li><a target="_blank" rel="noopener" href="https://www.yuque.com/antv/g2plot">G2Plot 可视化圈子</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.yuque.com/antv/g2-docs">G2：图形、交互语法</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.yuque.com/antv/gvvtcf">可视化小讲堂</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/459251463">如何看待 Google Docs 将从 HTML 迁移到基于 Canvas 渲染？</a> - @知乎 海蓝</li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/34139676">用Canvas画一只会跟着鼠标走的小狗</a> - @知乎 李银城</li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/28203300">用Canvas + WASM画一个迷宫</a> - @知乎 李银城</li>
+<li><a target="_blank" rel="noopener" href="https://www.bianchengquan.com/article/140323.html">玩转「Canvas」</a> - 编程圈 @糖少</li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/802c3bd2df34">JS之使用Canvas绘图</a> - 简书 @LemonnYan</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903490020442125">一个少女心满满的例子带你入门 Canvas</a> - 掘金 @sunshine小小倩</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6986785259966857247">为了让她10分钟入门canvas，我熬夜写了3个小项目和这篇文章</a> - 掘金 @Sunshine_Lin</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903870276206606">更优雅地基于 canvas 在前端画海报</a> - 掘金 @2dunn</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6924866572972457992">【🎨万物皆可动】详解Canvas路径动画</a>- 掘金 @ChanningHyl</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6963476650356916254">产品经理：你能不能用div给我画条龙？</a> - 掘金 @大帅老猿</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903682761310216">Canvas性能优化</a> - 掘金 @清夜</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6989003710030413838">为了让你们进阶Canvas，我花7小时写了3个有趣的小游戏！！！</a> - 掘金 @Sunshine_Lin</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903840249020429">十分钟实现灭霸打响指灰飞烟灭的效果</a> - 掘金 @wangzy2019</li>
+<li><a target="_blank" rel="noopener" href="http://louiszhai.github.io/2017/07/07/canvas-draw/">匠心打造canvas签名组件</a> - @路易斯</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/MyBlog/about" rel="external nofollow noreferrer">nzgl</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://leisuping.github.io/MyBlog/canvas-note/">https://leisuping.github.io/MyBlog/canvas-note/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/MyBlog/about" target="_blank">nzgl</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/MyBlog/tags/canvas/">
+                                    <span class="chip bg-color">canvas</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/MyBlog/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/MyBlog/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/MyBlog/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/MyBlog/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/MyBlog/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content">
+    </div>
+</div>
+
+<script src="/MyBlog/libs/valine/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'jh93KUbfezH8yQMlyJ4Cav1J-MdYXbMMI',
+        appKey: 'XdONuihOkTuT0WQSnuh7otLb',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'robohash',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '欢迎畅所欲言'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/MyBlog/canvas-note/">
+                    <div class="card-image">
+                        
+                        <img src="https://s21.ax1x.com/2024/05/16/pknWBu9.jpg" class="responsive-img" alt="canvas 资料收录">
+                        
+                        <span class="card-title">canvas 资料收录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
+                            <a href="/MyBlog/categories/%E5%89%8D%E7%AB%AF/canvas/" class="post-category">
+                                    canvas
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/MyBlog/tags/canvas/">
+                        <span class="chip bg-color">canvas</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/MyBlog/element-datetimerange/">
+                    <div class="card-image">
+                        
+                        <img src="https://s21.ax1x.com/2024/05/16/pknWyAx.jpg" class="responsive-img" alt="element日期组件时间校验精确到时分秒">
+                        
+                        <span class="card-title">element日期组件时间校验精确到时分秒</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/MyBlog/categories/vue/" class="post-category">
+                                    vue
+                                </a>
+                            
+                            <a href="/MyBlog/categories/vue/element/" class="post-category">
+                                    element
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/MyBlog/tags/element/">
+                        <span class="chip bg-color">element</span>
+                    </a>
+                    
+                    <a href="/MyBlog/tags/DateTimePicker/">
+                        <span class="chip bg-color">DateTimePicker</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/MyBlog/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/MyBlog/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/MyBlog/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/MyBlog/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/MyBlog/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/MyBlog/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5216174881"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/MyBlog/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2024</span>
+            
+            <a href="/MyBlog/about" target="_blank">nzgl</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/leisuping/" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">49.3k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/leisuping/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2950821420@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2950821420" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2950821420" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/6537493249" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/6537493249" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/MyBlog/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/MyBlog/libs/materialize/materialize.min.js"></script>
+    <script src="/MyBlog/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/MyBlog/libs/aos/aos.js"></script>
+    <script src="/MyBlog/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/MyBlog/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/MyBlog/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/MyBlog/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/MyBlog/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/MyBlog/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/MyBlog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/MyBlog/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"react":{"opacity":0.7}}});</script></body>
+
+</html>
