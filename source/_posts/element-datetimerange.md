@@ -1,7 +1,7 @@
 ---
 title : element日期组件时间校验精确到时分秒
 date: 2024-02-29 12:34:00
-img: https://s11.ax1x.com/2024/02/29/pFwtwiF.jpg
+img: https://s21.ax1x.com/2024/05/16/pknWyAx.jpg
 tags:
  - element
  - DateTimePicker
