@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2024-05-30T07:15:53.327Z</updated>
+  <updated>2024-05-31T07:06:30.572Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端页面与串口通讯</title>
+    <link href="https://leisuping.github.io/web-serial/"/>
+    <id>https://leisuping.github.io/web-serial/</id>
+    <published>2024-05-31T06:00:00.000Z</published>
+    <updated>2024-05-31T07:06:30.572Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;关于Web-Serial-API&quot;&gt;&lt;a href=&quot;#关于Web-Serial-API&quot; class=&quot;headerlink&quot; title=&quot;关于Web Serial API&quot;&gt;&lt;/a&gt;关于Web Serial</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/categories/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/categories/js/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://leisuping.github.io/tags/js/"/>
+    
+    <category term="前端" scheme="https://leisuping.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>关于萌新求职，我有话要说</title>
@@ -553,36 +582,6 @@
     <category term="Vue" scheme="https://leisuping.github.io/tags/Vue/"/>
     
     <category term="Element+" scheme="https://leisuping.github.io/tags/Element/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在私服创建私有库</title>
-    <link href="https://leisuping.github.io/server-private-library/"/>
-    <id>https://leisuping.github.io/server-private-library/</id>
-    <published>2022-06-25T14:04:06.000Z</published>
-    <updated>2023-02-15T04:28:01.760Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、引题&quot;&gt;&lt;a href=&quot;#一、引题&quot; class=&quot;headerlink&quot; title=&quot;一、引题&quot;&gt;&lt;/a&gt;一、引题&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;🎯</summary>
-        
-      
-    
-    
-    
-    <category term="server" scheme="https://leisuping.github.io/categories/server/"/>
-    
-    <category term="repository" scheme="https://leisuping.github.io/categories/server/repository/"/>
-    
-    
-    <category term="server" scheme="https://leisuping.github.io/tags/server/"/>
-    
-    <category term="私有库" scheme="https://leisuping.github.io/tags/%E7%A7%81%E6%9C%89%E5%BA%93/"/>
     
   </entry>
   
