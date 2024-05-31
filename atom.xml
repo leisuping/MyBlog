@@ -6,7 +6,7 @@
   <link href="https://leisuping.github.io/atom.xml" rel="self"/>
   
   <link href="https://leisuping.github.io/"/>
-  <updated>2024-05-16T09:02:47.877Z</updated>
+  <updated>2024-05-30T07:15:53.327Z</updated>
   <id>https://leisuping.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于萌新求职，我有话要说</title>
+    <link href="https://leisuping.github.io/jobseeking/"/>
+    <id>https://leisuping.github.io/jobseeking/</id>
+    <published>2024-05-23T09:24:26.000Z</published>
+    <updated>2024-05-30T07:15:53.327Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;🎯</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://leisuping.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://leisuping.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>canvas 资料收录</title>
@@ -557,31 +583,6 @@
     <category term="server" scheme="https://leisuping.github.io/tags/server/"/>
     
     <category term="私有库" scheme="https://leisuping.github.io/tags/%E7%A7%81%E6%9C%89%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序父组件调用子组件的方法</title>
-    <link href="https://leisuping.github.io/xiaochengxu-parent-child/"/>
-    <id>https://leisuping.github.io/xiaochengxu-parent-child/</id>
-    <published>2022-06-15T05:05:16.000Z</published>
-    <updated>2023-02-15T04:28:01.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、微信小程序父组件调用子组件的方法&quot;&gt;&lt;a href=&quot;#一、微信小程序父组件调用子组件的方法&quot; class=&quot;headerlink&quot; title=&quot;一、微信小程序父组件调用子组件的方法&quot;&gt;&lt;/a&gt;一、微信小程序父组件调用子组件的方法&lt;/h2&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="小程序" scheme="https://leisuping.github.io/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-    
-    <category term="小程序" scheme="https://leisuping.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   

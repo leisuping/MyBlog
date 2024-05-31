@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>关于萌新求职，我有话要说</title>
+      <link href="/MyBlog/jobseeking/"/>
+      <url>/MyBlog/jobseeking/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><blockquote><p>🎯 又到了一年一度的毕业季了，职场又要注入一波新鲜朝气蓬勃的血液了！但是就目前内卷的社会现状来看，要找到心仪的工作似乎并不是一件容易的事，还是那句话：机遇与挑战并存！<br>那么需要做哪些准备呢？</p></blockquote><h2 id="二、关于简历"><a href="#二、关于简历" class="headerlink" title="二、关于简历"></a>二、关于简历</h2><blockquote><p>简历没有统一的模板跟要求，根据自己的实际情况去写适当包装一下，格式整洁不浮夸即可。<br>可以稍微注意下面几个方面：</p></blockquote><blockquote><p>1、学历：如果没有很大优势的可以放在简历的最后，统招写统招，非统招的比如自考、成考的就不用写了。<br>2、专业技能：可以精简一点，把关键的技能点写上即可（熟练掌握XXX框架、熟练使用XXX系统/xxx数据库/xxx开发工具等、熟悉xxx、了解xxx）。比如熟练掌握Spring、SpringBoot、Mybatis等主流开源框架。（这栏的熟练、熟悉、掌握的相关技能点必须完全掌握！）<br>3、工作经验（公司）与项目经验分开写。先写工作经验，把时间线梳理好，分点写清楚主要做了些什么，后面再写项目经验，从最近的到之前的（倒序写）。<br>4、工作经验与项目经验其实都可以不用写的特别细致，工作经验写清楚主要做什么，项目经验简单描述项目、自己负责的内容（面试时可多讲一些）、实现项目用到的技术点即可。其他的在面试过程中口述即可。<br>5、项目经验里面，最近的项目可以挑一两个业务较为复杂（或者是自己擅长的）的功能点，用于讲项目难点，或者是项目亮点。（年限1-3的不用每个项目都写负责核心内容，项目二次开发迭代需求等也可）<br>6、有技术博客、个人博客或者是GitHub上star值高的项目有贡献的都可以写上。（算是自己的优势）<br>7、有线上项目的把项目地址附带上</p></blockquote><h2 id="三、项目"><a href="#三、项目" class="headerlink" title="三、项目"></a>三、项目</h2><h3 id="1、介绍项目架构"><a href="#1、介绍项目架构" class="headerlink" title="1、介绍项目架构"></a>1、介绍项目架构</h3><blockquote><p>举例: 整个项目是基于B/S模式，应用Spring、springMVC、mybatis、xxx、xxx框架实现了XXXX系统，分为View层（显示层）、Control层（控制层）、Service层（业务逻辑层）、DAO层（数据库访问对象层）。<br>利用Spring的依赖注入和面向切面特性，mybatis的数据持久化技术、等实现了用户权限管理、日程安排、客户关系管理、销售管理、档案管理、统计数据、商务联系管理等模块。</p></blockquote><h3 id="2、自己负责的技术部分"><a href="#2、自己负责的技术部分" class="headerlink" title="2、自己负责的技术部分"></a>2、自己负责的技术部分</h3><blockquote><p>介绍自己负责的技术部分时，除了能说清楚自己项目中的业务以外，还需要将涉及的技术点、技术栈、基础知识理等细节都梳理好。</p></blockquote><h3 id="3、项目遇到的难点、怎么解决的（提出问题、解决问题）"><a href="#3、项目遇到的难点、怎么解决的（提出问题、解决问题）" class="headerlink" title="3、项目遇到的难点、怎么解决的（提出问题、解决问题）"></a>3、项目遇到的难点、怎么解决的（提出问题、解决问题）</h3><blockquote><p>每个项目中挑一个自己认为比较复杂的业务，或者比较难实现的功能点来讲。这里考察的就是业务能力+技术能力<br>解决方案一定要说明白，为什么采用这种解决方式，优点在哪？（可以带一下过程，考虑了几种解决方式，实践或者验证后采取的已知最优方案。）</p></blockquote><p>参考一下大佬们的案例：<br><a href="https://juejin.cn/post/7361715712992935975">微软一面：订单超时未支付，如何自动关闭？</a><br><a href="https://juejin.cn/post/7342480215533404170">阿里二面，Redis宕机了，如何恢复数据</a><br><a href="https://juejin.cn/post/7350652060872310793">京东二面：Redis为什么快？我说Redis是纯内存访问的，然后他对我笑了笑</a></p><h3 id="4、项目亮点"><a href="#4、项目亮点" class="headerlink" title="4、项目亮点"></a>4、项目亮点</h3><blockquote><p>把项目中自己认为好的地方提出来，可以是架构设计上的也可以是具体优化细节上的，甚至可以是编码实现上的。</p></blockquote><h3 id="5、你认为需要改进的地方"><a href="#5、你认为需要改进的地方" class="headerlink" title="5、你认为需要改进的地方"></a>5、你认为需要改进的地方</h3><blockquote><p>根据项目实际情况来即可</p></blockquote><h2 id="四、知识储备（技能点）"><a href="#四、知识储备（技能点）" class="headerlink" title="四、知识储备（技能点）"></a>四、知识储备（技能点）</h2><blockquote><p>简历上的个人技能点相关的知识储备一定要有！另外面试过程中也可以多上网看看大佬们的高频面试题。</p></blockquote><p>收集的高频面试题：<br><a href="https://juejin.cn/post/7342427121665441811">面试官：说说SpringAOP实现原理？</a><br><a href="https://juejin.cn/post/7346009985791541298">面试官：说说反射的底层实现原理？</a><br><a href="https://juejin.cn/post/7344834567150927907">面试官：说说线程池的工作原理？</a><br><a href="https://juejin.cn/post/7370708996418764854">小米面试：如何实现优先级线程池？</a><br><a href="https://juejin.cn/post/7367975773518774323">字节面试：说说Java中的锁机制？</a><br><a href="https://juejin.cn/post/7354974699133255731">小米一面：电商系统开发遇到了哪些问题？</a><br><a href="https://juejin.cn/post/7331663247002255400">面试官：如何防止短信盗刷和短信轰炸？</a><br><a href="https://juejin.cn/post/7340172161628782655">面试官：Redis如何保证高可用？</a><br><a href="https://juejin.cn/post/7309310129024008230">面试官：什么是JWT？为什么要用JWT？</a><br><a href="https://juejin.cn/post/7346036731727511578">面试官必问：MySQL并发事务是怎么处理的？</a><br><a href="https://juejin.cn/post/7370879551428149285">来聊聊Socket，WebSocket和MQTT的区别</a></p><h2 id="五、设计（编码、数据库、框架等等）"><a href="#五、设计（编码、数据库、框架等等）" class="headerlink" title="五、设计（编码、数据库、框架等等）"></a>五、设计（编码、数据库、框架等等）</h2><p><a href="https://juejin.cn/post/7343548913034133523">什么？你设计接口什么都不考虑？</a><br><a href="https://juejin.cn/post/7358368402795692082">API接口加解密技术方案（参考HTTPS原理和微信支付）</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>canvas 资料收录</title>
       <link href="/MyBlog/canvas-note/"/>
       <url>/MyBlog/canvas-note/</url>
@@ -628,9 +653,9 @@
       
         <tags>
             
-            <tag> Vue </tag>
-            
             <tag> js </tag>
+            
+            <tag> Vue </tag>
             
             <tag> font </tag>
             
