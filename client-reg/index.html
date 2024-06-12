@@ -494,7 +494,7 @@ export const regSpecialSymbol = /^((?!\\|\/|:|\*|test|null|？|:|;|">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    625
+                    812
                 </div>
                 
 
@@ -561,7 +561,40 @@ export const regSpecialSymbol = /^((?!\\|\/|:|\*|test|null|？|:|;|">
 <span class="token comment">// 不能以空格、-、&amp;符号开头、结尾</span>
 <span class="token keyword">export</span> <span class="token keyword">const</span> ignore_spaces <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^([\u4e00-\u9fa5A-Za-z0-9\(\)]+)(.*[\u4e00-\u9fa5A-Za-z0-9\(\)]+)?$</span><span class="token regex-delimiter">/</span></span>
 <span class="token keyword">export</span> <span class="token keyword">const</span> ignore_spaces_1 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^[^\s\-\.\,;:'"!@\#\$%\^\&amp;\*\(\)\&lt;\&gt;\/\|\\].+$</span><span class="token regex-delimiter">/</span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<span class="token comment">// input 只能输入框只能输入正整数，输入同时禁止了以0开始的数字输入，防止被转化为其他进制的数值。</span>
+<span class="token comment">// 不能输入零时</span>
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'text'</span> oninput<span class="token operator">=</span><span class="token string">"value=value.replace(/^(0+)|[^\d]+/g,'')"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment">// 能输入零时</span>
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'text'</span> oninput<span class="token operator">=</span><span class="token string">"value=value.replace(/^0+(\d)|[^\d]+/g,'')"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+<span class="token comment">// 附：只能输入中文:</span>
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"text"</span> oninput<span class="token operator">=</span><span class="token string">"this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>  
+<span class="token comment">// 附：只能输入英文:</span>
+<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"text"</span> oninput<span class="token operator">=</span><span class="token string">"this.value=this.value.replace(/[^a-zA-Z]/g,'')"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>  
+
+
+
+<span class="token comment">// el-input 只能输入框只能输入正整数</span>
+<span class="token operator">&lt;</span>el<span class="token operator">-</span>input size<span class="token operator">=</span><span class="token string">"small"</span>
+    οnkeyup<span class="token operator">=</span><span class="token string">"value=value.replace(/^(0+)|[^\d]+/g,'')"</span>
+    v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"count"</span>
+    maxlength<span class="token operator">=</span><span class="token string">"9"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">&gt;</span>
+
+<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      count<span class="token operator">:</span> <span class="token number">0</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> VersionReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^(V|v)([1-9]\d|[1-9])(.([1-9]\d|\d)){2}$</span><span class="token regex-delimiter">/</span></span>
+
+<span class="token comment">// 指定范围随机数：</span>
+<span class="token function">parseInt</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">8</span><span class="token punctuation">)</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="二、小插件"><a href="#二、小插件" class="headerlink" title="二、小插件"></a>二、小插件</h2><blockquote>
 <p>推荐vs code中一个关于正则的小插件 any-rule 个人觉得还可以，虽然包含的正则数目不多，但是常规的一些都有。<br>在vs code应用商店中下载安装后，打开一个页面右键就会有：正则大全75条<br>当然，特殊的正则也是可以根据个人需要做一些调整的。</p>
@@ -1398,7 +1431,7 @@ export const regSpecialSymbol = /^((?!\\|\/|:|\*|test|null|？|:|;|">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">51.2k</span>
+                        class="white-color">51.4k</span>
             
             
             
