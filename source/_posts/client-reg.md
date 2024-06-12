@@ -63,6 +63,39 @@ export const capitalize_first_letter = /^(([A-Z0-9\u4e00-\u9fa5]+)([\w\u4e00-\u9
 export const ignore_spaces = /^([\u4e00-\u9fa5A-Za-z0-9\(\)]+)(.*[\u4e00-\u9fa5A-Za-z0-9\(\)]+)?$/
 export const ignore_spaces_1 = /^[^\s\-\.\,;:'"!@\#\$%\^\&\*\(\)\<\>\/\|\\].+$/
 
+
+// input 只能输入框只能输入正整数，输入同时禁止了以0开始的数字输入，防止被转化为其他进制的数值。
+// 不能输入零时
+<input type='text' oninput="value=value.replace(/^(0+)|[^\d]+/g,'')" />
+
+// 能输入零时
+<input type='text' oninput="value=value.replace(/^0+(\d)|[^\d]+/g,'')" />
+
+// 附：只能输入中文:
+<input type="text" oninput="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')" />  
+// 附：只能输入英文:
+<input type="text" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'')" />  
+
+
+
+// el-input 只能输入框只能输入正整数
+<el-input size="small"
+    οnkeyup="value=value.replace(/^(0+)|[^\d]+/g,'')"
+    v-model="count"
+    maxlength="9"></el-input>
+
+data() {
+   return {
+      count: 0
+   }
+}
+
+export const VersionReg = /^(V|v)([1-9]\d|[1-9])(.([1-9]\d|\d)){2}$/
+
+// 指定范围随机数：
+parseInt(Math.random() * 8)
+
+
 ```
 
 ## 二、小插件
