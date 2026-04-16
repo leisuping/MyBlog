@@ -1,7 +1,7 @@
 ---
 title : go语言环境搭建及本地项目运行笔记
 date: 2023-03-16 18:04:26
-img: https://s2.232232.xyz/static/384/2022/12/08-6391832fa8506.jpg
+img: https://s11.ax1x.com/2023/12/15/pihzLZt.jpg
 top: true
 tags:
  - go
